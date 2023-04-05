@@ -535,12 +535,13 @@
 let num = 333;
 let sum = 0;
 let count = 0;
-while (sum <= 1000) {
-    sum = (num * 3);
-    num++;
+while (num <= 1000) {
+    
+console.log(num);
+    num = num * 3;
     count++
 }
-console.log(sum-3);
+console.log(num);
 console.log(count);
 
 // let arr = ['a', 'b', 'c', 'd'];
@@ -548,3 +549,5 @@ console.log(count);
 //     arr[0]+
     
 // }
+
+console.log(55);
