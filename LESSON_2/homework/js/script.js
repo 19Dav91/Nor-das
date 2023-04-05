@@ -531,35 +531,20 @@
 // 114.3 Дано число num с неким начальным значением. Умножайте его на 3 столько раз, пока результат
 //       умножения не станет больше 1000. Какое число получится? Посчитайте количество итераций, 
 //       необходимых для этого.
-// ???????????????????????????????
-// let num = 333;
-// let sum = 0;
+
+// let num = 2;
 // let count = 0;
 // while (num <= 1000) {
-
-// console.log(num);
-//     num = num * 3;
+//     let sum = num *= 3;
+//     console.log(sum);
 //     count++
 // }
-// console.log(num);
 // console.log(count);
 
+// 115.1 Выведите в консоль все элементы следующего массива:
 
-
-let num = 2;
-let count = 0;
-while (num <= 1000) {
-    let sum = num *= 3;
-    console.log(sum);
-    count++
+for (let i = 111; i <= 121; i++) {
+    let str = String(i);
+    let res = parseInt(str[0]) + parseInt(str[1])
+    console.log(res);
 }
-console.log(count);
-
-
-// let arr = ['a', 'b', 'c', 'd'];
-// for (let i = 0; i < arr.length; i++) {
-//     arr[0]+
-
-// }
-
-console.log(55);
