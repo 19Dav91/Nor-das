@@ -532,22 +532,34 @@
 //       умножения не станет больше 1000. Какое число получится? Посчитайте количество итераций, 
 //       необходимых для этого.
 // ???????????????????????????????
-let num = 333;
-let sum = 0;
+// let num = 333;
+// let sum = 0;
+// let count = 0;
+// while (num <= 1000) {
+
+// console.log(num);
+//     num = num * 3;
+//     count++
+// }
+// console.log(num);
+// console.log(count);
+
+
+
+let num = 2;
 let count = 0;
 while (num <= 1000) {
-    
-console.log(num);
-    num = num * 3;
+    let sum = num *= 3;
+    console.log(sum);
     count++
 }
-console.log(num);
 console.log(count);
+
 
 // let arr = ['a', 'b', 'c', 'd'];
 // for (let i = 0; i < arr.length; i++) {
 //     arr[0]+
-    
+
 // }
 
 console.log(55);
