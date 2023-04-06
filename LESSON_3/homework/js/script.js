@@ -333,3 +333,13 @@
 //    obj1[key] = elem
 // }
 // console.log(obj1);
+
+// let str = ['a', 'b', 'c', 'd'];
+// let str1 = ''
+// for (let elem of str) {
+//     if (elem !== 'd') {
+//         console.log(elem + '+');
+//     } else{
+//         str1 += 'd'
+//     }
+// }
