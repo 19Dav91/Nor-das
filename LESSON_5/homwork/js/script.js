@@ -60,3 +60,10 @@
 //     arr.push(getRandomInt(11, 51))
 // }
 // console.log(arr);
+
+// 152.1, 2 Дана строка 'js'. Сделайте из нее строку 'JS'.
+
+// let str = 'js';
+// console.log(str.toUpperCase());
+// let str1 = 'JS';
+// console.log(str1.toLowerCase());
