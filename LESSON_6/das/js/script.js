@@ -2,11 +2,11 @@
 ///Математические методы в JavaScript
 ///Math.pow
 //Math.pow(число, степень)
-//console.log(Math.pow(3, 4));
-//console.log(Math.pow(2, -5));
+// console.log(Math.pow(3, 4));
+// console.log(Math.pow(2, -5));
 /////////////////////////Math.sqrt
 //Math.sqrt(положительное число)
-//console.log(Math.sqrt(4));
+// console.log(Math.sqrt(4));
 //console.log(Math.sqrt(15));
 
 
@@ -83,7 +83,7 @@
 // let res=fruits.pop();
 //  console.log(res);
 // console.log(fruits);
-////////////push()
+// ////////////push()
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.push("Kiwi"));
 // console.log(fruits);
@@ -392,14 +392,14 @@
 ///Array.from()
 //Array.from("ABCDEFG");
 ///Array.keys()
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-const keys = fruits.values();
-let text="";
-for (let x of keys) {
-  text += x + "<br>";
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.values();
+// let text="";
+// for (let x of keys) {
+//   text += x + "<br>";
   
-}
-document.write(text);
+// }
+// document.write(text);
 
 
 ////includes()
@@ -410,12 +410,12 @@ document.write(text);
  //console.log(..."abc");
 // console.log(...["a","b","c"])
  //console.log(...123);
-const q1 = ["Jan", "Feb", "Mar"];
-const q2 = ["Apr", "May", "Jun"];
-const q3 = ["Jul", "Aug", "Sep"];
-const q4 = ["Oct", "Nov", "May"];
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
 
- const year = [...q1, ...q2, ...q3, ...q4];
+//  const year = [...q1, ...q2, ...q3, ...q4];
 //////Exercises of Math
 //https://www.w3resource.com/javascript-exercises/javascript-math-exercises.php
 
@@ -427,3 +427,4 @@ const q4 = ["Oct", "Nov", "May"];
 ///https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/index.php
 //JavaScript String - Exercises, Practice, Solution
 //https://www.w3resource.com/javascript-exercises/javascript-string-exercises.php
+
