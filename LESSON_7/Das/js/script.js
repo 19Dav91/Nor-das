@@ -1,3 +1,4 @@
+'use strict'
 ////Functions
 // hello()//hoisting
 // function hello(){ //declaration
@@ -230,20 +231,20 @@
 //     console.log("Привет мир");
 // })();
  
-(function (n){
-    var result = 1;
-    for(var i=1; i<=n; i++)
-        result *=i;
-    console.log("Факториал числа " + n + " равен " + result);
-}(3));
+// (function (n){
+//     var result = 1;
+//     for(var i=1; i<=n; i++)
+//         result *=i;
+//     console.log("Факториал числа " + n + " равен " + result);
+// }(3));
 
-///////Паттерн Модуль
+// ///////Паттерн Модуль
 let foo = (function(){
     let obj = {greeting: "hello"};
      
     return {
         display: function(){
-            console.log(obj.greeting);
+            console.log(obj);
         }
     }
 })();
@@ -252,23 +253,23 @@ foo.display();
 /////////////////////////////////////
 
 
-// let calculator = (function(){
-//     let data = { number: 0};
+let calculator = (function(){
+    let data = { number: 0};
      
-//     return {
-//         sum: function(n){
-//             data.number += n;
-//         },
-//         subtract: function(n){
-//             data.number -= n;
-//         },
-//         display: function(){
-//             console.log("Result: ", data.number);
-//         }
-//     }
-// })();
-// calculator.sum(10);
-// calculator.sum(3);
-// calculator.display();   
-// calculator.subtract(4);
-// calculator.display();   
+    return {
+        sum: function(n){
+            data.number += n;
+        },
+        subtract: function(n){
+            data.number -= n;
+        },
+        display: function(){
+            console.log("Result: ", data.number);
+        }
+    }
+})();
+calculator.sum(10);
+calculator.sum(3);
+calculator.display();   
+calculator.subtract(4);
+calculator.display();   
