@@ -1,3 +1,23 @@
+'wse strict'
+// 170.3 Код должен найти сумму элементов массива, однако, ничего не выводит в консоль:
+
+let arr = [1, 2, 3, 4, 5];
+function func(arr) {
+	let res = 0;
+	
+	for (let elem of arr) {
+		res += elem;
+	}
+	
+	console.log(res);
+}
+
+
+
+
+
+
+
 // function fibonacci(n) {
 //     if (n <= 1) return n;
 //     return fibonacci(n - 1) + fibonacci(n - 2);
