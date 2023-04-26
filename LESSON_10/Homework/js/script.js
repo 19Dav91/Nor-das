@@ -164,9 +164,9 @@
 // պալինդրոմ է
 // a. Այսինքն՝ աջից եւ ձախից կարդացվում է նույն կերպ
 
-function checkPalindrom(str) {
-    return str == str.split('').reverse().join('');
-}
+// function checkPalindrom(str) {
+//     return str == str.split('').reverse().join('');
+// }
 
 // ★ Գրել ConvertToBinary(x) ֆունկցիան, որը 10-ական համակարգի x թիվը ձևափոխում
 // է 2-ական համակարգի
