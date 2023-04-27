@@ -156,11 +156,12 @@
 //194.2 Дан массив со строками. С помощью созданной нами функции each переверните символы 
 // каждой строки в обратном порядке.
 
-// function revStr(str) {
-//     return str.split('').reverse().join('').toLowerCase();
-// }
-
-// console.log(revStr('David')); 
+function revStr(str) {
+    let res =  str.split('').reverse().join('').toLowerCase();
+    console.log(res); 
+    res[0].toUpper
+}
+revStr('David')
 
 // function each(arr, callback) {
 //     for (var i = 0; i < arr.length; i++) {
