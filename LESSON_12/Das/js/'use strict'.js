@@ -1,19 +1,4 @@
-// 'use strict'
-
-// function foo(x, y) {
-//     let arr = x.split('');
-//     let result = arr.filter(elem => elem !== y);
-//     // let result = (arr.filter(elem => elem !== y)).join('');
-//     return result
-// }
-// console.log(foo('gmail.@gmail@.com', '@'));
-
-// function foo(x, y) {
-//     let result = x.split(y).join('');
-//     return result;
-// }
-// console.log(foo('@gm@ail.@gma@il@.com', '@')); 
-
+'use strict'
 // let arr = [1, 2, 3, 4, 5];
 // let max = Math.max(...arr);
 // let min = Math.min(...arr);
