@@ -289,9 +289,11 @@
 // 235.12 Определите, сколько часов осталось до конца дня.
 
 // let now = new Date();
-// let hours = new Date(now.getFullYear(), now.getMonth() + 1, now.getDay(), 23, 59, 59);
+// let hours = new Date(now.getFullYear(), now.getMonth() , now.getDay(), 23, 59, 59);
 // let res = hours - now;
 // console.log(((res / (1000 * 60 * 60)).toFixed(2)))
+// console.log(now);
+// console.log(hours);
 // ??????????????????????????? ropener@ chem stanum
 
 // 235.13 Рассмотрите промежуток от 2000 года до текущего года. 
@@ -312,7 +314,7 @@
 // 236.1 Определите, сколько секунд прошло с начала дня до настоящего момента времени.
 
 // let now = new Date();
-// let minutes = new Date(now.getFullYear(),now.getMonth()+1,now.getDay(),0,0,0);
+// let minutes = new Date(now.getFullYear(),now.getMonth(),now.getDay(),0,0,0);
 // let res = ((now - minutes)/(1000)).toFixed(2)
 // console.log(res);
 
