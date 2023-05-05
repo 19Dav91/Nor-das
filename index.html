@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convert Minutes to Time</title>
+	<script>
+		function convertToTime() {
+			const minutes = document.getElementById('minutes').value;
+			const hours = Math.floor(minutes / 60);
+			const remainingMinutes = minutes % 60;
+			const timeString = hours.toString().padStart(2, '0') + ':' + remainingMinutes.toString().padStart(2, '0');
+			document.getElementById('result').innerText = timeString;
+		}
+	</script>
+</head>
+<body>
+	<label for="minutes">Enter minutes:</label>
+	<input type="number" id="minutes" name="minutes">
+	<button onclick="convertToTime()">Convert</button>
+	<h1 id="result"></h1>
+</body>
+</html>
