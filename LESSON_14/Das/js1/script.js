@@ -78,27 +78,27 @@
 
 // text.textContent = `${days}or, ${hours}jam, ${minutes}rope, ${seconds}varkyan`;
 
-let button = document.querySelector('#btn');
-let inp = document.querySelector('#name');
-let inp1 = document.querySelector('#name1');
-let text = document.querySelector('#txt');
-     utton.addEventListener('click', function func() {
-    let seconds = inp.value;
-let days = Math.ceil(seconds / 86400);
-seconds -= days * 86400;
-let hours = Math.floor(seconds / 3600);
-                  seconds -= hours * 3600;
-let minutes = Math.floor(seconds / 60);
-seconds -= minutes * 60;
+// let button = document.querySelector('#btn');
+// let inp = document.querySelector('#name');
+// let inp1 = document.querySelector('#name1');
+// let text = document.querySelector('#txt');
+//      utton.addEventListener('click', function func() {
+//     let seconds = inp.value;
+// let days = Math.ceil(seconds / 86400);
+// seconds -= days * 86400;
+// let hours = Math.floor(seconds / 3600);
+//                   seconds -= hours * 3600;
+// let minutes = Math.floor(seconds / 60);
+// seconds -= minutes * 60;
 
-text.textContent = `${days}or, ${hours}jam, ${minutes}rope, ${seconds}varkyan`;
+// text.textContent = `${days}or, ${hours}jam, ${minutes}rope, ${seconds}varkyan`;
 
 // let day = Math.floor(inp.value / 24 /60 /60);
 // let jam = Math.floor((+inp.value - (day*24*60*60))/60/60 );
 // let rope = ((+inp.value - (day*24*60*60))/60/60);
 // let sec = rope/60;
 //     text.textContent = `${day}or,  ${jam}jam,  ${rope}rope,  ${sec}varkyan` ;
-});
+// });
 
 // function convertTime() {
 //     let timeInput = document.getElementById("timeInput").value;
@@ -119,11 +119,6 @@ text.textContent = `${days}or, ${hours}jam, ${minutes}rope, ${seconds}varkyan`;
 //     resultElement.innerText = formattedTime;
 //   }
   
-
-
-
-
-
 
 
 

@@ -5,14 +5,19 @@
 // Առաջադրանք 1:Գրել հետեւյալ նկարագրությանը համապատասխանող ֆունկցիաները
 // ★ gumar(x) - հաշվում եւ վերադարձնում է x զանգվածի տարրերի գումարը
 
-// function gumar(x) {
-//     let sum = 0;
-//     for (let i = 0; i < x.length; i++) {
-//         sum += x[i];
-//     }
-//     return sum
-// }
-
+function gumar(x) {
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+        sum += x[i];
+    }
+    return sum
+}
+function name(params) {
+    if (condition) {
+        let arr = [1, 2, 3];
+        console.log(arr);
+    }
+}
 
 // ★ Ֆունկցիան ստանում է զանգված և գտնում այդ զանգվածի մեծագույն և փոքրագույն
 // տարրերի գումարը
