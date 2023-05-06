@@ -205,7 +205,7 @@
 // 249.2 Дан следующий инпут:
 // Дана также кнопка. По нажатию на кнопку запишите в атрибут type значение submit.
 
-    
+
 // let elem = document.querySelector('#elem');
 // let button = document.querySelector('#button');
 // button.addEventListener('click', func);
@@ -288,4 +288,178 @@
 // button2.addEventListener('click', func2);
 // function func2() {
 // 	img.src='images/img2.jpg'
+// }
+
+// 250.1 Дан инпут и кнопка. По нажатию на кнопку запишите в инпут какой-нибудь текст.
+
+
+// let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+// 	elem.value = 'Karen'
+// 	console.log(elem.type);
+// }
+
+// 250.2 Дан инпут, абзац и кнопка. По нажатию на кнопку запишите в абзац текст из инпута.
+
+// let elem = document.querySelector('#elem');
+// let txt = document.querySelector('#txt')
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+// 	txt.innerHTML = elem.value
+// }
+
+// 250.3 Даны два инпута и кнопка. В первый инпут пользователем вводится число. 
+// По нажатию на кнопку запишите во второй инпут квадрат введенного числа.
+
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     elem2.value = elem1.value * 2
+// }
+
+
+// 250.4 Даны два инпута и кнопка. По нажатию на кнопку запишите в первый 
+// инпут значение второго инпута, а во второй инпут - значение первого. 
+// Ваш код должен работать универсально, для любых значений инпутов.
+
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     const temp = elem1.value;
+//     elem1.value = elem2.value;
+//     elem2.value = temp;
+// }
+
+
+// 250.5 Даны 5 инпутов, абзац и кнопка. В инпут вводятся числа. 
+// По нажатию на кнопку запишите среднее арифметическое введенных чисел в абзац.
+
+
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// let elem3 = document.querySelector('#elem3');
+// let elem4 = document.querySelector('#elem4');
+// let elem5 = document.querySelector('#elem5');
+// let txt = document.querySelector('#txt')
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+
+//     txt.innerHTML = +elem1.value + +elem2.value + +elem3.value + +elem4.value + +elem5.value
+
+//     // let sum = 0;
+// let count = 0;
+//     // for (const elem of document.querySelectorAll('input')) {
+//     //     sum += parseInt(elem.value)
+// count++
+
+//     // }
+//     // txt.innerHTML = sum/count
+
+// }
+
+
+// 251.1 Дан инпут. По получению фокуса запишите в него число 1, а по потери фокуса - число 2.
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('focus', function() {
+// 	elem.value = 1;
+// });
+// elem.addEventListener('blur', function(){
+// 	elem.value = 2;
+// })
+
+// 251.2 Дан инпут. Пусть в него вводится число. По потери фокуса выведите на экран квадрат этого числа.
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', function() {
+// 	elem.value *= elem.value;
+// });
+
+
+// 251.3 Дан инпут, в котором изначально есть какой-то текст. 
+// По получению фокуса инпутом очистите содержимое этого инпута.
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('focus', function() {
+// 	elem.value = '';
+// });
+
+// 252.1 Дан див:
+// Дана также кнопка. По нажатию на кнопку прочитайте и выведите на экран значение атрибута class нашего дива.
+
+
+// let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     elem.innerHTML = elem.className;
+// }
+
+// 252.2 Дан див:
+// Дана также кнопка. По нажатию на кнопку запишите в атрибут class нашего дива какой-нибудь класс.
+
+
+
+// let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     elem.className = 'content';
+//     elem.innerHTML = elem.className;
+// }
+
+
+// 252.3 Дан див с несколькими CSS классами, записанными через пробел:
+// Дана также кнопка. По нажатию на кнопку получите массив CSS классов нашего дива.
+
+
+// let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     let arr = [];
+//     for (const elem of document.querySelectorAll('#elem')) {
+//         arr.push(elem.className)
+//     }
+//     console.log(arr);
+// }
+
+// 253.1 Дан следующий код:
+// // Переделайте приведенный выше код так, чтобы вместо введения переменной image использовалась цепочка.
+
+// // let image = document.querySelector('#image');
+// // console.log(image.src);
+
+// console.log(document.querySelector('#image').src);
+
+// 254.1 Дан инпут. По получению фокуса этим инпутом запишите в него число 1, а по потери фокуса - число 
+// 2. Для обращения у инпуту внутри функции-обработчика используйте объект this.
+
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('focus', function () {
+//     this.value = '1';
+// });
+// elem.addEventListener('blur', function(){
+// 	this.value = 2;
+// })
+
+// 254.2 Дана кнопка, значением которой служит число 1. 
+// Сделайте так, чтобы по клику на эту кнопку ее значение каждый раз увеличивалось на единицу.
+
+
+// ???????????????????????????
+// let button = document.querySelector('#button');
+// button.addEventListener('click', func);
+// function func() {
+//     this.value += parseInt(1);
+//     this.innerHTML = this.value
 // }
