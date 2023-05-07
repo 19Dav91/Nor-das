@@ -457,11 +457,11 @@
 
 
 // ???????????????????????????
-// let button = document.querySelector('#button');
-// button.addEventListener('click', func);
-// let sum = 1;
-// function func() {
-//     sum++
-//     this.innerHTML = sum
-//     // this.value += Number(1);
-// }
+let button = document.querySelector('#button');
+button.addEventListener('click', func);
+let sum = 1;
+function func() {
+    sum++
+    this.innerHTML = sum
+    // this.value += Number(1);
+}

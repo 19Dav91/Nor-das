@@ -27,24 +27,21 @@ but2.addEventListener('click', func2);
 let arr = [];
 function func2() {
     for (const elem of document.querySelectorAll('input')) {
-        arr.push(elem.value)
+        arr.push(elem.value);
+        return arr
     }
-    for (const elem of arr) {
-        if (arr[0] == 1 || arr[1] == 1 || arr[2] == 1) {
-            txt1.innerHTML = 'այո'
-        } else { txt1.innerHTML = 'ոչ' }
-    }
+    if (arr[0] == 1 || arr[1] == 1 || arr[2] == 1) {
+        txt1.innerHTML = 'այո';
+    } else { txt1.innerHTML = 'ոչ' }
     console.log(arr[0]);
+    return arr
+};
+but3.addEventListener('click', func3);
+function func3() {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== arr[i] + 1) {
+            txt1.innerHTML = 'ոչ';
+        } else { txt1.innerHTML = 'այո' }
+    }
+    console.log(arr);
 }
-// but3.addEventListener('click', func3);
-// function func3() {
-//     for (const elem of document.querySelectorAll('input')) {
-//         let arr = [];
-//         arr.push(elem.value);
-//         let str = '';
-//         return arr / str / elem
-//     }
-
-//     console.log(arr[0]);
-
-// }
