@@ -209,21 +209,21 @@
 // թվերը դրական են և 3^2 +4^2=5^2, մնացյալ դեպքերում ցույց կտրվի 
 // error։ 
 
-// let input1 = document.querySelector('#input1');
-// let input2 = document.querySelector('#input2');
-// let input3 = document.querySelector('#input3');
-// let input = document.querySelectorAll('input')
-// let button1 = document.querySelector('#button1');
-// let tex = document.querySelector('#tex');
-// button1.addEventListener('click', () => {
-//     if ((+input1.value > 0 && +input2.value > 0 && +input3.value > 0)&&
-//     Math.pow(input1.value,2) + Math.pow(input2.value,2) == Math.pow(input3.value,2)) {
-//         tex.textContent = 'ԱՅՈ';
-//         console.log(input1);
-//     } else {
-//         tex.textContent = 'ՈՉ'
-//     }
-// });
+let input1 = document.querySelector('#input1');
+let input2 = document.querySelector('#input2');
+let input3 = document.querySelector('#input3');
+let input = document.querySelectorAll('input')
+let button1 = document.querySelector('#button1');
+let tex = document.querySelector('#tex');
+button1.addEventListener('click', () => {
+    if ((+input1.value > 0 && +input2.value > 0 && +input3.value > 0)&&
+    Math.pow(input1.value,2) + Math.pow(input2.value,2) == Math.pow(input3.value,2)) {
+        tex.textContent = 'ԱՅՈ';
+        console.log(input1);
+    } else {
+        tex.textContent = 'ՈՉ'
+    }
+});
 
 
 // Առաջադրանք 3: Input դաշտում մուտքագրվում է a թիվը ։ Button -ին սեղմելիս 
