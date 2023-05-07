@@ -459,7 +459,9 @@
 // ???????????????????????????
 // let button = document.querySelector('#button');
 // button.addEventListener('click', func);
+// let sum = 1;
 // function func() {
-//     this.value += parseInt(1);
-//     this.innerHTML = this.value
+//     sum++
+//     this.innerHTML = sum
+//     // this.value += Number(1);
 // }
