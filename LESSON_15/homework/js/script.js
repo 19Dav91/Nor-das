@@ -221,7 +221,7 @@ button1.addEventListener('click', () => {
         tex.textContent = 'ԱՅՈ';
         console.log(input1);
     } else {
-        tex.textContent = 'ՈՉ'
+        tex.textContent === 'ՈՉ'
     }
 });
 
