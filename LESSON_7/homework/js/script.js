@@ -1,10 +1,10 @@
-'use strict';
+// 'use strict';
 // 156.1 Сделайте функцию, выводящую в консоль ваше имя.
 
-// function name() {
-//     console.log('David');
-// }
-// name()
+function name() {
+    console.log('David');
+}
+name()
 
 // 156.2 Сделайте функцию, выводящую в консоль сумму чисел от 1 до 100.
 
