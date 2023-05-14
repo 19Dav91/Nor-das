@@ -52,14 +52,14 @@
 
 // 151.8 С помощью цикла заполните массив 10-ю случайными целыми числами.
 
-// function getRandomInt(min, max) {
-// 	return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-// let arr = [];
-// for (let i = 0; i < 10; i++) {
-//     arr.push(getRandomInt(11, 51))
-// }
-// console.log(arr);
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let arr = [];
+for (let i = 0; i < 10; i++) {
+    arr.push(getRandomInt(11, 51));
+}
+console.log(arr);
 
 // 152.1, 2 Дана строка 'js'. Сделайте из нее строку 'JS'.
 

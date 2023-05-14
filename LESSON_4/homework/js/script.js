@@ -1,12 +1,12 @@
 'use strict'
 /////////////flags
-// // let arr = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4, 5];
 
-// // for (let elem of arr) {
-// // 	if (elem == 3) {
-// // 		console.log('+++'); 
-// // 	} 
-// // }
+for (let elem of arr) {
+	if (elem == 3) {
+		console.log('+++'); 
+	} 
+}
 
 // //////////////////
 // let arr = [1, 2, 3, 4, 5];

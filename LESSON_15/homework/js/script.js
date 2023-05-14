@@ -221,11 +221,9 @@ button1.addEventListener('click', () => {
         tex.textContent = 'ԱՅՈ';
         console.log(input1);
     } else {
-        tex.textContent === 'ՈՉ'
+        tex.textContent = 'ՈՉ'
     }
 });
-
-
 // Առաջադրանք 3: Input դաշտում մուտքագրվում է a թիվը ։ Button -ին սեղմելիս 
 // ցուցադրել, այդ թիվը բնական է թե իրական ։ 
 // ★ Օրինակ՝ 7 -ի դեպքում կստանանք դրական պատասխան (true), սակայն 5,2 -ը 
