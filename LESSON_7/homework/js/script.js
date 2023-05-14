@@ -47,13 +47,13 @@ name()
 // в консоль их сумму. Пусть даны 3 переменные с числами:
 // С помощью созданной вами функции выведите в консоль сумму значений эти переменных.
 
-// let param1 = 1;
-// let param2 = 2;
-// let param3 = 3;
-// function sum(param1, param2, param3) {
-//     console.log(param1 + param2 + param3);
-// }
-// sum(param1, param2, param3)
+let param1 = 1;
+let param2 = 2;
+let param3 = 3;
+function sum(param1, param2, param3) {
+    console.log(param1 + param2 + param3);
+}
+sum(param1, param2, param3)
 
 // 160.1 Дана функция:
 // Эта функция вызывается следующим образом:

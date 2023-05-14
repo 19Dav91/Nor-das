@@ -10,14 +10,14 @@
 // 151.3 Дан следующий массив:
 // Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
 
-// let arr = [4, 2, 5, 19, 13, 0, 10];
-// let sum = 0;
-// for (const elem of arr) {
-//     sum += elem
-// }
-// console.log(sum);
-// console.log(Math.pow(sum, 3));
-// console.log(parseInt(Math.sqrt(Math.pow(sum, 3))));
+let arr = [4, 2, 5, 19, 13, 0, 10];
+let sum = 0;
+for (const elem of arr) {
+    sum += elem
+}
+console.log(sum);
+console.log(Math.pow(sum, 3));
+console.log(parseInt(Math.sqrt(Math.pow(sum, 3))));
 
 // 151.4 Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
 
