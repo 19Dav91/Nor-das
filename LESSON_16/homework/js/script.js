@@ -144,19 +144,40 @@
 // 281.1 Даны два инпута. Сделайте так, чтобы после ввода двух символов фокус ввода 
 // переходил ко второму инпуту, а после ввода двух символов в этот инпут - фокус из него убирался.
 
-let elem1 = document.querySelector('#elem1');
-let elem2 = document.querySelector('#elem2');
-elem1.addEventListener('input', func1);
-elem2.addEventListener('input', func2);
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// elem1.addEventListener('input', func1);
+// elem2.addEventListener('input', func2);
+// function func1() {
+//     if (elem1.value.length >=2) {
+//         elem2.focus();
+//         console.log(elem1.value);
+//     };
+// };
+// function func2() {
+//     if (elem2.value.length >=2) {
+//         elem2.blur();
+//         console.log(elem1.value);
+//     };
+// };
+
+// 282.1 Дан селект, абзац и кнопка. По клику на кнопку выведите текст выбранного пункта списка в абзац. 
+
+// let select = document.querySelector('#select');
+// let txt = document.querySelector('#txt');
+// let btn = document.querySelector('#btn');
+// btn.addEventListener('click', func1);
+// function func1() {
+//     txt.textContent = select.value;
+// }
+
+// 282.2 Сделайте выпадающий список годов от 2020 до 2030. При выборе какого-нибудь 
+// пункта списка выведите сообщение о том, високосный этот год или нет.
+
+let select = document.querySelector('#select');
+let txt = document.querySelector('#txt');
+select.addEventListener('change',func1);
 function func1() {
-    if (elem1.value.length >=2) {
-        elem2.focus();
-        console.log(elem1.value);
-    };
-};
-function func2() {
-    if (elem2.value.length >=2) {
-        elem2.blur();
-        console.log(elem1.value);
-    };
-};
+    console.log(this.value);
+}
+
