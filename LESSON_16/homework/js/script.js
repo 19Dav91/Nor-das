@@ -174,10 +174,33 @@
 // 282.2 Сделайте выпадающий список годов от 2020 до 2030. При выборе какого-нибудь 
 // пункта списка выведите сообщение о том, високосный этот год или нет.
 
-let select = document.querySelector('#select');
-let txt = document.querySelector('#txt');
-select.addEventListener('change',func1);
-function func1() {
-    console.log(this.value);
-}
+// let select = document.querySelector('#select');
+// let txt = document.querySelector('#txt');
+// select.addEventListener('change', func1);
+// function func1() {
+//     if (select.value % 4 === 0 && select.value % 100 !== 0 || select.value % 400 === 0) {
+//         txt.textContent = `${this.value}թ-ը նահանջ տերի է`
+//     } else{
+//         txt.textContent = ''
+//     }
+// }
 
+// 282.3 Сделайте выпадающий список с названиями дней недели. В качестве атрибутов value 
+// пунктов списка добавьте номера дней недели от 1 до 7. По изменению списка выведите на 
+// экран сообщение о том, выбран выходной день или рабочий.
+
+// let select = document.querySelector('#select');
+// let txt = document.querySelector('#txt');
+// select.addEventListener('change', function () {
+//     if (this.value == 6 || this.value == 7) {
+//         txt.textContent = "Ոչ աշխատանքային օր է", txt.style.color = 'red'
+//     } else {
+//         txt.textContent = ''
+//     };
+// });
+
+let select = document.querySelector('#select');
+let button = document.querySelector('#button');
+button.addEventListener('click', function() {
+	select.value = 'one';
+});
