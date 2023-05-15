@@ -46,12 +46,12 @@ for (let i = 0; i < arr.length; i++) {
 // 116.2 Дан следующий объект:
 // Выведите в консоль те элементы объекта, значения которых - нечетные числа.
 
-// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
-// for (let elem in obj) {
-//     if (obj[elem] % 2 !== 0) {
-//         console.log(obj[elem]);
-//     }
-// }
+let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+for (let elem in obj) {
+    if (obj[elem] % 2 !== 0) {
+        console.log(obj[elem]);
+    }
+}
 
 // 117.1 Найдите сумму четных чисел от 2 до 100.
 
