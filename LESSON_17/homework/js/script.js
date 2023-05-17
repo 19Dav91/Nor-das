@@ -33,12 +33,29 @@
 //     } else {
 //         let paragraph = document.createElement('p');
 //         paragraph.innerHTML = 'Դուք սեխմել եք UL-ի վրա';
-//         document.body.prepend(paragraph);
+//         document.elem.prepend(paragraph);
 //         setTimeout(() => {
 //             paragraph.remove();
 //           }, 800);
 //           paragraph.style.textAlign = 'center'
 //     }
 // }
+//  420.1 Сделайте инпут, который будет по вводу выводить значения введенных клавиш и их коды.
 
-console.log(15);
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('keypress', function (e) {
+//     console.log(e.key);
+//     console.log(e.code);
+// });
+
+// 420.5 Дан абзац и инпут. В него вводится текст и нажимается клавиша Enter. Сделайте так, 
+// чтобы в этот момент введенный текст попадал в абзац под инпутом, а содержимое инпута очищалось.
+
+// let elem = document.querySelector('#elem');
+// let txt = document.querySelector('#txt');
+// elem.addEventListener('keypress', function (e) {
+//     if(e.key === 'Enter') {
+//         txt.textContent = this.value;
+//         this.value = '';
+//     }
+// });
