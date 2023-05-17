@@ -40,3 +40,5 @@
 //           paragraph.style.textAlign = 'center'
 //     }
 // }
+
+console.log(15);
