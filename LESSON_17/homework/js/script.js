@@ -8,15 +8,15 @@
 // elem.addEventListener('click', func);
 // elem.addEventListener('dblclick', func);
 
-// function func(e) {
-//     if (e.type === 'click') {
-//         elem.style.backgroundColor = 'green';
-//         elem.style.color = 'white'
-//     } else if (e.type === 'dblclick') {
-//         elem.style.backgroundColor = 'red';
-//         elem.style.color = 'white'
-//     }
-// }
+function func(e) {
+    if (e.type === 'click') {
+        elem.style.backgroundColor = 'green';
+        elem.style.color = 'white'
+    } else if (e.type === 'dblclick') {
+        elem.style.backgroundColor = 'red';
+        elem.style.color = 'white'
+    }
+}
 
 // 419.1   Пусть у вас есть список ul с тегами li:
 // Привяжите к тегу ul обработчик клика. В этом обработчике 
