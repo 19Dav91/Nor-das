@@ -1,4 +1,3 @@
-
 let result = document.getElementById("result");
 
 function appendSymbol(symbol) {
@@ -12,30 +11,69 @@ function clearResult() {
 function deleteNumber() {
     result.value = result.value.slice(0, -1);
 }
-let plus = document.querySelector('.plus');
-let minus = document.querySelector('.minus');
-let angam = document.querySelector('.angam');
-let bajanac = document.querySelector('.bajanac');
-let havasar = document.querySelector('.havasar');
-// plus.addEventListener('click', () => {
-    //     havasar.textContent = +inp1.value + +inp2.value
-    // });
-    // minus.addEventListener('click', () => {
-//     txt.textContent = +inp1.value - +inp2.value
+
+// let havasar = document.querySelector('.havasar');
+// let buttons = document.querySelectorAll("button");
+// buttons.forEach(function (button) {
+//     button.addEventListener("click", calculate);
 // });
-// angam.addEventListener('click', () => {
-    //     txt.textContent = +inp1.value * +inp2.value
-    // });
-    // bajanac.addEventListener('click', () => {
-        //     txt.textContent = +inp1.value / +inp2.value
-        // });
-        havasar.addEventListener('click', () => {
-            Number(result.value) = result.value-1
-        })
-        // function calculate() {
-            //   try {
-                //     result.value = eval(result.value);
-                //   } catch (error) {
-//     alert("Invalid Calculation!");
-//   }
+// function calculate(e) {
+//     let res = e.target.value;
+//     if (res === "=") {
+//         if (result.value !== "") {
+//             result.value = eval(result.value);
+//         }
+//     } else if (res === "C") {
+//         result.value = "";
+//     } else {
+//         let lastChar = result.value.slice(-1);
+//         if (lastChar !== "+" && lastChar !== "-" && lastChar !== "*" && lastChar !== "/" && lastChar !== "%") {
+//             result.value += res;
+//         }
+//     }
 // }
+// havasar.addEventListener('click', () => {
+//     result.value = eval(result.value);
+// });
+
+const buttons = document.querySelectorAll('button');
+const input = document.querySelector('input');
+
+function handleClick(e) {
+    const value = e.target.value;
+
+    const inputArray = input.value.split(/(\+|\-|\*|\/)/);
+
+    value === '='
+        ? (() => {
+            let result = Number(inputArray[0]);
+
+            for (let i = 1; i < inputArray.length; i += 2) {
+                const operator = inputArray[i];
+                const number = Number(inputArray[i + 1]);
+
+                operator === '+'
+                    ? (result += number)
+                    : operator === '-'
+                        ? (result -= number)
+                        : operator === '*'
+                            ? (result *= number)
+                            : operator === '/'
+                                ? (result /= number)
+                                : null;
+            }
+
+            input.value = result;
+        })()
+        : value === 'C'
+            ? (() => {
+                input.value = '';
+            })()
+            : (() => {
+                input.value += value;
+            })();
+}
+
+buttons.forEach(button => {
+    button.addEventListener('click', handleClick);
+});

@@ -1,3 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="icon" type="image" href="image/calk.png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="calk">
+        <div class="sun clearfix">
+            <div class="sun1 ">
+                <div class="sunMin"></div>
+                <div class="sunMin"></div>
+                <div class="sunMin"></div>
+            </div>
+        </div>
+        <div class="inpbord">
+            <div class="inpbord1">
+                <input class="inp" type="text" id="result" readonly />
+            </div>
+        </div>
+        <div class="btns">
+            <div class="mek">
+                <button class="btn cls" onclick="clearResult()">Clear</button>
+                <button class="btn cll" onclick="deleteNumber()">C</button>
+                <button class="btn proc" onclick="appendSymbol('%')">%</button>
+                <button class="btn bajanac" onclick="appendSymbol('/')">÷</button>
+            </div>
+            <div class="erku">
+                <button class="btn sevn" onclick="appendSymbol('7')">7</button>
+                <button class="btn eyd" onclick="appendSymbol('8')">8</button>
+                <button class="btn nain" onclick="appendSymbol('9')">9</button>
+                <button class="btn angam" onclick="appendSymbol('*')">X</button>
+            </div>
+            <div class="ereq">
+                <button class="btn for" onclick="appendSymbol('4')">4</button>
+                <button class="btn fayv" onclick="appendSymbol('5')">5</button>
+                <button class="btn six" onclick="appendSymbol('6')">6</button>
+                <button class="btn minus" onclick="appendSymbol('-')"> - </button>
+            </div>
+            <div class="chors">
+                <button class="btn one" onclick="appendSymbol('1')">1</button>
+                <button class="btn tu" onclick="appendSymbol('2')">2</button>
+                <button class="btn tree" onclick="appendSymbol('3')">3</button>
+                <button class="btn plus" onclick="appendSymbol('+')">+</button>
+            </div>
+            <div class="hing">
+                <button class="btn a0" onclick="appendSymbol('0')">0</button>
+                <button class="btn atoch" onclick="appendSymbol('.')">.</button>
+                <button class="btn ravno havasar" onclick="calculate()"> = </button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
 <!-- <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,58 +102,3 @@
     <script src="js/script.js"></script>
   </body>
 </html> -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
-    <link rel="icon" type="image" href="image/calk.png">
-    <link rel="stylesheet" href="style/style.css">
-</head>
-
-<body>
-    <div class="calk">
-        <div class="sun clearfix">
-            <div class="sun1 ">
-                <div class="sunMin"></div>
-                <div class="sunMin"></div>
-                <div class="sunMin"></div>
-            </div>
-        </div>
-        <div class="inpbord">
-            <div class="inpbord1">
-                <input class="inp" type="text" id="result" readonly />
-            </div>
-        </div>
-        <div class="btns">
-            <button class="btn" onclick="clearResult()">Clear</button>
-            <button class="btn" onclick="deleteNumber()">C</button>
-            <button class="btn" onclick="appendSymbol('%')">%</button>
-            <button class="btn" onclick="appendSymbol('/')">÷</button>
-            <button class="btn" onclick="appendSymbol('7')">7</button>
-            <button class="btn" onclick="appendSymbol('8')">8</button>
-            <button class="btn" onclick="appendSymbol('9')">9</button>
-            <button class="btn" onclick="appendSymbol('*')">X</button>
-            <button class="btn" onclick="appendSymbol('4')">4</button>
-            <button class="btn" onclick="appendSymbol('5')">5</button>
-            <button class="btn" onclick="appendSymbol('6')">6</button>
-            <button class="btn" onclick="appendSymbol('-')"> - </button>
-            <button class="btn" onclick="appendSymbol('1')">1</button>
-            <button class="btn" onclick="appendSymbol('2')">2</button>
-            <button class="btn" onclick="appendSymbol('3')">3</button>
-            <button class="btn" onclick="appendSymbol('+')">+</button>
-            <button class="btn" onclick="appendSymbol('0')">0</button>
-            <button class="btn" onclick="appendSymbol('.')">.</button>
-            <button class="btn" onclick="calculate()"> = </button>
-        </div>
-
-    </div>
-
-
-    <script src="js/script.js"></script>
-</body>
-
-</html>
