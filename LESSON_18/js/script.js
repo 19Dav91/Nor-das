@@ -1,3 +1,71 @@
+
+// let result = document.getElementById("result");
+
+// function appendSymbol(symbol) {
+//     result.value += symbol;
+// }
+
+// function clearResult() {
+//     result.value = "";
+// }
+
+// function deleteNumber() {
+//     result.value = result.value.slice(0, -1);
+// }
+
+
+// function appendSymbol(symbol) {
+//     result.value += symbol;
+// }
+
+// function clearResult() {
+//     result.value = "";
+// }
+
+// function deleteNumber() {
+//     result.value = result.value.slice(0, -1);
+// }
+// function calculate() {
+//     try {
+//         result.value = eval(result.value);
+//     } catch (error) {
+//         alert("Invalid Calculation!");
+//     }
+// }
+// document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Backspace' || e.key === 'Delete') {
+//         deleteNumber() += '';
+//     } else if (e.key === "Escape") {
+//         clearResult();
+//     } else if (e.key === "Enter" || e.key === "NumpadEnter") {
+//         calculate();
+//     }  
+//     else {
+//         result.value += e.key;
+//     }
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let result = document.getElementById("result");
 
 function appendSymbol(symbol) {
@@ -12,35 +80,25 @@ function deleteNumber() {
     result.value = result.value.slice(0, -1);
 }
 
-// let havasar = document.querySelector('.havasar');
-// let buttons = document.querySelectorAll("button");
-// buttons.forEach(function (button) {
-//     button.addEventListener("click", calculate);
-// });
-// function calculate(e) {
-//     let res = e.target.value;
-//     if (res === "=") {
-//         if (result.value !== "") {
-//             result.value = eval(result.value);
-//         }
-//     } else if (res === "C") {
-//         result.value = "";
-//     } else {
-//         let lastChar = result.value.slice(-1);
-//         if (lastChar !== "+" && lastChar !== "-" && lastChar !== "*" && lastChar !== "/" && lastChar !== "%") {
-//             result.value += res;
-//         }
-//     }
-// }
-// havasar.addEventListener('click', () => {
-//     result.value = eval(result.value);
-// });
+
+function appendSymbol(symbol) {
+    result.value += symbol;
+}
+
+function clearResult() {
+    result.value = "";
+}
+
+function deleteNumber() {
+    result.value = result.value.slice(0, -1);
+}
+
 
 const buttons = document.querySelectorAll('button');
 const input = document.querySelector('input');
 
-function handleClick(e) {
-    const value = e.target.value;
+function handleClick(event) {
+    const value = event.target.value;
 
     const inputArray = input.value.split(/(\+|\-|\*|\/)/);
 
@@ -76,4 +134,22 @@ function handleClick(e) {
 
 buttons.forEach(button => {
     button.addEventListener('click', handleClick);
+});
+let havasar = document.querySelector('.havasar');
+havasar.addEventListener('click', () => {
+    result.value = eval(result.value);
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Backspace' || e.key === 'Delete') {
+        deleteNumber() += '';
+    } else if (e.key === "Escape") {
+        clearResult();
+    } else if (e.key === "Enter" || e.key === "NumpadEnter") {
+        result.value = eval(result.value);
+    }
+    else {
+        result.value += e.key;
+    }
+
 });
