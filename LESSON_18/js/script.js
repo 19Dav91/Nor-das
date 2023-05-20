@@ -1,42 +1,41 @@
-// let inp1 = document.querySelector('#inp1');
-// let inp2 = document.querySelector('#inp2');
-// let txt = document.querySelector('#txt');
-// let plus = document.querySelector('#plus');
-// let minus = document.querySelector('#minus');
-// let angam = document.querySelector('#angam');
-// let bajanac = document.querySelector('#bajanac');
-// // inp1.addEventListener('input',func1);
-// // inp2.addEventListener('input',func1);
-// plus.addEventListener('click', () => {
-//     txt.textContent = +inp1.value + +inp2.value
-// });
-// minus.addEventListener('click', () => {
-//     txt.textContent = +inp1.value - +inp2.value
-// });
-// angam.addEventListener('click', () => {
-//     txt.textContent = +inp1.value * +inp2.value
-// });
-// bajanac.addEventListener('click', () => {
-//     txt.textContent = +inp1.value / +inp2.value
-// });
+
 let result = document.getElementById("result");
 
 function appendSymbol(symbol) {
-  result.value += symbol;
+    result.value += symbol;
 }
 
 function clearResult() {
-  result.value = "";
+    result.value = "";
 }
 
 function deleteNumber() {
-  result.value = result.value.slice(0, -1);
+    result.value = result.value.slice(0, -1);
 }
-
-function calculate() {
-  try {
-    result.value = eval(result.value);
-  } catch (error) {
-    alert("Invalid Calculation!");
-  }
-}
+let plus = document.querySelector('.plus');
+let minus = document.querySelector('.minus');
+let angam = document.querySelector('.angam');
+let bajanac = document.querySelector('.bajanac');
+let havasar = document.querySelector('.havasar');
+// plus.addEventListener('click', () => {
+    //     havasar.textContent = +inp1.value + +inp2.value
+    // });
+    // minus.addEventListener('click', () => {
+//     txt.textContent = +inp1.value - +inp2.value
+// });
+// angam.addEventListener('click', () => {
+    //     txt.textContent = +inp1.value * +inp2.value
+    // });
+    // bajanac.addEventListener('click', () => {
+        //     txt.textContent = +inp1.value / +inp2.value
+        // });
+        havasar.addEventListener('click', () => {
+            Number(result.value) = result.value-1
+        })
+        // function calculate() {
+            //   try {
+                //     result.value = eval(result.value);
+                //   } catch (error) {
+//     alert("Invalid Calculation!");
+//   }
+// }
