@@ -1,3 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" readonly />
+      <div class="keypad">
+        <button onclick="clearResult()">Clear</button>
+        <button onclick="deleteNumber()">C</button>
+        <button onclick="appendSymbol('%')">%</button>
+        <button onclick="appendSymbol('/')">÷</button>
+        <button onclick="appendSymbol('7')">7</button>
+        <button onclick="appendSymbol('8')">8</button>
+        <button onclick="appendSymbol('9')">9</button>
+        <button onclick="appendSymbol('*')">×</button>
+        <button onclick="appendSymbol('4')">4</button>
+        <button onclick="appendSymbol('5')">5</button>
+        <button onclick="appendSymbol('6')">6</button>
+        <button onclick="appendSymbol('-')">−</button>
+        <button onclick="appendSymbol('1')">1</button>
+        <button onclick="appendSymbol('2')">2</button>
+        <button onclick="appendSymbol('3')">3</button>
+        <button onclick="appendSymbol('+')">+</button>
+        <button onclick="appendSymbol('.')">.</button>
+        <button onclick="appendSymbol('0')">0</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,25 +56,29 @@
         </div>
         <div class="inpbord">
             <div class="inpbord1">
-                <input class="inp" type="text" disabled></input>
+                <input class="inp" type="text" id="result" readonly />
             </div>
         </div>
         <div class="btns">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">X</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn"> - </button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">+</button>
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn"> = </button>
+            <button class="btn" onclick="clearResult()">Clear</button>
+            <button class="btn" onclick="deleteNumber()">C</button>
+            <button class="btn" onclick="appendSymbol('%')">%</button>
+            <button class="btn" onclick="appendSymbol('/')">÷</button>
+            <button class="btn" onclick="appendSymbol('7')">7</button>
+            <button class="btn" onclick="appendSymbol('8')">8</button>
+            <button class="btn" onclick="appendSymbol('9')">9</button>
+            <button class="btn" onclick="appendSymbol('*')">X</button>
+            <button class="btn" onclick="appendSymbol('4')">4</button>
+            <button class="btn" onclick="appendSymbol('5')">5</button>
+            <button class="btn" onclick="appendSymbol('6')">6</button>
+            <button class="btn" onclick="appendSymbol('-')"> - </button>
+            <button class="btn" onclick="appendSymbol('1')">1</button>
+            <button class="btn" onclick="appendSymbol('2')">2</button>
+            <button class="btn" onclick="appendSymbol('3')">3</button>
+            <button class="btn" onclick="appendSymbol('+')">+</button>
+            <button class="btn" onclick="appendSymbol('0')">0</button>
+            <button class="btn" onclick="appendSymbol('.')">.</button>
+            <button class="btn" onclick="calculate()"> = </button>
         </div>
 
     </div>

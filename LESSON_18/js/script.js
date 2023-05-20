@@ -19,4 +19,24 @@
 // bajanac.addEventListener('click', () => {
 //     txt.textContent = +inp1.value / +inp2.value
 // });
- 
+let result = document.getElementById("result");
+
+function appendSymbol(symbol) {
+  result.value += symbol;
+}
+
+function clearResult() {
+  result.value = "";
+}
+
+function deleteNumber() {
+  result.value = result.value.slice(0, -1);
+}
+
+function calculate() {
+  try {
+    result.value = eval(result.value);
+  } catch (error) {
+    alert("Invalid Calculation!");
+  }
+}
