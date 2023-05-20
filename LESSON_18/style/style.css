@@ -12,105 +12,19 @@ body {
     font-size: 50px;
     color: #00bfff;
     position: fixed;
-    top: 10%;
+    top: 5%;
 }
 
 .clock-face {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .4);
+    background-image: url(/LESSON_18/image/1.png);
+    background-position: -20px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 10px rgba(253, 18, 18, 0.4);
 }
-
-
-
-.a12 {
-    position: absolute;
-    top: .2px;
-    font-size: 40px;
-    right: 125px;
-}
-.a1 {
-    position: absolute;
-    top: 15px;
-    font-size: 40px;
-    right: 75px;
-}
-
-.a2 {
-    position: absolute;
-    top: 60px;
-    font-size: 40px;
-    right: 27px;
-}
-
-.a3 {
-    position: absolute;
-    top: 128px;
-    font-size: 40px;
-    right: 8px;
-} 
-
-.a4 {
-    position: absolute;
-    top: 190px;
-    font-size: 40px;
-    right: 22px;
-}
-.a5 {
-    position: absolute;
-    top: 242px;
-    font-size: 40px;
-    right: 72px;
-}
-.a6 {
-    position: absolute;
-    top: 262px;
-    font-size: 40px;
-    right: 140px;
-}
-.a7 {
-    position: absolute;
-    top: 242px;
-    font-size: 40px;
-    right: 204px;
-}
-.a8 {
-    position: absolute;
-    top: 195px;
-    font-size: 40px;
-    right: 252.5px;
-}
-.a9 {
-    position: absolute;
-    top: 130px;
-    font-size: 40px;
-    right: 275.5px;
-}
-.a10 {
-    position: absolute;
-    top: 65px;
-    font-size: 40px;
-    right: 235px;
-}
-.a11 {
-    position: absolute;
-    top: 15px;
-    font-size: 40px;
-    right: 190px;
-}
-.mark1 {
-    width: 600px;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    right:  -50%;
-    top: 50%;
-}
-
-
 
 
 
@@ -133,7 +47,7 @@ body {
     top: calc(50% - 80px);
     left: 50%;
     transform-origin: bottom center;
-    background-color: #333;
+    background-color: #00276e;
 }
 
 .minute-hand {
@@ -144,7 +58,7 @@ body {
     top: calc(50% - 110px);
     left: 50%;
     transform-origin: bottom center;
-    background-color: #333;
+    background-color: #00276e;
 }
 
 .second-hand {
