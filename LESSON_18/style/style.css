@@ -28,38 +28,79 @@ body {
 
 .a12 {
     position: absolute;
-    top: .01%;
-    font-size: 25px;
-    left: calc(50% - 12.5px);
+    top: .2px;
+    font-size: 40px;
+    right: 125px;
 }
 .a1 {
     position: absolute;
-    top: 5%;
-    font-size: 25px;
-    right: 25%;
+    top: 15px;
+    font-size: 40px;
+    right: 75px;
 }
 
 .a2 {
     position: absolute;
-    top: 22%;
-    font-size: 25px;
-    right: 7.5%;
+    top: 60px;
+    font-size: 40px;
+    right: 27px;
 }
 
 .a3 {
     position: absolute;
-    top: 45.2%;
-    font-size: 25px;
-    right: 1.5%;
+    top: 128px;
+    font-size: 40px;
+    right: 8px;
 } 
 
 .a4 {
     position: absolute;
-    top: 80%;
-    font-size: 25px;
-    right: -80%;
+    top: 190px;
+    font-size: 40px;
+    right: 22px;
 }
-
+.a5 {
+    position: absolute;
+    top: 242px;
+    font-size: 40px;
+    right: 72px;
+}
+.a6 {
+    position: absolute;
+    top: 262px;
+    font-size: 40px;
+    right: 140px;
+}
+.a7 {
+    position: absolute;
+    top: 242px;
+    font-size: 40px;
+    right: 204px;
+}
+.a8 {
+    position: absolute;
+    top: 195px;
+    font-size: 40px;
+    right: 252.5px;
+}
+.a9 {
+    position: absolute;
+    top: 130px;
+    font-size: 40px;
+    right: 275.5px;
+}
+.a10 {
+    position: absolute;
+    top: 65px;
+    font-size: 40px;
+    right: 235px;
+}
+.a11 {
+    position: absolute;
+    top: 15px;
+    font-size: 40px;
+    right: 190px;
+}
 .mark1 {
     width: 600px;
     height: 1px;
