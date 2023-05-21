@@ -14,7 +14,6 @@ body {
     position: fixed;
     top: 5%;
 }
-
 .clock-face {
     position: relative;
     width: 260px;
@@ -25,10 +24,6 @@ body {
     background-repeat: no-repeat;
     box-shadow: 0px 3px 10px rgba(253, 18, 18, 0.4);
 }
-
-
-
-
 .ket {
     width: 10px;
     height: 10px;
@@ -38,10 +33,10 @@ body {
     top: calc(50% - 5px);
     left: calc(50% - 5px);
 }
-
 .hour-hand {
     width: 6px;
     height: 80px;
+    border-radius:50%;
     margin-left: -3px;
     position: absolute;
     top: calc(50% - 80px);
@@ -51,7 +46,8 @@ body {
 }
 
 .minute-hand {
-    width: 4px;
+    width: 5px;
+    border-radius:30%;
     height: 110px;
     margin-left: -2px;
     position: absolute;

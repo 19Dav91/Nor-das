@@ -1,27 +1,21 @@
 'use strict'
- function setTime() {
-      let now = new Date();
-      
-      let hours = now.getHours();
-      let minutes = now.getMinutes();
-      let seconds = now.getSeconds();
 
-      let hourHand = document.querySelector('.hour-hand');
-      let minuteHand = document.querySelector('.minute-hand');
-      let secondHand = document.querySelector('.second-hand');
-
-      let hourAngle = (hours / 12) * 360; 
-      let minuteAngle = (minutes / 60) * 360;
-      let secondAngle = (seconds / 60) * 360; 
-
-      hourHand.style.transform = `rotate(${hourAngle}deg)`;
-      minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
-      secondHand.style.transform = `rotate(${secondAngle}deg)`;
-    }
-
-    setTime(); 
-
-    setInterval(setTime, 1000); 
+let hourHand = document.querySelector('.hour-hand');
+let minuteHand = document.querySelector('.minute-hand');
+let secondHand = document.querySelector('.second-hand');
+function setDate(){
+  let now = new Date();
+  let seconds = now.getSeconds();
+  let minutes = now.getMinutes();
+  let hours = now.getHours();
+  let secondsDegrees = ((seconds / 60) * 360) ;
+  let minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6);
+  let hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30);
+  hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+  minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+}
+setInterval(setDate, 1000);
 
 
     function displayTime() {
