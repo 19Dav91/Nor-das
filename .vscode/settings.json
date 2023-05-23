@@ -3,5 +3,8 @@
         "py"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "quokka.automaticRestart": true,
+    "quokka.untrustedWorkspaceBehavior": "Always allow"
 }
