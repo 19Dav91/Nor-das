@@ -4,7 +4,30 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.disable-compile-files-on-did-save-code": true,
     "quokka.automaticRestart": true,
-    "quokka.untrustedWorkspaceBehavior": "Always allow"
+    "quokka.untrustedWorkspaceBehavior": "Always allow",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 20,
+    "editor.defaultFormatter": null,
+    "editor.gotoLocation.alternativeImplementationCommand": "editor.action.referenceSearch.trigger",
+    "editor.guides.bracketPairs": "active",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.definitionLinkOpensInPeek": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true
+    },
+    "workbench.editor.defaultBinaryEditor": "default",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.autoExpandLazyVariables": true,
+    "debug.confirmOnExit": "always",
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.console.closeOnEnd": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "testing.automaticallyOpenPeekView": "failureAnywhere",
+    "testing.alwaysRevealTestOnStateChange": true,
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true
 }
