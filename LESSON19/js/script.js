@@ -9,8 +9,18 @@ let but7 = document.querySelector('.button7');
 let but8 = document.querySelector('.button8');
 let but9 = document.querySelector('.button9');
 for (const elem of but) {
- elem.textContent = ''
+    elem.textContent = ''
 }
 but1.addEventListener('click', () => {
-but1.textContent = 'X'
+    but1.textContent = 'X'
+});
+but2.addEventListener('click', () => {
+    but2.textContent = 'X'
+});
+but3.addEventListener('click', () => {
+    but3.textContent = 'X'
+    
+});
+but4.addEventListener('click', () => {
+    but4.textContent = 'X'
 })
