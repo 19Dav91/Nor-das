@@ -1,23 +1,6 @@
+
+
 table {
-  border-collapse: collapse;
-  margin: auto;
-}
-
-td {
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  font-size: 96px;
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-button {
-  display: block;
-  margin: 20px auto;
-}
-
-/* table {
     border-collapse: collapse;
     margin: auto;
   }
@@ -35,4 +18,3 @@ button {
   .cell:hover {
     background-color: #ddd;
   }
-   */
