@@ -8,9 +8,15 @@ let but6 = document.querySelector('.button6');
 let but7 = document.querySelector('.button7');
 let but8 = document.querySelector('.button8');
 let but9 = document.querySelector('.button9');
+<<<<<<< HEAD
 for (const elem of but) {
     elem.textContent = ''
 }
+=======
+// for (const elem of but) {
+//     elem.textContent = ''
+// }
+>>>>>>> dfdd852 (fsd)
 but1.addEventListener('click', () => {
     but1.textContent = 'X'
 });
