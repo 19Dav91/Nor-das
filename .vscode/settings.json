@@ -29,5 +29,8 @@
     "testing.automaticallyOpenPeekView": "failureAnywhere",
     "testing.alwaysRevealTestOnStateChange": true,
     "extensions.closeExtensionDetailsOnViewChange": true,
-    "testing.automaticallyOpenPeekViewDuringAutoRun": true
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
