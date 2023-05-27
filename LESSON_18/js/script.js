@@ -90,6 +90,7 @@
 
 
 
+<<<<<<< HEAD
 // 3
 
 let result = document.getElementById("result");
@@ -158,6 +159,9 @@ document.addEventListener('keydown', function (e) {
 
 
 
+=======
+// // 3
+>>>>>>> 5878622 (DAs)
 
 // let result = document.getElementById("result");
 <<<<<<< HEAD
@@ -275,21 +279,28 @@ document.addEventListener('keydown', function (e) {
 // function appendSymbol(symbol) {
 //     result.value += symbol;
 // }
+
 // function clearResult() {
 //     result.value = "";
 // }
+
 // function deleteNumber() {
 //     result.value = result.value.slice(0, -1);
 // }
+
+
 // function appendSymbol(symbol) {
 //     result.value += symbol;
 // }
+
 // function clearResult() {
 //     result.value = "";
 // }
+
 // function deleteNumber() {
 //     result.value = result.value.slice(0, -1);
 // }
+<<<<<<< HEAD
 // const buttons = document.querySelectorAll('button');
 // const input = document.querySelector('input');
 // function handleClick(event) {
@@ -341,19 +352,123 @@ document.addEventListener('keydown', function (e) {
 
 =======
 >>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
+=======
+// function calculate() {
+//     try {
+//         result.value = eval(result.value);
+//     } catch (error) {
+//         alert("Invalid Calculation!");
+//     }
+// }
+>>>>>>> 5878622 (DAs)
 // document.addEventListener('keydown', function (e) {
 //     if (e.key === 'Backspace' || e.key === 'Delete') {
 //         deleteNumber() += '';
 //     } else if (e.key === "Escape") {
 //         clearResult();
 //     } else if (e.key === "Enter" || e.key === "NumpadEnter") {
-//         result.value = eval(result.value);
-//     }
+//         calculate();
+//     }  
 //     else {
 //         result.value += e.key;
 //     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 // });
+=======
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let result = document.getElementById("result");
+function appendSymbol(symbol) {
+    result.value += symbol;
+}
+function clearResult() {
+    result.value = "";
+}
+function deleteNumber() {
+    result.value = result.value.slice(0, -1);
+}
+function appendSymbol(symbol) {
+    result.value += symbol;
+}
+function clearResult() {
+    result.value = "";
+}
+function deleteNumber() {
+    result.value = result.value.slice(0, -1);
+}
+const buttons = document.querySelectorAll('button');
+const input = document.querySelector('input');
+function handleClick(event) {
+    const value = event.target.value;
+    const inputArray = input.value.split(/(\+|\-|\*|\/)/);
+    value === '='
+        ? (() => {
+            let result = Number(inputArray[0]);
+            for (let i = 1; i < inputArray.length; i += 2) {
+                const operator = inputArray[i];
+                const number = Number(inputArray[i + 1]);
+                operator === '+'
+                    ? (result += number)
+                    : operator === '-'
+                        ? (result -= number)
+                        : operator === '*'
+                            ? (result *= number)
+                            : operator === '/'
+                                ? (result /= number)
+                                : null;
+            }
+            input.value = result;
+        })()
+        : value === 'C'
+            ? (() => {
+                input.value = '';
+            })()
+            : (() => {
+                input.value += value;
+            })();
+}
+buttons.forEach(button => {
+    button.addEventListener('click', handleClick);
+});
+let havasar = document.querySelector('.havasar');
+havasar.addEventListener('click', () => {
+    result.value = eval(result.value);
+});
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Backspace' || e.key === 'Delete') {
+        deleteNumber() += '';
+    } else if (e.key === "Escape") {
+        clearResult();
+    } else if (e.key === "Enter" || e.key === "NumpadEnter") {
+        result.value = eval(result.value);
+    }
+    else {
+        result.value += e.key;
+    }
+});
+>>>>>>> 5878622 (DAs)

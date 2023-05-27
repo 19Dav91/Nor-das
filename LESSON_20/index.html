@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Էջի վրա նկար</title>
+	<style>
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<img id="myImage" src='image/1.jpg' />
+
+	<script>
+		var image = document.getElementById("myImage");
+		var width = 200;
+		var height = 200;
+
+		image.addEventListener("click", function () {
+			width += 50;
+			height += 50;
+
+			if (width > 500) {
+				
+			}
+
+			image.style.width = width + "px";
+			image.style.height = height + "px";
+		});
+	</script>
+</body>
+
+</html>
