@@ -12,21 +12,26 @@
 </head>
 
 <body>
-	<img id="myImage" src='image/1.jpg' />
+	<img id="myImage" src='image/1.jpg'/>
 
 	<script>
-		var image = document.getElementById("myImage");
-		var width = 200;
-		var height = 200;
+		let image = document.getElementById("myImage");
+		let width = 200;
+		let height = 200;
 
 		image.addEventListener("click", function () {
-			width += 50;
-			height += 50;
-
-			if (width > 500) {
-				
+			if (width <= 500) {
+				width += 50;
+				height += 50;
+			} else if (width > 500) {
+				width -= 50;
+				height -= 50;
 			}
-
+			if ( width > 500) {
+				width -= 50;
+				height -= 50;
+			}
+			console.log(width);
 			image.style.width = width + "px";
 			image.style.height = height + "px";
 		});
