@@ -47,22 +47,13 @@ let table = document.createElement('table');
 for (const elem of employees) {
     let tr = document.createElement('tr');
     tr.textContent = elem.name;
+    console.log(elem.name);
+    console.log(tr);
     let td = document.createElement('td');
     tr.appendChild(td);
+    console.log(td);
     table.appendChild(tr)
 }
 
 
-// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
-// document.body.appendChild(table);
-// for (let i = 0; i < arr.length; i++) {
-//     let tr = document.createElement('tr');
-//     for (let j = 0; j < arr[i].length; j++) {
-//         let td = document.createElement('td');
-//         td.textContent = arr[i][j]
-//         tr.appendChild(td);
-        
-//     }
-//     table.appendChild(tr)
-// }
 
