@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 body {
+=======
+/* 1 */
+/* body {
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +19,10 @@ body {
     position: fixed;
     top: 5%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 .clock-face {
     position: relative;
     width: 260px;
@@ -25,10 +33,13 @@ body {
     background-repeat: no-repeat;
     box-shadow: 0px 3px 10px rgba(253, 18, 18, 0.4);
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 .ket {
     width: 10px;
     height: 10px;
@@ -38,10 +49,17 @@ body {
     top: calc(50% - 5px);
     left: calc(50% - 5px);
 }
+<<<<<<< HEAD
 
 .hour-hand {
     width: 6px;
     height: 80px;
+=======
+.hour-hand {
+    width: 6px;
+    height: 80px;
+    border-radius:50%;
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
     margin-left: -3px;
     position: absolute;
     top: calc(50% - 80px);
@@ -51,7 +69,12 @@ body {
 }
 
 .minute-hand {
+<<<<<<< HEAD
     width: 4px;
+=======
+    width: 5px;
+    border-radius:30%;
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
     height: 110px;
     margin-left: -2px;
     position: absolute;
@@ -77,6 +100,10 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+ */
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 
 
 
@@ -93,8 +120,12 @@ body {
 
 
 
+<<<<<<< HEAD
 
 /* 
+=======
+/* 2 */
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 * {
     margin: 0;
     padding: 0;
@@ -187,6 +218,12 @@ body {
   height: 105px;
   right: 20px;
 }
+<<<<<<< HEAD
+=======
+
+
+/* 3 */
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 /* * {
     box-sizing: border-box;
   }
@@ -232,4 +269,8 @@ body {
   button:hover {
     background-color: #ddd;
   }
+<<<<<<< HEAD
    */
+=======
+   *
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81

@@ -1,7 +1,11 @@
 {
 	"folders": [
 		{
+<<<<<<< HEAD
 			"path": "Nor-das"
+=======
+			"path": "."
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 		}
 	],
 	"settings": {
