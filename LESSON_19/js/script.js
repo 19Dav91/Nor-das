@@ -11,6 +11,9 @@ let but9 = document.querySelector('.button9');
 for (const elem of but) {
     elem.textContent = ''
 }
+// for (const elem of but) {
+//     elem.textContent = ''
+// }
 but1.addEventListener('click', () => {
     but1.textContent = 'X'
 });

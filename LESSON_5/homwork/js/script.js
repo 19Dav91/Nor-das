@@ -10,14 +10,14 @@
 // 151.3 Дан следующий массив:
 // Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
 
-// let arr = [4, 2, 5, 19, 13, 0, 10];
-// let sum = 0;
-// for (const elem of arr) {
-//     sum += elem
-// }
-// console.log(sum);
-// console.log(Math.pow(sum, 3));
-// console.log(parseInt(Math.sqrt(Math.pow(sum, 3))));
+let arr = [4, 2, 5, 19, 13, 0, 10];
+let sum = 0;
+for (const elem of arr) {
+    sum += elem
+}
+console.log(sum);
+console.log(Math.pow(sum, 3));
+console.log(parseInt(Math.sqrt(Math.pow(sum, 3))));
 
 // 151.4 Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
 
@@ -52,14 +52,14 @@
 
 // 151.8 С помощью цикла заполните массив 10-ю случайными целыми числами.
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-let arr = [];
-for (let i = 0; i < 10; i++) {
-    arr.push(getRandomInt(11, 51));
-}
-console.log(arr);
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//     arr.push(getRandomInt(11, 51));
+// }
+// console.log(arr);
 
 // 152.1, 2 Дана строка 'js'. Сделайте из нее строку 'JS'.
 

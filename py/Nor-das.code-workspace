@@ -1,0 +1,74 @@
+{
+<<<<<<< HEAD:Nor-das.code-workspace
+	"folders": [],
+=======
+	"folders": [
+		{
+<<<<<<< HEAD
+			"path": "Nor-das"
+=======
+			"path": "."
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
+		}
+	],
+>>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56:py/Nor-das.code-workspace
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Nor-das",
+		"compile-hero.disable-compile-files-on-did-save-code": true
+	},
+	"launch": {
+		"configurations": [
+
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge",
+				"request": "launch",
+				"runtimeArgs": [
+					"--remote-debugging-port=9222"
+				],
+				"url": "/home/davo/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge in headless mode",
+				"request": "launch",
+				"runtimeArgs": [
+					"--headless",
+					"--remote-debugging-port=9222"
+				],
+				"url": "/home/davo/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "vscode-edge-devtools.debug",
+				"name": "Open Edge DevTools",
+				"request": "attach",
+				"url": "/home/davo/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html",
+				"presentation": {
+					"hidden": true
+				}
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch Edge Headless and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge in headless mode",
+					"Open Edge DevTools"
+				]
+			},
+			{
+				"name": "Launch Edge and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge",
+					"Open Edge DevTools"
+				]
+			}
+		]
+	}
+}

@@ -30,13 +30,7 @@
     "testing.alwaysRevealTestOnStateChange": true,
     "extensions.closeExtensionDetailsOnViewChange": true,
     "testing.automaticallyOpenPeekViewDuringAutoRun": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
     }
 }

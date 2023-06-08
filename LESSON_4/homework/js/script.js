@@ -4,8 +4,13 @@ let arr = [1, 2, 3, 4, 5];
 
 for (let elem of arr) {
 	if (elem == 3) {
+<<<<<<< HEAD
+		console.log('+++'); 
+	} 
+=======
 		console.log('+++');
 	}
+>>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 }
 
 // //////////////////

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Էջի վրա նկար</title>
+	<style>
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<img id="image" src="image/1.jpg"/>
+
+	<script>
+		// debugger
+		// let image = document.querySelector('#image')
+		// let width = 200;
+		// let height = 200;
+
+		// image.addEventListener('click', () => {
+		// 	console.log(15);
+		// 	if (width < 500) {
+		// 		width += 50;
+		// 		height += 50;
+		// 	} else {
+		// 		width = 250;
+		// 		height = 250;
+		// 	}
+
+		// 	if (width < 200) {
+		// 		width = 200;
+		// 		height = 200;
+		// 	}
+
+		// 	image.style.width =  width  + 'px';
+		// 	image.style.height = height  + 'px';
+		// });
+		let image = document.getElementById("image");
+		let width = 200;
+		let height = 200;
+
+		image.addEventListener("click", function () {
+			if (width <= 500) {
+				width += 50;
+				height += 50;
+			} else if (width > 500) {
+				width -= 50;
+				height -= 50;
+			}
+			if ( width > 500) {
+				width -= 50;
+				height -= 50;
+			}
+			console.log(width);
+			image.style.width = width + "px";
+			image.style.height = height + "px";
+		});
+	</script>
+</body>
+
+</html>
