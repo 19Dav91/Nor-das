@@ -51,12 +51,12 @@
 
 
 class Project {
-  name;
-  languages;
-  constructor(name, languages) {
-    this.name = name;
-    this.languages = languages;
-  }
+    name;
+    languages;
+    constructor(name, languages) {
+        this.name = name;
+        this.languages = languages;
+    }
 }
 let p1 = new Project("Marketing Site", ['JS', "Angular", "CSS"]);
 let par = document.createElement('h1');
@@ -65,10 +65,10 @@ par.textContent = p1.name
 let ul1 = document.createElement('ul');
 document.body.appendChild(ul1);
 for (let i = 0; i < p1.languages.length; i++) {
-  let li1 = document.createElement('li')
-  li1.textContent = p1.languages[i]
-  ul1.appendChild(li1)
-  li1.style.listStyle = 'none'
+    let li1 = document.createElement('li')
+    li1.textContent = p1.languages[i]
+    ul1.appendChild(li1)
+    li1.style.listStyle = 'none'
 }
 // Ունենք նաև Developer կլասը, որը ինֆորմացիա է պարունակում ծրագրավորողի մասին:
 // Կլասի դաշտրեն են.● name - Անուն ● surname - ազգանուն● projects - զանգված, որի մեջ կպահպանվեն 
@@ -78,9 +78,6 @@ for (let i = 0; i < p1.languages.length; i++) {
 // Օրինակ՝let p = new Developer("Hayk", "Davtyan", "1.jpg");
 // p.addProject(new Project("Basic Store", ["AngularJS", "PHP"]));p.addProject(new Project("Social Network", ["Node.js", "React.js"]));
 // p.addProject(new Project("3D Snake Game", ["JS", "Canvas","CSS3"]));p.toString() ֆունկցիան կանչելու դեպքւոմ էկրանին կհայտնվի ծրագրավորողի տվյալը
-
-// և նրա կատարած պրոյեկտների տվյալները գեղեցիկ դիզայնով
-// Առաջադրանք 3: Մշակել Calendar համակարգը
 // և նրա կատարած պրոյեկտների տվյալները գեղեցիկ դիզայնովԱռաջադրանք 3: Մշակել Calendar համակարգը
 // ★ Այն իրենից ներկայացնում է մեկ ընդհանուր կլաս, որը ունի ամիս , տարի դաշտերը ևget_days, create մեթոդները ։
 // ★ Get_days - ֆունկցիան կանչելիս, այն վերադարձնում է տվյալ ամսվա բոլոր օրերըզանգվածի տեսքով ։ Յուրաքանչյուր օր իրենից ներկայացնում է օբյեկտ, որը ունի
@@ -112,32 +109,8 @@ class Developer {
       const project = this.projects[i];
       output.push(`Name: ${project.name} Languages: ${project.languages.join(", ")}`);
     }
-    return output
+    return output;
   }
-name;
-surname;
-projects;
-photo;
-
-constructor(name, surname, photo) {
-  this.name = name;
-  this.surname = surname;
-  this.projects = [];
-  this.photo = photo;
-}
-
-addProject(project) {
-  this.projects.push(project);
-}
-
-toString() {
-  let output = `Developer: ${this.name} ${this.surname}\nProjects:\n`;
-  for (let i = 0; i < this.projects.length; i++) {
-    const project = this.projects[i];
-    output += `Name: ${project.name}\nLanguages: ${project.languages.join(", ")}\n\n`;
-  }
-  return output;
-}
 }
 
 let p = new Developer("Hayk", "Davtyan", "1.jpg");
@@ -146,27 +119,23 @@ p.addProject(new Project("Social Network", ["Node.js", "React.js"]));
 p.addProject(new Project("3D Snake Game", ["JS", "Canvas", "CSS3"]));
 let count = 0;
 for (const elem of p.toString()) {
-  count++
-  let p1 = document.createElement('p');
-  document.body.appendChild(p1);
-  p1.textContent = elem;
-  if (elem.startsWith('Developer')) {
-      p1.style.fontSize = '20px';
-  } else {
-      if(count === 2) {
-      p1.style.color = 'red';
-    } else if(count === 3) {
-      p1.style.color = 'blue';
+    count++
+    let p1 = document.createElement('p');
+    document.body.appendChild(p1);
+    p1.textContent = elem;
+    if (elem.startsWith('Developer')) {
+        p1.style.fontSize = '20px';
     } else {
-      p1.style.color = 'orange';
+        if(count === 2) {
+        p1.style.color = 'red';
+      } else if(count === 3) {
+        p1.style.color = 'blue';
+      } else {
+        p1.style.color = 'orange';
+      }
     }
-  }
 }
 
-// console.log(p.toString());
-// let par2 = document.createElement('p');
-// document.body.appendChild(par2);
-// par2.textContent = p.toString()
 // class Developer {
 //     name;
 //     surname;
@@ -179,7 +148,7 @@ for (const elem of p.toString()) {
 //     }
 //     addProject(x) {
 //         this.projects.push(x)
-//     }
+//     } 
 
 // }
 // let hayk = new Developer("Hayk", "Davtyan", "1.jpg");
@@ -190,25 +159,25 @@ for (const elem of p.toString()) {
 // let par2 = document.createElement('h1');
 // document.body.appendChild(par2)
 
-// par2.textContent = Developer
+// par2.textContent = Developer 
 
 // class Developer {
 //     name;
 //     surname;
 //     projects;
 //     img;
-
+  
 //     constructor(name, surname, img) {
 //       this.name = name;
 //       this.surname = surname;
 //       this.projects = [];
 //       this.img = img;
 //     }
-
+  
 //     addProject(project) {
 //       this.projects.push(project);
 //     }
-
+  
 //     toString() {
 //       let info = `Developer: ${this.name} ${this.surname}\nProjects:\n`;
 //       for (let project of this.projects) {
@@ -217,7 +186,7 @@ for (const elem of p.toString()) {
 //       return info;
 //     }
 //   }
-
+  
 //   let hayk = new Developer("Hayk", "Davtyan", "1.jpg");
 //   hayk.addProject(p1);
 //   console.log(hayk.projects);
@@ -227,4 +196,4 @@ for (const elem of p.toString()) {
 //   let par2 = document.createElement('h1');
 //   document.body.appendChild(par2);
 //   par2.textContent = hayk.toString();
-
+    
