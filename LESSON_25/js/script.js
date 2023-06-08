@@ -104,12 +104,12 @@ class Developer {
   }
 
   toString() {
-    let output = [`Developer: ${this.name} ${this.surname} Projects:`];
+    let out = [`Developer: ${this.name} ${this.surname} Projects:`];
     for (let i = 0; i < this.projects.length; i++) {
       const project = this.projects[i];
-      output.push(`Name: ${project.name} Languages: ${project.languages.join(", ")}`);
+      out.push(`Name: ${project.name} Languages: ${project.languages.join(", ")}`);
     }
-    return output;
+    return out;
   }
 }
 
@@ -124,13 +124,16 @@ for (const elem of p.toString()) {
     document.body.appendChild(p1);
     p1.textContent = elem;
     if (elem.startsWith('Developer')) {
-        p1.style.fontSize = '20px';
+        p1.style.fontSize = '22px';
     } else {
         if(count === 2) {
+        p1.style.fontSize = '18px';
         p1.style.color = 'red';
       } else if(count === 3) {
+        p1.style.fontSize = '18px';
         p1.style.color = 'blue';
       } else {
+        p1.style.fontSize = '18px';
         p1.style.color = 'orange';
       }
     }
