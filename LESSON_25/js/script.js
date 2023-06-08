@@ -163,10 +163,10 @@ for (const elem of p.toString()) {
   }
 }
 
-console.log(p.toString());
-let par2 = document.createElement('p');
-document.body.appendChild(par2);
-par2.textContent = p.toString()
+// console.log(p.toString());
+// let par2 = document.createElement('p');
+// document.body.appendChild(par2);
+// par2.textContent = p.toString()
 // class Developer {
 //     name;
 //     surname;
