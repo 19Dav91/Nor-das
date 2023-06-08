@@ -1,7 +1,17 @@
 {
+<<<<<<< HEAD
 <<<<<<< HEAD:Nor-das.code-workspace
 	"folders": [],
 =======
+=======
+<<<<<<<< HEAD:Nor-das.code-workspace
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
+========
+>>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56
 	"folders": [
 		{
 <<<<<<< HEAD
@@ -11,7 +21,10 @@
 >>>>>>> 3024a98bbeee4559a63c3625b0dc9c578d0b4f81
 		}
 	],
+<<<<<<< HEAD
 >>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56:py/Nor-das.code-workspace
+=======
+>>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "Nor-das",
 		"compile-hero.disable-compile-files-on-did-save-code": true
@@ -71,4 +84,8 @@
 			}
 		]
 	}
+<<<<<<< HEAD
+=======
+>>>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56:py/Nor-das.code-workspace
+>>>>>>> 520ef79ab9e706a855f5b4a5af877c4bb1e8ec56
 }
