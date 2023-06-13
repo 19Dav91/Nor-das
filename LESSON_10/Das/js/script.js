@@ -26,59 +26,59 @@
 //       return my_array.shift() + array_sum(my_array);
 //     }
 //   };
-  
+
 //    console.log(array_sum([1,2,3,4,5,6]));
 
 
 ///////////Переопределение функций 
- 
+
 // function display(){ 
 //     console.log("Доброе утро"); 
 //     display = function(){ 
 //         console.log("Добрый день"); 
 //     } 
 // } 
-  
- //display(); // Доброе утро 
+
+//display(); // Доброе утро 
 //display(); // Добрый день 
 // display(); // Добрый день 
- 
- 
+
+
 // ////////////////////// 
 //  let displayMessage = display; 
 //  display(); // Доброе утро 
 //  display(); // Добрый день 
- 
+
 // displayMessage(); // Доброе утро 
 //  displayMessage(); // Доброе утро 
 // /////////////////Hoisting 
 // console.log(foo);   // undefined 
 // var foo = "Tom"; 
 ///////////////////////Hoisting 
- 
- 
+
+
 // console.log(foo); 
 // var foo = "Tom";//??? 
 // // var c = a * b; 
 // var a = 7; 
 // var b = 3; 
 // console.log(c); // ???? 
- 
+
 // ///////////////////// 
 // display(); 
-  
+
 // function display(){ 
 //     console.log("Hello Hoisting"); 
 // } 
 // ////////////////// 
 // display(); 
-  
+
 // var display = function (){ 
 //     console.log("Hello Hoisting"); 
 // } 
 /////////////////////////////////Передача параметров по значению 
 // function change(x){ 
-   
+
 //     x = 2 * x;
 //       return x;
 //     // console.log("x in change:", x); 
@@ -91,9 +91,9 @@
 // function change(user){ 
 //     user.name = "Tom"; 
 // } 
-  
+
 // var bob ={  
-//     name: "Bob" 
+//    name: "Bob" 
 // }; 
 // console.log("before change:", bob.name);    
 // change(bob); 
@@ -105,9 +105,9 @@
 // // function changeFull(array){ 
 // //     array = [9, 8, 7]; 
 // // } 
-  
+
 // // var numbers = [1, 2, 3]; 
-  
+
 // // console.log("before change:", numbers);     // [1, 2, 3] 
 // // change(numbers); 
 // // console.log("after change:", numbers);      // [8, 2, 3] 
@@ -123,13 +123,13 @@
 // hello(); 
 ////////////// 
 // let sum = (x, y)=> console.log("Sum =", x + y); 
-  
+
 // sum(1, 2);      // Sum = 3 
 // sum(4, 3);      // Sum = 7 
 // sum(103, 2);    // Sum = 105 
 ///////////////////////////////////////////////// 
 // let sum = (x, y)=> x + y; 
-  
+
 // console.log(sum(1, 2));     
 // console.log(sum(4, 3));      
 // console.log(sum(102, 5));   
@@ -142,17 +142,17 @@
 // let user = (userName, userAge) => ({name: userName, age: userAge}); 
 // let tom = user("Tom", 34); 
 // let bob = user("Bob", 25); 
-  
+
 // console.log(tom.name, tom.age);     
 // console.log(bob.name, bob.age);      
- 
-// const square = n => { 
-//     let result = n ** 2; 
-//     console.log(result); 
-// } 
-   
-// square(5);     
-//
+
+const square = n => {
+    let result = n ** 2;
+    console.log(result);
+}
+
+square(5);
+
 
 
 
