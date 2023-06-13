@@ -46,7 +46,7 @@
 
 // ]
 // let nN
-// for (const elem of user) {
+// for (let elem of user) {
 //     if (elem.name == 'Bob') {
 //         nN = elem;
 //         console.log(nN);
@@ -80,12 +80,12 @@
 
 // 4.Получите из объекта obj значение id и разместите его в константу userId. 
 
-const obj = {
-    id: 5,
-    token: 12343423
-};
-const { id:userId } = obj
-console.log(userId);
+// const obj = {
+//     id: 5,
+//     token: 12343423
+// };
+// const { id:userId } = obj
+// console.log(userId);
 
 //5. isPlainObject. Напишите функцию, которая проверяет, является ли элемент именно простым объектом,
 //  а не массивом, null и т.п.
@@ -98,7 +98,85 @@ console.log(userId);
 //     }
 // }
 // isPlainObject([1,2,3]);
-const checkObj = el => {
-return (!Array.isArray(el)) && el !== null && typeof el === 'object';
+// const checkObj = el => {
+// return (!Array.isArray(el)) && el !== null && typeof el === 'object';
+// }
+// console.log(checkObj(null));
+
+// 6.MakePairs. Напишите функцию, которая возвращает вложенный массив вида [[key, value], [key, value]].
+// function makePairs(obj) {
+//     return Object.entries(obj);
+// }
+// const myObj = { 'name': 'Dav', 'age': 31 };
+// const result = makePairs(myObj);
+// console.log(result);
+
+// 7.Without. Напишите функцию, которая возвращает новый объект без указанных значений.
+
+// function without(obj, val) {
+//     let newObj = {};
+//     for (const key in obj) {
+//         if (obj.hasOwnProperty(key) && !val.includes(key)) {
+//             newObj[key] = obj[key];
+//         }
+//     }
+//     return newObj;
+// }
+// let newObj = { 'a': 1, 'b': 2, 'c': 3 };
+// let res = ['a', 'b'];
+// console.log(without(newObj, res));
+
+// 8.IsEmpty. Напишите функцию, которая делает проверку объекта на пустоту.
+
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         if (!obj.hasOwnProperty(key)) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// 9.sEqual. Напишите функцию, которая поверхностно сравнивает два объекта.
+
+// function sEqual(user1, user2) {
+//     let key1 = Object.keys(user1);
+//     let key2 = Object.keys(user2);
+//     if (key1.length !== key2.length) {
+//         return false;
+//     }
+//     // for (let key of key1) {
+//     //     if (user1[key] !== user2[key]) {
+//     //         return false;
+//     //     }
+//     // }
+//     return key1.every(key => user1[key] === user2[key]);
+
+// }
+// let user1 = { name: 'Dav', srname: 'Matevosyan', age: 31 };
+// let user2 = { name: 'Dav', srname: 'Matevosyan', age: 32 };
+// console.log(sEqual(user1, user2));
+//TARBERAK 2
+// const user1 = {
+//     name: 'John',
+//   }
+//   const user2 = {
+//     name: 'John',
+//   }
+//   const isEqual1 = (arg1, arg2) => {
+//     const keys1 = Object.keys(arg1);
+//     return (keys1.every(elem => arg1[elem] === arg2[elem]));
+//   }
+
+//   console.log(isEqual1(user1, user2))
+
+function isEmpty(obj) {
+    for (let key in obj) {
+        if (!obj.hasOwnProperty(key)) {
+            return true;
+        }
+    }
+    return false;
 }
-console.log(checkObj(null));
+const obj = {name};
+console.log(isEmpty(obj));
