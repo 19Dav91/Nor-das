@@ -22,7 +22,6 @@ but2.addEventListener('click', () => {
 });
 but3.addEventListener('click', () => {
     but3.textContent = 'X'
-    ===
 });
 but4.addEventListener('click', () => {
     but4.textContent = 'X'
