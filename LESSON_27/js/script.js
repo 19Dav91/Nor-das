@@ -252,7 +252,7 @@
 // console.log(sum);
 
 
-// 84.2 По заходу пользователя на сайт запишите в локальное хранилище 
+// 84.1 По заходу пользователя на сайт запишите в локальное хранилище 
 // текущий момент времени. Затем по повторному заходу выведите, сколько 
 // прошло времени с предыдущего захода пользователя на сайт.
 
@@ -268,7 +268,7 @@
 // localStorage.setItem('lastVisit', curVisit);
 
 
-// 84.3 По заходу пользователя на сайт спросите у него дату рождения. 
+// 84.2 По заходу пользователя на сайт спросите у него дату рождения. 
 // При следующем заходе пользователя на сайт, если у него в этот день 
 // будет День Рождения - поздравьте его с этим праздником.
 
@@ -345,17 +345,61 @@
 // let curVisit = new Date();
 // localStorage.setItem('lastVisit', curVisit);
 
-// 84.4 Дан инпут. По потери фокуса в этом инпуте 
+// 84.3 Дан инпут. По потери фокуса в этом инпуте 
 // сохраните его значение в локальное хранилище. 
 // При следующем заходе пользователя на страницу 
 // установите в инпуте сохраненный ранее текст.
 
-// let imp = document.createElement('input');
-// document.body.appendChild(imp);
-// imp.placeholder = "your name";
-// console.log(imp.textContent);
-// imp.addEventListener('mouseout', () => {
-//     let mem = localStorage.setItem('mem', imp.value);
-// });
-// console.log(localStorage.getItem('mem'));
-// imp.value = localStorage.getItem('mem')
+let imp = document.createElement('input');
+document.body.appendChild(imp);
+imp.placeholder = "your name";
+imp.addEventListener('mouseout', () => {
+    let mem = localStorage.setItem('mem', imp.value);
+});
+imp.value = localStorage.getItem('mem')
+
+
+// 86.1 Пользователь заходит на сайт, затем обновляет страницу, 
+// затем еще раз обновляет и так далее. Сделайте счетчик обновления страницы. 
+// Каждый раз при обновлении выводите значение счетчика на экран.
+
+window.addEventListener('load', () => {
+    let count = localStorage.getItem('count');
+    if (!count) {
+        count = 0;
+    }
+    count++;
+    localStorage.setItem('count', count);
+    console.log(count);
+    // 87.1 Сделайте счетчик обновления страницы. Пусть счетчик обнуляется после того, как дойдет до 10.
+    // if (count >= 11) {
+    //     localStorage.removeItem('count')
+    // }
+});
+
+// 88.1 Очистите хранилище. Проверьте, что все ранее установленные вами ключи пропали.
+
+// localStorage.clear()
+
+// 89.1 По нажатию на кнопку выведите количество записей в локальном хранилище.
+
+// let br = document.createElement('br');
+// document.body.appendChild(br);
+// let br1 = document.createElement('br');
+// document.body.appendChild(br1)
+document.body.insertAdjacentHTML('beforeend', '<br><br><br>');
+let btn = document.createElement('button');
+btn.textContent = 'OK';
+document.body.appendChild(btn);
+let p = document.createElement('p');
+document.body.appendChild(p);
+btn.addEventListener('click', () => {
+    p.textContent = localStorage.length;
+    btn.removeEventListener('click')
+})
+
+// 90.1 Получите значение записей с различными номерами.
+let key = localStorage.key(1);
+console.log(key);
+let res = localStorage.getItem(key);
+console.log(res);
