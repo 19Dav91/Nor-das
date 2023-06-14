@@ -256,4 +256,91 @@
 // текущий момент времени. Затем по повторному заходу выведите, сколько 
 // прошло времени с предыдущего захода пользователя на сайт.
 
+// localStorage.getItem('time')
+// if (localStorage.getItem('lastVisit')) {
+//     let preVisit = new Date(localStorage.getItem('lastVisit'));
+//     let nowTime = new Date();
+//     let timeDeef = nowTime.getTime() - preVisit.getTime();
+//     let minDeef = Math.floor(timeDeef / 1000 / 60);
+//     console.log(`Անցել է ${minDeef} րոպե`);
+// }
+// let curVisit = new Date();
+// localStorage.setItem('lastVisit', curVisit);
 
+
+// 84.3 По заходу пользователя на сайт спросите у него дату рождения. 
+// При следующем заходе пользователя на сайт, если у него в этот день 
+// будет День Рождения - поздравьте его с этим праздником.
+
+
+//////////////////////CODE FROM CHATGPT/////////////////////////
+
+// let userBirthday = localStorage.getItem("userBirthday");
+// if (!userBirthday || isNaN(Date.parse(userBirthday))) {
+//     userBirthday = prompt("Введите вашу дату рождения в формате ГГГГ-ММ-ДД");
+//     localStorage.setItem("userBirthday", userBirthday);
+// } else {
+//     userBirthday = new Date(userBirthday);
+// }
+// let currentDate = new Date();
+// if (
+//     currentDate.getDate() === userBirthday.getDate() &&
+//     currentDate.getMonth() === userBirthday.getMonth()
+// ) {
+//     alert("С днем рождения!");
+// }
+
+
+
+
+// Функция для проверки, является ли дата днем рождения пользователя
+// function checkBirthday(currentDate, birthday) {
+//     return (
+//         currentDate.getDate() === birthday.getDate() &&
+//         currentDate.getMonth() === birthday.getMonth()
+//     );
+// }
+
+// // Получите текущую дату
+// let currentDate = new Date();
+
+// // Функция для сохранения даты рождения пользователя
+// function saveUserBirthday(userId, birthday) {
+//     // Здесь вы должны сохранить дату рождения пользователя в localStorage или любом другом месте
+//     // Например, если вы используете localStorage:
+//     localStorage.setItem("userBirthday_" + userId, birthday.toISOString());
+// }
+
+// // Предполагая, что у вас есть функция, которая отправляет поздравление пользователю
+// function sendBirthdayGreeting(userId) {
+//     // Здесь вы должны отправить поздравление пользователю, например, через алерт или вывод на страницу
+//     // Например, с использованием алерта:
+//     alert(`С днем рождения! ${userId}`);
+// }
+
+// // Установите идентификатор пользователя
+// let userId = "Dav";
+
+// // Получите дату рождения пользователя
+// let userBirthday = new Date(prompt("Введите вашу дату рождения в формате ГГГГ-ММ-ДД"));
+
+// // Сохраните дату рождения пользователя
+// saveUserBirthday(userId, userBirthday);
+
+// // Проверьте, является ли дата рождения сегодняшним днем
+// if (checkBirthday(currentDate, userBirthday)) {
+//     sendBirthdayGreeting(userId);
+// }
+
+
+// let bird = prompt('Երբ եք դուք') 
+// localStorage.getItem('time')
+// if (localStorage.getItem('lastVisit')) {
+//     let preVisit = new Date(localStorage.getItem('lastVisit'));
+//     let nowTime = new Date();
+//     let timeDeef = nowTime.getTime() - preVisit.getTime();
+//     let minDeef = Math.floor(timeDeef / 1000 / 60);
+//     console.log(`Անցել է ${minDeef} րոպե`);
+// }
+// let curVisit = new Date();
+// localStorage.setItem('lastVisit', curVisit);
