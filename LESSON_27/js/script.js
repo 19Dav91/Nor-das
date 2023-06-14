@@ -344,3 +344,18 @@
 // }
 // let curVisit = new Date();
 // localStorage.setItem('lastVisit', curVisit);
+
+// 84.4 Дан инпут. По потери фокуса в этом инпуте 
+// сохраните его значение в локальное хранилище. 
+// При следующем заходе пользователя на страницу 
+// установите в инпуте сохраненный ранее текст.
+
+// let imp = document.createElement('input');
+// document.body.appendChild(imp);
+// imp.placeholder = "your name";
+// console.log(imp.textContent);
+// imp.addEventListener('mouseout', () => {
+//     let mem = localStorage.setItem('mem', imp.value);
+// });
+// console.log(localStorage.getItem('mem'));
+// imp.value = localStorage.getItem('mem')
