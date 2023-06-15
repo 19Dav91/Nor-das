@@ -252,7 +252,7 @@
 // console.log(sum);
 
 
-// 84.1 По заходу пользователя на сайт запишите в локальное хранилище 
+// 85.1 По заходу пользователя на сайт запишите в локальное хранилище 
 // текущий момент времени. Затем по повторному заходу выведите, сколько 
 // прошло времени с предыдущего захода пользователя на сайт.
 
@@ -275,20 +275,20 @@
 
 //////////////////////CODE FROM CHATGPT/////////////////////////
 
-// let userBirthday = localStorage.getItem("userBirthday");
-// if (!userBirthday || isNaN(Date.parse(userBirthday))) {
-//     userBirthday = prompt("Введите вашу дату рождения в формате ГГГГ-ММ-ДД");
-//     localStorage.setItem("userBirthday", userBirthday);
-// } else {
-//     userBirthday = new Date(userBirthday);
-// }
-// let currentDate = new Date();
-// if (
-//     currentDate.getDate() === userBirthday.getDate() &&
-//     currentDate.getMonth() === userBirthday.getMonth()
-// ) {
-//     alert("С днем рождения!");
-// }
+let userBirthday = localStorage.getItem("userBirthday");
+if (!userBirthday || isNaN(Date.parse(userBirthday))) {
+    userBirthday = prompt("Введите вашу дату рождения в формате ГГГГ-ММ-ДД");
+    localStorage.setItem("userBirthday", userBirthday);
+} else {
+    userBirthday = new Date(userBirthday);
+}
+let currentDate = new Date();
+if (
+    currentDate.getDate() === userBirthday.getDate() &&
+    currentDate.getMonth() === userBirthday.getMonth()
+) {
+    alert("С днем рождения!");
+}
 
 
 
