@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var calendar = document.getElementById("calendar");
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var currentMonth = currentDate.getMonth();
-    var currentDay = currentDate.getDate();
+    let calendar = document.getElementById("calendar");
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    let currentMonth = currentDate.getMonth();
+    let currentDay = currentDate.getDate();
   
     function generateCalendar(year, month) {
-      var date = new Date(year, month);
-      var firstDay = new Date(year, month, 1);
-      var lastDay = new Date(year, month + 1, 0);
-      var daysInMonth = lastDay.getDate();
-      var startingDay = firstDay.getDay();
-      var monthNames = [
+      let date = new Date(year, month);
+      let firstDay = new Date(year, month, 1);
+      let lastDay = new Date(year, month + 1, 0);
+      let daysInMonth = lastDay.getDate();
+      let startingDay = firstDay.getDay();
+      let monthNames = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
       ];
-      var calendarHTML = "<h2>" + monthNames[month] + " " + year + "</h2>";
+      let calendarHTML = "<h2>" + monthNames[month] + " " + year + "</h2>";
       calendarHTML += "<div class='calendar-nav'>";
       calendarHTML += "<button id='prev-btn'>&lt;</button>";
       calendarHTML += "<button id='next-btn'>&gt;</button>";
@@ -23,15 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
       calendarHTML += "<table>";
       calendarHTML += "<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
       
-      var day = 1;
-      for (var i = 0; i < 6; i++) {
+      let day = 1;
+      for (let i = 0; i < 6; i++) {
         calendarHTML += "<tr>";
         
-        for (var j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
           if ((i === 0 && j < startingDay) || day > daysInMonth) {
             calendarHTML += "<td></td>";
           } else {
-            var className = "";
+            let className = "";
             if (year === currentYear && month === currentMonth && day === currentDay) {
               className = "current-day";
             }
@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
       calendarHTML += "</table>";
       calendar.innerHTML = calendarHTML;
       
-      var prevBtn = document.getElementById("prev-btn");
-      var nextBtn = document.getElementById("next-btn");
+      let prevBtn = document.getElementById("prev-btn");
+      let nextBtn = document.getElementById("next-btn");
       
       prevBtn.addEventListener("click", function() {
         month--;
