@@ -16,6 +16,6 @@ const prom = new Promise(function (resolve) {
         resolve(5 + 5)
     }, 5000);
 });
-promise.then(function (resolve) {
-    console.log(resolve);
+promise.then(function(value) {
+    console.log(value);
 })
