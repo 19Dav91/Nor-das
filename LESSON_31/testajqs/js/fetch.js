@@ -5,6 +5,16 @@ window.addEventListener("DOMContentLoaded", () => {
         request.setRequestHeader("Content-type", "application/json;charset=utf-8");
         request.send();
         async function getResource(url) {
+            const res = await axios(`${url}`);
+            if (res.status !== 200) {
+                throw new Error(`Could not fetch ${url}, status: ${res.status}`)
+            }
+            return res;
+        }
+        getResource("http://localhost:3000/people")
+            .then(data => createCards(data.data)) ///console.log
+            .catch(err => console.error(err))
+        async function getResource(url) {
             const res = await fetch(`${url}`);
             if (!res.ok) {
                 throw new Error(`Could not fetch ${url}, status: ${res.status}`)
@@ -13,11 +23,12 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         this.remove();
 
-        getResource("http://localhost:3000/peoplee")
+        getResource("http://localhost:3000/people")
             .then(data => createCards(data))
             .catch(err => console.error(err))
-        }
-        document.querySelector("button").addEventListener("click", req, { "once": true })
+        
+    }
+    document.querySelector("button").addEventListener("click", req, { "once": true })
 })
 
 function createCards(response) {
