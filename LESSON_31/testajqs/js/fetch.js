@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         this.remove();
 
-        getResource("http://localhost:3000/people")
+        getResource("http://localhost:3000/peoplee")
             .then(data => createCards(data))
             .catch(err => console.error(err))
         }
