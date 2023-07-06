@@ -1,29 +1,5 @@
 {
   "people": [
-    {
-      "id": "0.8211274729993083"
-    },
-    {
-      "id": "0.9090390462923181"
-    },
-    {
-      "id": "0.8825758072177425"
-    },
-    {
-      "username": "sdf",
-      "email": "xentdvo1991@mail.ru",
-      "password": "sdf",
-      "id": "cn2Xr45"
-    },
-    {
-      "username": "Dav",
-      "email": "gjerov123321@gmail.com",
-      "password": "asdadfa",
-      "gender": "male",
-      "country": "Армения",
-      "city": "erevan",
-      "dob": "2020-06-17",
-      "id": "HEvDY20"
-    }
+    
   ]
 }
