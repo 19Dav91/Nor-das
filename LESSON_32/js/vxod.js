@@ -8,15 +8,12 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     username: username,
     password: password
   };
-
-  axios.post('http://localhost:3000/people', user)
+  axios.get('http://localhost:3000/people')
     .then(function (response) {
       const data = response.data;
       if (data.success) {
-        // Пользователь вошел в систему успешно
         console.log('Пользователь вошел в систему:', data.user);
       } else {
-        // Неверное имя пользователя или пароль
         console.log('Ошибка входа:', data.message);
       }
     })
