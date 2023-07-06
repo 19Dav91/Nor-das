@@ -36,5 +36,8 @@
     "[jsonc]": {
         "editor.defaultFormatter": "Wscats.eno"
     },
+    "[html]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
 
 }
