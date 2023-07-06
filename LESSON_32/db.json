@@ -1,5 +1,30 @@
 {
   "people": [
-    
+    {
+      "username": "sdvx",
+      "lastname": "sdv",
+      "middlename": "sv",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "password": "sdvsvs",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-07-05",
+      "id": 1
+    },
+    {
+      "username": "dmatevosyan91@mail.ru",
+      "lastname": "sdc",
+      "middlename": "dsc",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "password": "csdcs",
+      "gender": "female",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-07-03",
+      "id": 2
+    }
   ]
 }

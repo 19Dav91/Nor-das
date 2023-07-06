@@ -10,31 +10,24 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     const country = document.getElementById("country").value;
     const city = document.getElementById("city").value;
     const dob = document.getElementById("dob").value;
+    const user = {
+        username: username,
+        lastname: lastname,
+        middlename: middlename,
+        phone: phone,
+        email: email,
+        password: password,
+        gender: gender,
+        country: country,
+        city: city,
+        dob: dob
+    };
+    axios.post("http://localhost:3000/people", user)
+        .then(function (res) {
+            console.log(res);
+        })
+        .catch(function (error) {
+            console.error("Ошибка при отправке данных на сервер:", error);
+        });
 
-    if (username && email && password) {
-        alert("Регистрация успешно завершена. Добро пожаловать в нашу социальную сеть!");
-
-        const user = {
-            username: username,
-            lastname: lastname,
-            middlename: middlename,
-            phone: phone,
-            email: email,
-            password: password,
-            gender: gender,
-            country: country,
-            city: city,
-            dob: dob
-        };
-
-        axios.post("http://localhost:3000/people", user)
-            .then(function (res) {
-                console.log(res);
-            })
-            .catch(function (error) {
-                console.error("Ошибка при отправке данных на сервер:", error);
-            });
-    } else {
-        alert("Пожалуйста, заполните все поля.");
-    }
 });
