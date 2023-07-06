@@ -1,5 +1,8 @@
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
+    function generateRandomId() {
+        return uuid.v4();
+    }
     const username = document.getElementById("username").value;
     const lastname = document.getElementById("lastname").value;
     const middlename = document.getElementById("middlename").value;
@@ -10,6 +13,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     const country = document.getElementById("country").value;
     const city = document.getElementById("city").value;
     const dob = document.getElementById("dob").value;
+    const randomId = generateRandomId();
     const user = {
         username: username,
         lastname: lastname,
@@ -20,7 +24,8 @@ document.getElementById("registrationForm").addEventListener("submit", function 
         gender: gender,
         country: country,
         city: city,
-        dob: dob
+        dob: dob,
+        id: randomId
     };
     axios.post("http://localhost:3000/people", user)
         .then(function (res) {
