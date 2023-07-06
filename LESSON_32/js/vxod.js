@@ -1,25 +1,31 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Предотвращаем отправку формы
-  
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-  
-    // Создаем объект с данными пользователя
-    var user = {
-      username: username,
-      password: password
-    };
-  
-    // Отправляем запрос на сервер для проверки данных пользователя
-    axios.post("http://localhost:3000/people", user)
-      .then(function(response) {
-        // Проверка успешна, перенаправляем на страницу аккаунта
-        window.location.href = "account.html?id=" + response.data.id;
-      })
-      .catch(function(error) {
-        // Ошибка проверки, выводим сообщение об ошибке
-        alert("Неверное имя пользователя или пароль. Попробуйте еще раз.");
-        console.error("Ошибка проверки данных пользователя:", error);
-      });
-  });
-  
+const express = require("express");
+const app = express();
+
+// Обработчик POST-запроса для проверки данных пользователя и авторизации
+app.post("/login", (req, res) => {
+  const { username, password } = req.body;
+
+  // Здесь вам нужно добавить логику проверки данных пользователя
+  // и выполнения авторизации на вашем сервере.
+
+  // Пример проверки данных и генерации токена авторизации
+  if (username === "user1" && password === "password1") {
+    const token = generateAuthToken(); // Генерация токена авторизации
+    res.json({ success: true, token: token });
+  } else {
+    res.status(401).json({ success: false, message: "Неверное имя пользователя или пароль." });
+  }
+});
+
+// Здесь вы можете добавить другие маршруты и обработчики запросов
+
+// Запуск сервера
+app.listen(3000, () => {
+  console.log("Сервер запущен на порту 3000");
+});
+
+// Генерация токена авторизации (пример)
+function generateAuthToken() {
+  // Здесь вы можете использовать вашу собственную логику генерации токена авторизации
+  return "your-auth-token";
+}
