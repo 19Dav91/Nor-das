@@ -12,6 +12,19 @@
       "city": "erevan",
       "dob": "2023-06-26",
       "id": 1
+    },
+    {
+      "username": "Dav",
+      "lastname": "mat",
+      "middlename": "kar",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "password": "8520",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-07-03",
+      "id": 2
     }
   ]
 }
