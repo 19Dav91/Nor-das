@@ -1,4 +1,48 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <title>Social Network Registration</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Зарегистрироваться</h1>
+    <form id="registrationForm">
+      <input type="text" id="username" placeholder="Имя пользователя" required>
+      <input type="text" id="lastname" placeholder="Фамилия" required>
+      <input type="text" id="middlename" placeholder="Отчество" required>
+      <input type="tel" id="phone" placeholder="Номер телефона" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Пароль" required>
+      <select id="gender" required>
+        <option value="">Выберите пол</option>
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select>
+      <input type="text" id="country" placeholder="Страна" required>
+      <input type="text" id="city" placeholder="Город" required>
+      <input type="date" id="dob" placeholder="День рождения" required>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+
+    <!-- <div class="container">
+        <h1>Зарегистрироваться</h1>
+        <form id="registrationForm">
+          <input type="text" id="username" placeholder="Имя пользователя" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Пароль" required>
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+  </div> -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +54,17 @@
     <link rel="stylesheet" href="css/style.css" class="css">
 </head>
 <body>
-    
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <div class="container">
+        <form action="" method="post">
+            <input type="text" name="name" id="name">
+            <input type="text" name="surname" id="surname">
+            <input type="text" name="patronymic" id="patronymic">
+            <input type="text" name="age" id="age">
+            <input type="radio" name="gender" id="">
+
+        </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-</html>
+</html> -->

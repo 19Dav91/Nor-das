@@ -25,25 +25,25 @@ window.addEventListener("DOMContentLoaded", () => {
         //             }
         //         })
         //     }
-        //     document.querySelector("button").addEventListener("click", req, { "once": true })
+            document.querySelector("button").addEventListener("click", req, { "once": true })
         // })
-    //     async function getResource(url, data) {
-    //         const res = await fetch(`${url}`, {
-    //             method: "POST",
-    //             headers: {
-    //                 "Content-type": "application/json"
+        async function getResource(url, data) {
+            const res = await fetch(`${url}`, {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
 
-    //             },
-    //             body: JSON.stringify(data)
-    //         });
-    //         if (!res.ok) {
-    //             throw new Error(`Could not fetch ${url},status:${res.status}`)
-    //         }
-    //         return await res.json()
-    //     }
-    //     getResource("http://localhost:3000/people", obj)
-    //         .then(data => console.log(data))
-    //         .catch(err => console.error(err));
+                },
+                body: JSON.stringify(data)
+            });
+            if (!res.ok) {
+                throw new Error(`Could not fetch ${url},status:${res.status}`)
+            }
+            return await res.json()
+        }
+        getResource("http://localhost:3000/people", obj)
+            .then(data => console.log(data))
+            .catch(err => console.error(err));
     // 
     axios.post("http://localhost:3000/people",obj);
 }
