@@ -1,31 +1,26 @@
-const express = require("express");
-const app = express();
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+  event.preventDefault();
 
-// Обработчик POST-запроса для проверки данных пользователя и авторизации
-app.post("/login", (req, res) => {
-  const { username, password } = req.body;
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
 
-  // Здесь вам нужно добавить логику проверки данных пользователя
-  // и выполнения авторизации на вашем сервере.
+  const user = {
+    username: username,
+    password: password
+  };
 
-  // Пример проверки данных и генерации токена авторизации
-  if (username === "user1" && password === "password1") {
-    const token = generateAuthToken(); // Генерация токена авторизации
-    res.json({ success: true, token: token });
-  } else {
-    res.status(401).json({ success: false, message: "Неверное имя пользователя или пароль." });
-  }
+  axios.post('http://localhost:3000/people', user)
+    .then(function (response) {
+      const data = response.data;
+      if (data.success) {
+        // Пользователь вошел в систему успешно
+        console.log('Пользователь вошел в систему:', data.user);
+      } else {
+        // Неверное имя пользователя или пароль
+        console.log('Ошибка входа:', data.message);
+      }
+    })
+    .catch(function (error) {
+      console.error('Ошибка при отправке данных на сервер:', error);
+    });
 });
-
-// Здесь вы можете добавить другие маршруты и обработчики запросов
-
-// Запуск сервера
-app.listen(3000, () => {
-  console.log("Сервер запущен на порту 3000");
-});
-
-// Генерация токена авторизации (пример)
-function generateAuthToken() {
-  // Здесь вы можете использовать вашу собственную логику генерации токена авторизации
-  return "your-auth-token";
-}
