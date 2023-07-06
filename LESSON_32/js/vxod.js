@@ -1,13 +1,9 @@
+const axios = require('axios');
 document.getElementById('loginForm').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
 
-  const user = {
-    username: username,
-    password: password
-  };
+ 
   axios.get('http://localhost:3000/people')
     .then(function (response) {
       const data = response.data;
