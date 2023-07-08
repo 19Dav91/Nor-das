@@ -14,7 +14,6 @@ document.getElementById("registrationForm").addEventListener("submit", function 
             const users = response.data;
             const filteredUsers = users.filter(user => user.username === username && user.password === password);
             if (filteredUsers.length > 0) {
-                let a = document.createElement('a');
                 window.location.href = '../user.html';
                 document.body.appendChild(a)
                 console.log("Пользователь найден:", filteredUsers[0]);
