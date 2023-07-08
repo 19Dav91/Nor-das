@@ -1,11 +1,18 @@
 const axios = require('axios');
-// import axios from '../../../node_modules/axios/dist/axios.js';
-axios.get(url, { params })
+import axios from 'axios';
+console.log(require);
+const username = 'правильное_имя_пользователя';
+const password = 'правильный_пароль';
+
+axios.get('http://localhost:3000/people', {
+  params: {
+    username: username,
+    password: password
+  }
+})
   .then(response => {
-    // Обработка успешного ответа
     console.log(response.data);
   })
   .catch(error => {
-    // Обработка ошибки
-    console.error(error);
+    console.error('Ошибка при выполнении GET-запроса:', error);
   });
