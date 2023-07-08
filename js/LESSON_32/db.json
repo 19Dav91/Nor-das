@@ -50,6 +50,48 @@
       "name": "John",
       "age": "Smith",
       "id": "0.6956143641530081"
+    },
+    {
+      "username": "asda",
+      "lastname": "xcvbc",
+      "middlename": "sdv",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-07-18",
+      "login": "DavoMatos",
+      "password": "8520",
+      "id": 3
+    },
+    {
+      "username": "adsf",
+      "lastname": "xcvbc",
+      "middlename": "sdv",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-06-28",
+      "login": "asdad",
+      "password": "asda",
+      "id": 4
+    },
+    {
+      "username": "Dav",
+      "lastname": "xcvbc",
+      "middlename": "sdv",
+      "phone": "+37494182873",
+      "email": "gjerov123321@gmail.com",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-07-20",
+      "login": "dvzdsv",
+      "password": "zc",
+      "id": 5
     }
   ]
 }

@@ -1,22 +1,25 @@
-const axios = require('axios/dist/browser/axios.cjs');
-const axios1 = require('axios/dist/node/axios.cjs');
-console.log(require);
-const username = 'правильное_имя_пользователя';
-const password = 'правильный_пароль';
+document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault();
 
-axios.get('http://localhost:3000/people', {
-  params: {
-    username: username,
-    password: password
-  }
-})
-  .then(response => {
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.error('Ошибка при выполнении GET-запроса:', error);
-  });
-  // mkdir axios-get-examples
-  // cd axios-get-examples
-  // npm init -y
-  // npm install axios
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    axios.get("http://localhost:3000/people", {
+        params: {
+            username: username,
+            password: password
+        }
+    })
+        .then(function (response) {
+            const users = response.data;
+            const filteredUsers = users.filter(user => user.username === username && user.password === password);
+            if (filteredUsers.length > 0) {
+                console.log("Пользователь найден:", filteredUsers[0]);
+            } else {
+                console.log("Пользователь не найден");
+            }
+        })
+        .catch(function (error) {
+            console.error("Ошибка при выполнении GET-запроса:", error);
+        });
+});
