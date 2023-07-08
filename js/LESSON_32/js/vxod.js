@@ -15,7 +15,6 @@ document.getElementById("registrationForm").addEventListener("submit", function 
             const filteredUsers = users.filter(user => user.username === username && user.password === password);
             if (filteredUsers.length > 0) {
                 window.location.href = '../user.html';
-                document.body.appendChild(a)
                 console.log("Пользователь найден:", filteredUsers[0]);
                 document.getElementById("username").style.border = "1px solid green";
                 document.getElementById("password").style.border = "1px solid green";
