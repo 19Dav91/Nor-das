@@ -1,5 +1,4 @@
-const axios = require('axios');
-import axios from 'axios';
+const axios = require('axios/dist/browser/axios.cjs');
 console.log(require);
 const username = 'правильное_имя_пользователя';
 const password = 'правильный_пароль';
