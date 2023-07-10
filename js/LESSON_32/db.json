@@ -224,6 +224,19 @@
       "log": "7",
       "password": "7",
       "id": 40
+    },
+    {
+      "username": "11",
+      "lastname": "11",
+      "middlename": "11",
+      "email": "gjerov123321@gmail.com",
+      "gender": "male",
+      "country": "Армения",
+      "city": "erevan",
+      "dob": "2023-06-29",
+      "log": "11",
+      "password": "11",
+      "id": 41
     }
   ]
 }

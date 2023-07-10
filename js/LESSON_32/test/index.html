@@ -15,11 +15,54 @@
 <body>
     <div class="form">
         <ul class="tab-group">
-            <li><a href="register.html" style="border-radius: 15px!important;margin-right:8x;">Sign Up</a>
+            <li><a href="#signup" style="border-radius: 15px!important;margin-right:8x;">Sign Up</a>
             </li>
             <li class="tab"><a href="#login" style="border-radius: 15px!important;margin-left:8px;">Log In</a></li>
         </ul>
-        
+        <div class="tab-content">
+            <div id="signup">
+                <h1>Register</h1>
+                <form action="" id="registrationForm" method="post">
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <input type="text" id="username" placeholder="Имя пользователя" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" id="lastname" placeholder="Фамилия" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" id="middlename" placeholder="Отчество" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="field-wrap">
+                            <input type="text" id="country" placeholder="Страна" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" id="city" placeholder="Город" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="date" id="dob" placeholder="День рождения" required>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" id="log" placeholder="логин" required>
+                        </div>
+                        <div class="field-wrap" id="gend">
+                            <select class="field-wrap" id="gender" required>
+                                <option value="" disabled selected>Выберите пол</option>
+                                <option value="male">Мужской</option>
+                                <option value="female">Женский</option>
+                            </select>
+                        </div>
+                        <div class="field-wrap" id="pass">
+                            <input type="password" id="password" placeholder="Пароль" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button-block">Sign Up</button>
+                </form>
+            </div>
 
 
             <div id="login" class="login-container">
@@ -35,6 +78,7 @@
                 </form>
             </div>
         </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
