@@ -34,9 +34,10 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                 const closeBtn = document.createElement('button');
                 closeBtn.className = 'close';
                 closeBtn.textContent = "close";
-                cllog.style.display = 'none'
+                cllog.style.display = 'none';
                 modal.appendChild(closeBtn);
-
+                let body = document.querySelector('body');
+                body.style.backgroundColor = 'greenyellow';
                 closeBtn.addEventListener('click', function () {
                     modal.style.display = 'none';
                     cllog.style.display = 'block';
@@ -47,6 +48,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                     const li = document.createElement('li');
                     li.textContent = `${key}: ${filteredUsers[0][key]}`;
                     userDetails.appendChild(li);
+                    li.style.fontSize = '22px';
                     li.style.listStyleType = 'none'
 
                 }
