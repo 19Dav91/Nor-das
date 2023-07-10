@@ -1,9 +1,11 @@
+import axios from '../../../node_modules/axios/dist/axios.min';
+
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-
+    const cllog = document.querySelector('.login-container');
     axios.get("http://localhost:3000/people", {
         params: {
             username: username,
@@ -18,27 +20,34 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                 modal.className = 'modal';
                 modal.innerHTML = `
     <div class="modal-content">
-        <span class="close">&times;</span>
         <h2>User Information</h2>
         <ul id="userDetails"></ul>
     </div>
 `;
                 document.body.prepend(modal);
+                modal.style.textAlign = 'center';
+                modal.style.margin = '0 auto';
+                modal.style.width = '350px'
                 modal.style.display = 'block';
-                const closeBtn = modal.querySelector('.close');
+                const closeBtn = document.createElement('button');
+                closeBtn.className = 'close';
+                closeBtn.textContent = "close";
+                cllog.style.display = 'none'
+                modal.appendChild(closeBtn);
+
                 closeBtn.addEventListener('click', function () {
                     modal.style.display = 'none';
+                    cllog.style.display = 'block';
+                    location.reload()
                 });
                 const userDetails = document.getElementById('userDetails');
                 for (const key in filteredUsers[0]) {
                     const li = document.createElement('li');
                     li.textContent = `${key}: ${filteredUsers[0][key]}`;
                     userDetails.appendChild(li);
+                    li.style.listStyleType = 'none'
+
                 }
-                // let usr = window.location.href = ('user.html');
-                // let p = document.createElement('p');
-                // p.textContent = `Username: ${filteredUsers[0].username}, Email: ${filteredUsers[0].email}`;
-                // document.body.appendChild(p)
                 console.log("Пользователь найден:", filteredUsers[0]);
                 document.getElementById("username").style.border = "1px solid green";
                 document.getElementById("password").style.border = "1px solid green";
@@ -46,7 +55,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                 console.log("Пользователь не найден");
                 document.getElementById("username").style.border = "1px solid red";
                 document.getElementById("password").style.border = "1px solid red";
-                alert('Դուք մուտքագրել եք սխալ մուտքանուն կամ գախտնաբառ')
+                alert('Դուք մուտքագրել եք սխալ մուտքանուն կամ գաղտնաբառ')
             }
         })
         .catch(function (error) {
