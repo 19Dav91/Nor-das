@@ -48,7 +48,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                     const li = document.createElement('li');
                     li.textContent = `${key}: ${filteredUsers[0][key]}`;
                     userDetails.appendChild(li);
-                    li.style.fontSize = '35px';
+                    li.style.fontSize = '24px';
                     li.style.listStyleType = 'none'
 
                 }
