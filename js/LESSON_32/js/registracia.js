@@ -10,20 +10,20 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     const country = document.getElementById("country").value;
     const city = document.getElementById("city").value;
     const dob = document.getElementById("dob").value;
-    const login = document.getElementById("login").value;
+    const log = document.getElementById("log").value;
     const password = document.getElementById("password").value;
 
     axios.get("http://localhost:3000/people", {
         params: {
-            login: login
+            log: log
         }
     })
         .then(function (response) {
             const users = response.data;
-            const existingUser = users.find(user => user.login === login);
+            const existingUser = users.find(user => user.log === log);
 
             if (existingUser) {
-                document.getElementById("login").style.border = "1px solid red";
+                document.getElementById("log").style.border = "1px solid red";
                 alert("Пользователь с таким логином уже существует.");
             } else {
                 const user = {
@@ -36,7 +36,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                     country: country,
                     city: city,
                     dob: dob,
-                    login: login,
+                    log: log,
                     password: password
                 };
 

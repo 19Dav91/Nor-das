@@ -5,18 +5,18 @@
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const login = document.getElementById("login").value;
+    const log = document.getElementById("log").value;
     const password = document.getElementById("password").value;
     const cllog = document.querySelector('.login-container');
     axios.get("http://localhost:3000/people", {
         params: {
-            login: login,
+            log: log,
             password: password
         }
     })
         .then(function (response) {
             const users = response.data;
-            const filteredUsers = users.filter(user => user.login === login && user.password === password);
+            const filteredUsers = users.filter(user => user.log === log && user.password === password);
             if (filteredUsers.length > 0) {
                 const modal = document.createElement('div');
                 modal.className = 'modal';
@@ -51,11 +51,11 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
                 }
                 console.log("Пользователь найден:", filteredUsers[0]);
-                document.getElementById("login").style.border = "1px solid green";
+                document.getElementById("log").style.border = "1px solid green";
                 document.getElementById("password").style.border = "1px solid green";
             } else {
                 console.log("Пользователь не найден");
-                document.getElementById("login").style.border = "1px solid red";
+                document.getElementById("log").style.border = "1px solid red";
                 document.getElementById("password").style.border = "1px solid red";
                 alert('Դուք մուտքագրել եք սխալ մուտքանուն կամ գաղտնաբառ')
             }
