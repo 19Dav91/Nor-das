@@ -1,4 +1,6 @@
-import axios from '../../../node_modules/axios/dist/axios.min';
+// const axios = require('../../../node_modules/axios');
+import axios from 'axios';
+
 
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
