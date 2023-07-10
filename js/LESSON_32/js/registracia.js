@@ -24,6 +24,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
             if (existingUser) {
                 document.getElementById("login").style.border = "1px solid red";
+                alert("Пользователь с таким логином уже существует.");
             } else {
                 const user = {
                     username: username,
@@ -42,7 +43,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
                 axios.post("http://localhost:3000/people", user)
                     .then(function (res) {
                         console.log("Пользователь успешно зарегистрирован:", res.data);
-                        // Добавьте свою логику для обработки успешной регистрации пользователя
+                        location.reload()
                     })
                     .catch(function (error) {
                         console.error("Ошибка при отправке данных на сервер:", error);

@@ -1,22 +1,22 @@
-// const axios = require('../../../node_modules/axios');
-import axios from 'axios';
+// // const axios = require('../../../node_modules/axios');
+// import axios from '../../../node_modules/axios/dist';
 
 
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
+    const login = document.getElementById("login").value;
     const password = document.getElementById("password").value;
     const cllog = document.querySelector('.login-container');
     axios.get("http://localhost:3000/people", {
         params: {
-            username: username,
+            login: login,
             password: password
         }
     })
         .then(function (response) {
             const users = response.data;
-            const filteredUsers = users.filter(user => user.username === username && user.password === password);
+            const filteredUsers = users.filter(user => user.login === login && user.password === password);
             if (filteredUsers.length > 0) {
                 const modal = document.createElement('div');
                 modal.className = 'modal';
@@ -51,11 +51,11 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
                 }
                 console.log("Пользователь найден:", filteredUsers[0]);
-                document.getElementById("username").style.border = "1px solid green";
+                document.getElementById("login").style.border = "1px solid green";
                 document.getElementById("password").style.border = "1px solid green";
             } else {
                 console.log("Пользователь не найден");
-                document.getElementById("username").style.border = "1px solid red";
+                document.getElementById("login").style.border = "1px solid red";
                 document.getElementById("password").style.border = "1px solid red";
                 alert('Դուք մուտքագրել եք սխալ մուտքանուն կամ գաղտնաբառ')
             }

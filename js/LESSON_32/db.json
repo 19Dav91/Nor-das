@@ -1,19 +1,6 @@
 {
   "people": [
     {
-      "username": "asda",
-      "lastname": "sdf",
-      "middlename": "sdfa",
-      "phone": "asdf",
-      "email": "gjerov123321@gmail.com",
-      "password": "sdfa",
-      "gender": "male",
-      "country": "Армения",
-      "city": "erevan",
-      "dob": "2023-06-26",
-      "id": 1
-    },
-    {
       "username": "Dav",
       "lastname": "mat",
       "middlename": "kar",
@@ -24,84 +11,49 @@
       "country": "Армения",
       "city": "erevan",
       "dob": "2023-07-03",
-      "id": 2
+      "id": 25
     },
     {
-      "name": "David",
-      "age": "Matevosya",
-      "id": "0.46572286897232273"
-    },
-    {
-      "name": "",
-      "age": "",
-      "id": "0.1454150400720906"
-    },
-    {
-      "name": "",
-      "age": "",
-      "id": "0.18645452542456242"
-    },
-    {
-      "name": "fd",
-      "age": "",
-      "id": "0.5796339292414718"
-    },
-    {
-      "name": "John",
-      "age": "Smith",
-      "id": "0.6956143641530081"
-    },
-    {
-      "username": "asda",
-      "lastname": "xcvbc",
-      "middlename": "sdv",
+      "username": "d",
+      "lastname": "m",
+      "middlename": "k",
       "phone": "+37494182873",
-      "email": "gjerov123321@gmail.com",
+      "email": "xentdvo1991@mail.ru",
       "gender": "male",
       "country": "Армения",
       "city": "erevan",
-      "dob": "2023-07-18",
-      "login": "DavoMatos",
-      "password": "8520",
+      "dob": "2023-06-27",
+      "login": "d",
+      "password": "d",
       "id": 3
     },
     {
-      "username": "adsf",
-      "lastname": "xcvbc",
-      "middlename": "sdv",
-      "phone": "+37494182873",
+      "username": "Dav",
+      "lastname": "sad",
+      "middlename": "asd",
+      "phone": "ads",
       "email": "gjerov123321@gmail.com",
       "gender": "male",
       "country": "Армения",
       "city": "erevan",
       "dob": "2023-06-28",
-      "login": "asdad",
-      "password": "asda",
-      "id": 4
+      "login": "a",
+      "password": "a",
+      "id": 26
     },
     {
-      "username": "Dav",
-      "lastname": "xcvbc",
-      "middlename": "sdv",
-      "phone": "+37494182873",
+      "username": "s",
+      "lastname": "s",
+      "middlename": "s",
+      "phone": "s",
       "email": "gjerov123321@gmail.com",
       "gender": "male",
       "country": "Армения",
       "city": "erevan",
-      "dob": "2023-07-20",
-      "login": "dvzdsv",
-      "password": "zc",
-      "id": 5
-    },
-    {
-      "username": "Dav",
-      "password": "8520",
-      "id": 6
-    },
-    {
-      "username": "Dav",
-      "password": "8520",
-      "id": 7
+      "dob": "2023-06-27",
+      "login": "as",
+      "password": "a",
+      "id": 27
     }
   ]
 }
