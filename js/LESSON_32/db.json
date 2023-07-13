@@ -276,6 +276,19 @@
       "log": "222",
       "password": "222",
       "id": 44
+    },
+    {
+      "username": "Narine",
+      "lastname": "Matevosyan",
+      "middlename": "Serjiki",
+      "email": "davnankar@gmail.com",
+      "gender": "female",
+      "country": "Armenia",
+      "city": "Erevan",
+      "dob": "1991-01-01",
+      "log": "nankar",
+      "password": "1991",
+      "id": 45
     }
   ]
 }
