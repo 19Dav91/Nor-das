@@ -1,6 +1,6 @@
 // // const axios = require('../../../node_modules/axios');
-// import axios from '../../../node_modules/axios/dist';
-
+// import axios from "../axios-get-examples/node_modules/axios";
+const axios = require('axios');
 
 document.getElementById("registrationForm").addEventListener("submit", function (event) {
     event.preventDefault();
