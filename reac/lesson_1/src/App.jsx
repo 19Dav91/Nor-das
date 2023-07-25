@@ -89,10 +89,13 @@ function App() {
     // Вставьте значение константы attr в атрибут id нашего дива.
 
     //    22/1Добавьте в див несколько инпутов, разделенных тегами br.
-    const inp = <><input /> <br /><br /> <input /><br /><br /><input /></>
-    return <>
-        {inp}
-    </>
+    // const inp = <><input /> <br /><br /> <input /><br /><br /><input /></>
+    // return <>
+    //     {inp}
+    // </>
+    let a = 3 * 2 ** (3 + 1);
+    alert(a);
+
 };
 
 export default App;
