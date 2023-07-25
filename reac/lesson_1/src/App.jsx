@@ -1,7 +1,13 @@
 import logo from "./logo.svg";
 import './App.css';
+import Heder from "./Heder";
+import Footer from "./Footer";
 
 function App() {
+    return <>
+    <Heder/>
+    <Footer/>
+    </>
     // return < >
     {/*7/1. В вашем основном компоненте есть следующая функция:
     Поменяйте текст внутри дива. Посмотрите на изменения, произошедшие в браузере. */}
