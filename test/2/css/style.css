@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(52, 185, 103);
+}
+
+div {
+    margin: 10% auto;
+    text-align: center;
+}
+
+span {
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+}
+
+input, button {
+    padding: 5px;
+    margin: 5px;
+}
+button:hover {
+    background-color:greenyellow;
+    cursor: progress;
+}

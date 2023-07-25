@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <input type="number" name="num" id="sum">
+        <span> &#8658 </span>
+        <input type="number" name="num" id="day">
+        <button type="button">RES</button>
+    </div>
+    <h3 id="result" style="color: red; font-size: 35px; text-align: center;"></h3>
+    <script>
+        const sum = document.getElementById("sum");
+        const day = document.getElementById("day");
+        const btn = document.querySelector('button');
+        const resultElement = document.getElementById("result");
+
+        btn.addEventListener('click', function res() {
+            let res1 = 0;
+            for (let i = parseInt(sum.value); i <= parseInt(day.value); i++) {
+                res1 += i;
+            }
+            resultElement.textContent = `Результат: ${res1}`;
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
