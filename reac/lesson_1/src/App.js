@@ -1,11 +1,138 @@
 import logo from './logo.svg';
 import './App.css';
-import { Button } from '../node_modules/react-bootstrap/lib/InputGroup';
+import { Button, Container, Tab, Tabs, Pagination } from 'react-bootstrap';
+import Spinner from 'react-bootstrap/Spinner';
+// // alert('Ваше имя: ' + prompt('Ваше имя?'));
+// document.write(123);
+// document.write('<b>text</b>');
+// let str = 'text';
+// document.write(str);
+// let num = parseFloat('5px');
+// let num1 = parseFloat('6px');
+// // alert(num+num1); // выведет 12
+// // alert(60 * 60);
+// // function App() {
+
+// //     return (<>
+// //     </>)
+// // }
+// function App() {
+// 	return(<>
+// 		<ul>
+// 			<li>text1</li>
+// 			<li>text2</li>
+// 			<li>text3</li>
+// 		</ul>;
+//         </>)
+// }
+
+// function App() {
+//     const arr = [1, 2, 3, 4, 5];
+//     const str1 = 'text1';
+//     const str2 = 'text1';
+//     let ul = document.createElement('ul');
+//     document.body.appendChild(ul);
+//     for (let i = 1; i <= arr.length; i++) {
+//         const li = document.createElement('li');
+//         li.textContent = i;
+//         ul.appendChild(li)
+//     }
+//     return ul
+    // return <>
+
+    //     {/* <ul>
+    //         <li>{arr[0]}</li>
+    //         <li>{arr[1]}</li>
+    //         <li>{arr[2]}</li>
+    //         <li>{arr[3]}</li>
+    //         <li>{arr[4]}</li>
+    //     </ul>
+    //     <div>
+    //         <p>{str1}</p>
+    //         <p>{str2}</p>
+    //         <p></p>
+    //     </div>
+    //     <ul>
+    //         <li>text1</li>
+    //         <li>text2</li>
+    //         <li>text3</li>
+    //     </ul>
+    //     <ul>
+    //         <li>text1</li>
+    //         <li>text2</li>
+    //         <li>text3</li>
+    //     </ul>
+    //     <input />
+    //     <input /><input /><input /> */}
+    // </>
+// }
+// function App() {
+// 	const str = <div><p>text1</p><p>text2</p></div>;
+	
+// 	return <main>
+// 		{str}
+// 	</main>;
+// }
+
+
+// function App() {
+// 	return <table>
+// 		<tr>
+// 			<td>1</td>
+// 			<td>2</td>
+// 		</tr>
+// 		<tr>
+// 			<td>3</td>
+// 			<td>4</td>
+// 		</tr>
+// 	</table>;
+// }
+
+// function App() {
+// 	return <table>
+// 		<tbody>
+// 			<tr>
+// 				<td>1</td>
+// 				<td>2</td>
+// 			</tr>
+// 			<tr>
+// 				<td>3</td>
+// 				<td>4</td>
+// 			</tr>
+// 		</tbody>
+// 	</table>;
+// }
 
 function App() {
-    return (<>
-    <Button>OK</Button>
-    </>) 
+	function showMess() {
+		alert('hello');
+	}
+	
+	return <div>
+		<button onClick={showMess}>show</button>
+	</div>;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default App;
