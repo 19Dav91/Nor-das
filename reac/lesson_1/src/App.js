@@ -28,47 +28,46 @@ import Spinner from 'react-bootstrap/Spinner';
 
 // function App() {
 //     const arr = [1, 2, 3, 4, 5];
-//     const str1 = 'text1';
-//     const str2 = 'text1';
+//     arr.push(1)
+//     const res = arr.map(elem => elem)
 //     let ul = document.createElement('ul');
 //     document.body.appendChild(ul);
-//     for (let i = 1; i <= arr.length; i++) {
-//         const li = document.createElement('li');
-//         li.textContent = i;
-//         ul.appendChild(li)
-//     }
-//     return ul
-    // return <>
 
-    //     {/* <ul>
-    //         <li>{arr[0]}</li>
-    //         <li>{arr[1]}</li>
-    //         <li>{arr[2]}</li>
-    //         <li>{arr[3]}</li>
-    //         <li>{arr[4]}</li>
-    //     </ul>
-    //     <div>
-    //         <p>{str1}</p>
-    //         <p>{str2}</p>
-    //         <p></p>
-    //     </div>
-    //     <ul>
-    //         <li>text1</li>
-    //         <li>text2</li>
-    //         <li>text3</li>
-    //     </ul>
-    //     <ul>
-    //         <li>text1</li>
-    //         <li>text2</li>
-    //         <li>text3</li>
-    //     </ul>
-    //     <input />
-    //     <input /><input /><input /> */}
-    // </>
+//     let li = document.createElement('li');
+//     li.textContent = res;
+//     ul.appendChild(li)
+
+// return <>
+
+//     {/* <ul>
+//         <li>{arr[0]}</li>
+//         <li>{arr[1]}</li>
+//         <li>{arr[2]}</li>
+//         <li>{arr[3]}</li>
+//         <li>{arr[4]}</li>
+//     </ul>
+//     <div>
+//         <p>{str1}</p>
+//         <p>{str2}</p>
+//         <p></p>
+//     </div>
+//     <ul>
+//         <li>text1</li>
+//         <li>text2</li>
+//         <li>text3</li>
+//     </ul>
+//     <ul>
+//         <li>text1</li>
+//         <li>text2</li>
+//         <li>text3</li>
+//     </ul>
+//     <input />
+//     <input /><input /><input /> */}
+// </>
 // }
 // function App() {
 // 	const str = <div><p>text1</p><p>text2</p></div>;
-	
+
 // 	return <main>
 // 		{str}
 // 	</main>;
@@ -103,16 +102,17 @@ import Spinner from 'react-bootstrap/Spinner';
 // 	</table>;
 // }
 
-function App() {
-	function showMess() {
-		alert('hello');
-	}
-	
-	return <div>
-		<button onClick={showMess}>show</button>
-	</div>;
-}
+// function App() {
+//     function showMess() {
+//         alert('hello');
+//     }
 
+//     return <div>
+//         <button onClick={showMess}>show</button>
+//     </div>;
+// }
+
+                                      // LESSON_2
 
 
 
