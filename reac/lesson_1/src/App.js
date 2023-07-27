@@ -116,12 +116,43 @@ import ClickButton from './ClickButton';
 
 // LESSON_2
 
-function App() {
-    return <>
-        <ClickButton />
-    </>
-}
+// function App() {
+//     return <>
+    
+//         <ClickButton />
+//     </>
+// }
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// class Clock extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {date: new Date()};
+//   }
+//   componentDidMount() {
+//     this.timerID = setInterval(
+//       () => this.tick(),
+//       1000
+//     )
+//   }
+//   componentWillUnmount() {
+//     clearInterval(this.timerID)
+//   }
+//   tick() {
+//     this.setState({
+//       date: new Date()
+//     })
+//   }
 
+//   render() {
+//     return (
+//       <div>
+//         <h1>Here is the time</h1>
+//         <h2>The time is: {this.state.date.toLocaleTimeString()}</h2>
+//       </div>
+//     )
+//   }
+// }
+// root.render(<Clock/>)
 
 
 
