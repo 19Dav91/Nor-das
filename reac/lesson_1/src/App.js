@@ -1,7 +1,9 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button, Container, Tab, Tabs, Pagination } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/Spinner';
+import ClickButton from './ClickButton';
 // // alert('Ваше имя: ' + prompt('Ваше имя?'));
 // document.write(123);
 // document.write('<b>text</b>');
@@ -112,10 +114,13 @@ import Spinner from 'react-bootstrap/Spinner';
 //     </div>;
 // }
 
-                                      // LESSON_2
+// LESSON_2
 
-
-
+function App() {
+    return <>
+        <ClickButton />
+    </>
+}
 
 
 
