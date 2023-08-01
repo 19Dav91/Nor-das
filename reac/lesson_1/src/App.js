@@ -1,4 +1,5 @@
 import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button, Container, Tab, Tabs, Pagination } from 'react-bootstrap';
@@ -28,8 +29,18 @@ import ClickButton from './ClickButton';
 //         </>)
 // }
 
-// function App() {
-//     const arr = [1, 2, 3, 4, 5];
+// function App() // function App() {
+//     const arr = [1, 2, 3, 4, 5];vscode-icons
+//     arr.push(1)
+//     const res = arr.map(elem => elem)
+//     let ul = document.createElement('ul');
+//     document.body.appendChild(ul);
+
+//     let li = document.createElement('li');
+//     li.textContent = res;
+//     ul.appendChild(li)
+//{
+//     const arr = [1, 2, 3, 4, 5];vscode-icons
 //     arr.push(1)
 //     const res = arr.map(elem => elem)
 //     let ul = document.createElement('ul');
@@ -154,16 +165,28 @@ import ClickButton from './ClickButton';
 // }
 // root.render(<Clock/>)
 
+const prods = [
+	{name: 'product1', cost: 100},
+	{name: 'product2', cost: 200},
+	{name: 'product3', cost: 300},
+];
 
 
 
-
-
-
-
-
-
-
+function App() {
+	const rows = prods.map(function(item) {
+		return <tr key={item.id}>
+			<td>{item.name}</td>
+			<td>{item.cost}</td>
+		</tr>;
+	});
+	
+	return <table>
+		<tbody>
+			{rows}
+		</tbody>
+	</table>;
+}
 
 
 
