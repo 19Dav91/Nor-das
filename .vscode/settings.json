@@ -42,5 +42,6 @@
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "git.ignoreLimitWarning": true,
 
 }
