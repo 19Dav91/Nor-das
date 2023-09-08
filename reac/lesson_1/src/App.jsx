@@ -195,15 +195,24 @@ import ClickButton from './ClickButton';
 
 
 // export default App;
-export default function App() {
-	const isAdult = false;
-	let text;
-	if(isAdult) {
-		text = <p>Hameceq</p>
+// export default function App() {
+// 	const isAdult = false;
+// 	let text;
+// 	if(isAdult) {
+// 		text = <p>Hameceq</p>
 
-	}else{
-		text = <p>kmecanas nor kgas</p>
-	}
-	return text
+// 	}else{
+// 		text = <p>kmecanas nor kgas</p>
+// 	}
+// 	return text
 	
+// }
+
+
+function App() {
+	const age = 19;
+	
+	return <div>
+		{age < 18 ? 'mecaci' : 'bari gakust'}
+	</div>;
 }
