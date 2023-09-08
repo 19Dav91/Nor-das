@@ -165,33 +165,45 @@ import ClickButton from './ClickButton';
 // }
 // root.render(<Clock/>)
 
-const prods = [
-	{name: 'product1', cost: 100},
-	{name: 'product2', cost: 200},
-	{name: 'product3', cost: 300},
-];
+// const prods = [
+// 	{name: 'product1', cost: 100},
+// 	{name: 'product2', cost: 200},
+// 	{name: 'product3', cost: 300},
+// ];
 
 
 
-function App() {
-	const rows = prods.map(function(item) {
-		return <tr key={item.id}>
-			<td>{item.name}</td>
-			<td>{item.cost}</td>
-		</tr>;
-	});
+// function App() {
+// 	const rows = prods.map(function(item) {
+// 		return <tr key={item.id}>
+// 			<td>{item.name}</td>
+// 			<td>{item.cost}</td>
+// 		</tr>;
+// 	});
 	
-	return <table>
-		<tbody>
-			{rows}
-		</tbody>
-	</table>;
+// 	return <table>
+// 		<tbody>
+// 			{rows}
+// 		</tbody>
+// 	</table>;
+// }
+
+
+
+
+
+
+
+// export default App;
+export default function App() {
+	const isAdult = false;
+	let text;
+	if(isAdult) {
+		text = <p>Hameceq</p>
+
+	}else{
+		text = <p>kmecanas nor kgas</p>
+	}
+	return text
+	
 }
-
-
-
-
-
-
-
-export default App;
