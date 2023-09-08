@@ -209,10 +209,18 @@ import ClickButton from './ClickButton';
 // }
 
 
-function App() {
-	const age = 19;
+// function App() {
+// 	const age = 19;
+	
+// 	return <div>
+// 		{age < 18 ? 'mecaci' : 'bari gakust'}
+// 	</div>;
+// }
+
+export default function App() {
+	const isAuth = true;
 	
 	return <div>
-		{age < 18 ? 'mecaci' : 'bari gakust'}
+		{isAuth && <p>вы авторизованы</p>}
 	</div>;
 }
