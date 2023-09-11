@@ -181,15 +181,26 @@ const users = [
 //     </ul>
 // }
 
-export default function App(){
-    const res = users.map((item,index)=>{
-        return <li key={index}>
-            <span>{item.name}</span>
-            <span>{item.surn}</span>
-            <span>{item.age}</span>
-        </li>
-    })
-    return <ul>
-        {res}
-    </ul>
-}
+// export default function App(){
+//     const res = users.map((item,index)=>{
+//         return <li key={index}>
+//             <span>{item.name}</span>
+//             <span>{item.surn}</span>
+//             <span>{item.age}</span>
+//         </li>
+//     })
+//     return <ul>
+//         {res}
+//     </ul>
+// }
+
+// const square = function (x) {
+//     return x * x;
+// };
+
+// // Calling the anonymous function
+// const result = square(4);
+// console.log(result); // Output: 16
+
+const square = x=>x*x;
+console.log(square(9));
