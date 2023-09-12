@@ -205,23 +205,23 @@ const users = [
 // const square = x=>x*x;
 // console.log(square(9));
 
-const prods = [
-    { id: 1, name: 'product1', cost: 100 },
-    { id: 2, name: 'product2', cost: 200 },
-    { id: 3, name: 'product3', cost: 300 },
-];
+// const prods = [
+//     { id: 1, name: 'product1', cost: 100 },
+//     { id: 2, name: 'product2', cost: 200 },
+//     { id: 3, name: 'product3', cost: 300 },
+// ];
 
-export default function App(){
-    const res = prods.map(item => {
-        return <tr key={item.id}>
-            <td>
-            name:{item.name},cost:{item.cost}
-            </td>
-        </tr>
-    })
-    return <table>
-        <tbody>
-            {res}
-        </tbody>
-    </table>
-}
+// export default function App(){
+//     const res = prods.map(item => {
+//         return <tr key={item.id}>
+//             <td>
+//             name:{item.name},cost:{item.cost}
+//             </td>
+//         </tr>
+//     })
+//     return <table>
+//         <tbody>
+//             {res}
+//         </tbody>
+//     </table>
+// }
