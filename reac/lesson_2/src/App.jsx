@@ -162,11 +162,11 @@ import './App.css';
 // 	</div>;
 // }
 
-const users = [
-    { name: 'user1', surn: 'surn1', age: 30 },
-    { name: 'user2', surn: 'surn2', age: 31 },
-    { name: 'user3', surn: 'surn3', age: 32 },
-];
+// const users = [
+//     { name: 'user1', surn: 'surn1', age: 30 },
+//     { name: 'user2', surn: 'surn2', age: 31 },
+//     { name: 'user3', surn: 'surn3', age: 32 },
+// ];
 
 // export default function App(){
 //     const res = users.map(function(item,index){
@@ -227,3 +227,42 @@ const users = [
 // }
 
 // HOMEWORK
+
+
+// Приведение строк к верхнему регистру:
+// Создайте функцию, которая принимает массив строк и возвращает новый массив,
+// в котором все строки приведены к верхнему регистру с использованием функции map().
+
+// export default function App (){
+//     let arrStr = ['dav','karen','edo'];
+//     let res = arrStr.map(item=>item.toUpperCase())
+// return res
+// }
+
+// Получение длин строк:
+// Создайте функцию, которая принимает массив строк и возвращает новый массив,
+// содержащий длины каждой строки с использованием функции map().
+
+//տանյվել եմ
+
+// Удаление элементов с определенным значением:
+// Создайте функцию, которая принимает массив и значение, которое нужно удалить,
+// и возвращает новый массив без всех вхождений этого значения с использованием функции map().
+
+
+// export default function App() {
+//     let arrStr = ['Davit', 'Kar', 'Eduard', 'արևաճաչանչափայլատակություն',"ունիկալ","ուխտ"];
+//     let res = arrStr.map((item) => {
+//         let sum = 0
+//         let total = item.length
+//         for (let i = 0; i <= 55; i++) {
+//             if (item[i] === 'ո' && item[i + 1] === 'ւ') {
+//                 sum++;
+//                 total--
+//             }
+//         }
+//         return total
+//     })
+//     return res
+// }
+
