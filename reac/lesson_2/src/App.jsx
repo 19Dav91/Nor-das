@@ -266,3 +266,22 @@ import './App.css';
 //     return res
 // }
 
+let res;
+export default function App() {
+    let arrStr = ['Davit', 'Kar', 'Eduard', 'արևաճաչանչափայլատակություն', "ունիկալ", "ուխտ"];
+    res = arrStr.map((item) => {
+        let sum = 0
+        let total = item.length
+        for (let i = 0; i <= 55; i++) {
+            if (item[i] === 'ո' && item[i + 1] === 'ւ') {
+                sum++;
+                total--
+            }
+        }
+        return total
+    })
+    return res
+}
+console.log(res);
+
+
