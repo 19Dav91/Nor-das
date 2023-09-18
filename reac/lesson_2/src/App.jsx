@@ -266,22 +266,112 @@ import './App.css';
 //     return res
 // }
 
-let res;
-export default function App() {
-    let arrStr = ['Davit', 'Kar', 'Eduard', 'արևաճաչանչափայլատակություն', "ունիկալ", "ուխտ"];
-    res = arrStr.map((item) => {
-        let sum = 0
-        let total = item.length
-        for (let i = 0; i <= 55; i++) {
-            if (item[i] === 'ո' && item[i + 1] === 'ւ') {
-                sum++;
-                total--
-            }
-        }
-        return total
-    })
-    return res
-}
-console.log(res);
+// let res;
+// export default function App() {
+//     let arrStr = ['Davit', 'Kar', 'Eduard', 'արևաճաչանչափայլատակություն', "ունիկալ", "ուխտ"];
+//     res = arrStr.map((item) => {
+//         let sum = 0
+//         let total = item.length
+//         for (let i = 0; i <= 55; i++) {
+//             if (item[i] === 'ո' && item[i + 1] === 'ւ') {
+//                 sum++;
+//                 total--
+//             }
+//         }
+//         return total
+//     })
+//     return res
+// }
+// console.log(res);
+// export default function sumArray(arr) {
+//     if (arr.length === 0) {
+//         return 0;
+//     } else {
+//         return arr[0] + sumArray(arr.slice(1));
+//     }
+// }
+// sumArray([1,2])
+// export default function App() {
+// 	function show1() {
+// 		alert(1);
+// 	}
 
+// 	function show2() {
+// 		alert(2);
+// 	}
 
+// 	return <div>
+// 		<button onClick={show1}>act1</button>
+// 		<button onClick={show2}>act2</button>
+// 	</div>;
+// }
+// export default function App() {
+// 	return <div>
+// 		<button onClick={()=>alert(1)}>act1</button>
+// 		<button onClick={()=>alert(2)}>act2</button>
+// 		<button onClick={()=>alert(3)}>act3</button>
+// 	</div>;
+// }
+
+// export default function App() {
+//     let arr = [];
+//     for (let i = -8; i <= 9; i++) {
+//         i === 0 ? console.log(1) : arr.push(<p>{i}</p>)
+//     }
+//     return arr
+// }
+
+// export default function App() {
+//     const arr = ['a', 'b', 'c', 'd', 'e'];
+//     // let res = arr.map(arr => <p key={{arr}}>{arr}</p>);
+//     let res = arr.map((arg, index) => <p key={index}>{arg}</p>)
+//     return <ul>
+//         {res}
+//     </ul>
+// }
+
+// const users = [
+//     { name: 'user1', surn: 'surn1', age: 30 },
+//     { name: 'user2', surn: 'surn2', age: 31 },
+//     { name: 'user3', surn: 'surn3', age: 32 },
+// ];
+// export default function App() {
+//     let res = users.map((arg, index) => {
+//        return <p key={index}>
+//             <span>{arg.name}</span>
+//             <span>{arg.surn}</span>
+//             <span>{arg.age}</span>
+//         </p>
+//     });
+//     return <>
+//         {res}
+//     </>
+// }
+
+// const users = [
+//     { id: 1, name: 'user1', surn: 'surn1', age: 30 },
+//     { id: 2, name: 'user2', surn: 'surn2', age: 31 },
+//     { id: 3, name: 'user3', surn: 'surn3', age: 32 },
+// ];
+
+// export default function App() {
+//     let rows = users.map((arg, id) => {
+//         return <tr key={id}>
+//             <td>{arg.name}</td>
+//             <td>{arg.surn}</td>
+//             <td>{arg.age}</td>
+//         </tr>
+//     })
+//     return <table>
+//         <thead>
+//             <tr>
+//                 <td>Name</td>
+//                 <td>Surn</td>
+//                 <td>Age</td>
+//             </tr>
+//         </thead>
+//         <tbody>
+//             {rows}
+//         </tbody>
+//     </table>
+// }
