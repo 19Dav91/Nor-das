@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
 // export default function App() {
 
@@ -283,14 +284,28 @@ import './App.css';
 //     return res
 // }
 // console.log(res);
+
+
+// ?????????????????????????????????????
 // export default function sumArray(arr) {
+
 //     if (arr.length === 0) {
 //         return 0;
 //     } else {
-//         return arr[0] + sumArray(arr.slice(1));
+//         let arr1 = [...arr]
+// return  arr1[0] + sumArray(...arr1.slice(1)); // maqur js-ov ashxatum e reactum grum enq ayl kerp
+
 //     }
 // }
 // sumArray([1,2])
+
+
+
+
+
+
+
+
 // export default function App() {
 // 	function show1() {
 // 		alert(1);
@@ -316,7 +331,7 @@ import './App.css';
 // export default function App() {
 //     let arr = [];
 //     for (let i = -8; i <= 9; i++) {
-//         i === 0 ? console.log(1) : arr.push(<p>{i}</p>)
+//         i === 0 ? 1 : arr.push(<p key={i}>{i}</p>)
 //     }
 //     return arr
 // }
@@ -362,12 +377,12 @@ import './App.css';
 //             <td>{arg.age}</td>
 //         </tr>
 //     })
-//     return <table>
+//     return <table border={1}>
 //         <thead>
 //             <tr>
-//                 <td>Name</td>
-//                 <td>Surn</td>
-//                 <td>Age</td>
+//                 <th>Name</th>
+//                 <th>Age</th>
+//                 <th>Surn</th>
 //             </tr>
 //         </thead>
 //         <tbody>
@@ -375,3 +390,50 @@ import './App.css';
 //         </tbody>
 //     </table>
 // }
+//lesson 4 18.09.23
+
+// export default class App extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = { welcome: "Добро пожаловать на сайт!", count: 0 };
+//     }
+
+//     render() {
+
+//         // this.state.welcome = 'Barev' Animast kod. reakt@ chi @ndunum
+//         return <>
+//             <h1>{this.state.welcome}</h1>
+//             <h2>{this.state.count}</h2>
+//             {/* <button onClick={this.setState({welcome:'Barev'})}>OK</button> */}
+//         </>;
+//     }
+// }
+// export default class ClickButton extends React.Component {
+
+//     constructor(props) {
+//         super(props);
+//         this.state = { class: "off", label: "Off" };
+//         this.press = this.press.bind(this);
+//     }
+//     press() {
+//         let className = (this.state.class === "off") ? "on" : "off";
+//         let lableName = (this.state.label === 'Off') ? 'On' : 'Off';
+//         this.setState({ class: className, label: lableName });
+
+//     }
+//     render() {
+//         return <button onClick={this.press} className={this.state.class}>{this.state.label}</button>;
+//     }
+// }
+
+//metaniti staer@ porcel hertov inchqan karas
+
+//PROPS
+
+// export default function App(props) {
+//     return <div>
+//         <p>Имя: {props.name}</p>
+//         <p>Возраст: {props.age+5}</p>
+//     </div>;
+// }
+
