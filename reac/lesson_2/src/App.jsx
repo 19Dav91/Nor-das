@@ -433,7 +433,7 @@ import React from 'react';
 export default function App(props) {
     return <div>
         <p>Имя: {props.name}</p>
-        <p>Возраст: {props.age+5}</p>
+        <p>Возраст: {props.age + 5}</p>
     </div>;
 }
 
