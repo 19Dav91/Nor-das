@@ -430,10 +430,10 @@ import React from 'react';
 
 //PROPS
 
-// export default function App(props) {
-//     return <div>
-//         <p>Имя: {props.name}</p>
-//         <p>Возраст: {props.age+5}</p>
-//     </div>;
-// }
+export default function App(props) {
+    return <div>
+        <p>Имя: {props.name}</p>
+        <p>Возраст: {props.age+5}</p>
+    </div>;
+}
 
