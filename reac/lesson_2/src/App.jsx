@@ -415,7 +415,7 @@ import React from 'react';
 //         this.state = { class: "off", label: "Off" };
 //         this.press = this.press.bind(this);
 //     }
-//     press() {
+// //     press() {
 //         let className = (this.state.class === "off") ? "on" : "off";
 //         let lableName = (this.state.label === 'Off') ? 'On' : 'Off';
 //         this.setState({ class: className, label: lableName });
