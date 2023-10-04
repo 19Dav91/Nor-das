@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="form">
+        <ul class="tab-group">
+            <li><a href="register.html" style="border-radius: 15px!important;margin-right:8x;">Sign Up</a>
+            </li>
+            <li class="tab"><a href="vxod.html" style="border-radius: 15px!important;margin-left:8px;">Log In</a></li>
+        </ul>
+        <div id="signup">
+            <h1>Register</h1>
+            <form action="" id="registrationForm" method="post">
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <input type="text" id="username" placeholder="Имя пользователя" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" id="lastname" placeholder="Фамилия" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" id="middlename" placeholder="Отчество" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="field-wrap">
+                        <input type="text" id="country" placeholder="Страна" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" id="city" placeholder="Город" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="date" id="dob" placeholder="День рождения" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" id="log" placeholder="логин" required>
+                    </div>
+                    <div class="field-wrap" id="gend">
+                        <select class="field-wrap" id="gender" required>
+                            <option value="" disabled selected>Выберите пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                    </div>
+                    <div class="field-wrap" id="pass">
+                        <input type="password" id="password" placeholder="Пароль" required>
+                    </div>
+                </div>
+                <button type="submit" class="button button-block">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

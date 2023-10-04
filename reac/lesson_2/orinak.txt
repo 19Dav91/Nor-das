@@ -1,0 +1,85 @@
+
+It seems like you're looking for examples of JavaScript functions and how to use them. Here are some basic examples:
+
+Function Declaration:
+
+javascript
+Copy code
+// Function declaration
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+// Calling the function
+greet("John"); // Output: Hello, John!
+greet("Alice"); // Output: Hello, Alice!
+Function Expression:
+
+javascript
+Copy code
+// Function expression
+const add = function (a, b) {
+    return a + b;
+};
+
+// Calling the function
+const result = add(5, 3);
+console.log(result); // Output: 8
+Arrow Function:
+
+javascript
+Copy code
+// Arrow function
+const multiply = (x, y) => x * y;
+
+// Calling the function
+const product = multiply(4, 6);
+console.log(product); // Output: 24
+Function with Default Parameters:
+
+javascript
+Copy code
+function greet(name = "Guest") {
+    console.log(`Hello, ${name}!`);
+}
+
+greet(); // Output: Hello, Guest!
+greet("Alice"); // Output: Hello, Alice!
+Function Returning an Object:
+
+javascript
+Copy code
+function createPerson(name, age) {
+    return {
+        name: name,
+        age: age
+    };
+}
+
+const person = createPerson("John", 30);
+console.log(person); // Output: { name: 'John', age: 30 }
+Function as a Parameter:
+
+javascript
+Copy code
+function operate(a, b, operation) {
+    return operation(a, b);
+}
+
+const sum = operate(5, 3, (x, y) => x + y);
+const difference = operate(5, 3, (x, y) => x - y);
+
+console.log(sum); // Output: 8
+console.log(difference); // Output: 2
+Anonymous Function (No Name):
+
+javascript
+Copy code
+// Anonymous function assigned to a variable
+const square = function (x) {
+    return x * x;
+};
+
+// Calling the anonymous function
+const result = square(4);
+console.log(result); // Output: 16

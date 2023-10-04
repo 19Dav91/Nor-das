@@ -1,0 +1,45 @@
+#calendar {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#calendar h2 {
+    text-align: center;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar th,
+#calendar td {
+    padding: 10px;
+    text-align: center;
+}
+
+#calendar th {
+    background-color: #eee;
+}
+
+#calendar td {
+    cursor: pointer;
+}
+
+#calendar td:hover {
+    background-color: #f7f7f7;
+}
+
+#calendar .current-day {
+    background-color: #0cac2f;
+}
+
+#calendar .selected-day {
+    background-color: #ffcc80;
+}
+
+body {
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618837530_47-phonoteka_org-p-krasivii-fon-dlya-kalendarya-51.jpg);
+}
