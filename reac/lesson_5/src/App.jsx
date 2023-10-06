@@ -96,6 +96,7 @@ export function App() {
     return <div>
         <input value={value} onChange={sum}></input>
         <p>{value}</p>
+
         <p>{value.length}</p>
         <p>{wordCount}</p>
     </div>
