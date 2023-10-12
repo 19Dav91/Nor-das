@@ -12,7 +12,6 @@ import { useState } from 'react';
 
 // export default App;
 
-
 // 09.10.23 lesson_5 cod.mu 58
 
 // export default function App() {
@@ -128,7 +127,7 @@ export default function App() {
 	const [checked, setChecked] = useState(true);
 	
 	return <div>
-		<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
-		<p>состояние: {checked ? 'отмечен' : 'не отмечен'}</p>
+<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
+	  <p>состояние: {checked ? 'отмечен' : 'не отмечен'}</p>
 	</div>;
 }
