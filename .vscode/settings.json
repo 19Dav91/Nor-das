@@ -43,5 +43,8 @@
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "git.ignoreLimitWarning": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
 
 }

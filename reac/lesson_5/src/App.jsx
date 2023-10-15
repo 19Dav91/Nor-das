@@ -99,7 +99,7 @@ import { useState } from 'react';
 // export default function App() {
 //     const [value1, setValue1] = useState(null);
 //     const [result, setResult] = useState(null);
-    
+
 //     function sum(str) {
 //         let sum = 0;
 //         for (const elem of str) {
@@ -116,7 +116,7 @@ import { useState } from 'react';
 
 // export default function App() {
 //     const [checked, setChecked] = useState(true);
-	
+
 // 	return <div>
 // 		<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)}  />
 //         <p>состояние: {checked ? 'отмечен' : 'не отмечен'}</p>
@@ -125,9 +125,9 @@ import { useState } from 'react';
 
 export default function App() {
 	const [checked, setChecked] = useState(true);
-	
+
 	return <div>
-<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
-	  <p>состояние: {checked ? 'отмечен' : 'не отмечен'}</p>
+		<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
+		<p>состояние: {checked ? 'отмечен' : 'не отмечен'}</p>
 	</div>;
 }
