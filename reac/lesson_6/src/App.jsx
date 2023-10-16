@@ -160,15 +160,15 @@ import { useState } from 'react';
 
 // export default function App() {
 // 	const [notes, setNotes] = useState([1, 2, 3]);
-	function getSum(arr) {
-        let sum = 0;
+	// function getSum(arr) {
+    //     let sum = 0;
         
-        for (const elem of arr) {
-            sum += +elem;
-        }
+    //     for (const elem of arr) {
+    //         sum += +elem;
+    //     }
         
-        return sum;
-    }
+    //     return sum;
+    // }
 // 	return <div>
 // 		<input value={notes[0]} />
 // 		<input value={notes[1]} />
@@ -195,11 +195,11 @@ import { useState } from 'react';
 // 	</div>;
 // }
 
-const initObj = {
-	prop1: 'value1',
-	prop2: 'value2',
-	prop3: 'value3',
-}
+// const initObj = {
+// 	prop1: 'value1',
+// 	prop2: 'value2',
+// 	prop3: 'value3',
+// }
 // export default function App() {
 // 	const [obj, setObj] = useState(initObj);
 	
@@ -238,5 +238,3 @@ const initObj = {
 //     <p>{date.year}.{date.month}.{date.day}</p>
 //     </>
 // }
-
-
