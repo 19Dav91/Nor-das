@@ -220,21 +220,23 @@ const initObj = {
 // 71.1 Пусть в стейте хранится объект с датой:
 // Выведите в абзаце год, месяц и день из даты, хранящейся в стейте, а также день недели, соответствующий ей.
 
-const initDate = {
-	year:  2025,
-	month: 12,
-	day:   31,
-}
+// const initDate = {
+// 	year:  2025,
+// 	month: 12,
+// 	day:   31,
+// }
 
-export default function App() {
-    const [date, setDate] = useState(initDate);
-    function handleChange(key,event) {
-        setDate({...date,...{[key]:event.target.value}})
-    }
-    return <>
-    <input value={date.year} onChange={(event)=>handleChange('year',event)}/><br/><br/>
-    <input value={date.month} onChange={(event)=>handleChange('month',event)}/><br/><br/>
-    <input value={date.day} onChange={(event)=>handleChange('day',event)}/><br/><br/>
-    <p>{date.year}.{date.month}.{date.day}</p>
-    </>
-}
+// export default function App() {
+//     const [date, setDate] = useState(initDate);
+//     function handleChange(key,event) {
+//         setDate({...date,...{[key]:event.target.value}})
+//     }
+//     return <>
+//     <input value={date.year} onChange={(event)=>handleChange('year',event)}/><br/><br/>
+//     <input value={date.month} onChange={(event)=>handleChange('month',event)}/><br/><br/>
+//     <input value={date.day} onChange={(event)=>handleChange('day',event)}/><br/><br/>
+//     <p>{date.year}.{date.month}.{date.day}</p>
+//     </>
+// }
+
+
