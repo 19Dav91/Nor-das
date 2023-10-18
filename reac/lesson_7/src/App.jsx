@@ -100,3 +100,71 @@ import { useState } from 'react';
 
 // 74.3
 
+// export default function App() {
+//     const [li, setLi] = useState([1, 2, 3, 4, 5]);
+//     function del(elem) {
+//         let copy = Object.assign([], li);
+//         copy.splice(elem, 1)
+//         setLi(copy);
+//     }
+//     const res = li.map((li, elem) => {
+//         return <li key={elem}>
+//             {li}
+//             &nbsp&nbsp<button onClick={() => del()}>delete</button>
+//         </li>
+//     });
+//     return <>
+//         <ul>
+
+//             {res}
+//         </ul>
+//     </>
+// };
+
+// 74.3
+
+// export default function App() {
+//     // const [inp, setInp] = useState('');
+//     const [li, setLi] = useState([1, 2, 3, 4, 5]);
+//     function inp(elem) {
+//         let copy = Object.assign([], li);
+//         copy[elem] += copy[elem]
+//         setLi(copy);
+//     }
+//     const res = li.map((li, elem) => {
+//         return <li key={elem}>
+//             {li}
+//         </li>
+//     });
+//     return <>
+//         <ul>
+//             {res}
+//         </ul>
+//         <input onClick={() => inp()} />
+//     </>
+// };
+
+
+export default function App() {
+  const [li, setLi] = useState([1, 2, 3, 4, 5]);
+  const [inputValue, setInputValue] = useState('');
+
+  function handleLiClick(text) {
+    setInputValue(text);
+  }
+
+  const res = li.map((text, index) => {
+    return (
+      <li key={index} onClick={() => handleLiClick(text)}>
+        {text}
+      </li>
+    );
+  });
+
+  return (
+    <div>
+      <ul>{res}</ul>
+      <input value={inputValue} />
+    </div>
+  );
+}
