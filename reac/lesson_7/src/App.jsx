@@ -73,3 +73,30 @@ import { useState } from 'react';
 //         </ul>
 //     </>
 // };
+
+
+
+// 74.2
+
+// export default function App() {
+//     const [li, setLi] = useState([1, 2, 3, 4, 5]);
+//     function del(elem) {
+//         let copy = Object.assign([], li);
+//         copy.splice(elem, 1)
+//         setLi(copy);
+//     }
+//     const res = li.map((li, elem) => {
+//         return <li key={elem} onClick={() => del(elem)}>
+//             {li}
+//         </li>
+//     });
+//     return <>
+//         <ul>
+//             {res}
+//         </ul>
+//     </>
+// };
+
+
+// 74.3
+
