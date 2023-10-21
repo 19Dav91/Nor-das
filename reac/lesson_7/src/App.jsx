@@ -145,26 +145,51 @@ import { useState } from 'react';
 // };
 
 
+// export default function App() {
+//   const [li, setLi] = useState([1, 2, 3, 4, 5]);
+//   const [inputValue, setInputValue] = useState('');
+
+//   function handleLiClick(text) {
+//     setInputValue(text);
+//   }
+
+//   const res = li.map((text, index) => {
+//     return (
+//       <li key={index} onClick={() => handleLiClick(text)}>
+//         {text}
+//       </li>
+//     );
+//   });
+
+//   return (
+//     <div>
+//       <ul>{res}</ul>
+//       <input value={inputValue} />
+//     </div>
+//   );
+// }
+
 export default function App() {
-  const [li, setLi] = useState([1, 2, 3, 4, 5]);
-  const [inputValue, setInputValue] = useState('');
+    const [li, setLi] = useState([1, 2, 3, 4, 5]);
+    function revers() {
+        const res = [...li].reverse()
+        console.log(li);
+        return res
+    };
+    function handleLiClick(text) {
+        setLi(text);
+    }
+    const rev = li.map((text, index) => {
+        return <>
+            <li key={index} onClick={() => handleLiClick(text)}>
+                {text}
+            </li>
+        </>
+    })
+    return <>
+        <ul>
+            {rev} </ul><br /><br /><br />
+        <button onClick={() => setLi(revers())}>ok</button>
+    </>
+};
 
-  function handleLiClick(text) {
-    setInputValue(text);
-  }
-
-  const res = li.map((text, index) => {
-    return (
-      <li key={index} onClick={() => handleLiClick(text)}>
-        {text}
-      </li>
-    );
-  });
-
-  return (
-    <div>
-      <ul>{res}</ul>
-      <input value={inputValue} />
-    </div>
-  );
-}
