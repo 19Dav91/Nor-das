@@ -36,57 +36,66 @@ import { useState } from 'react';
 
 
 // export default function App() {
-// 	const [notes, setNotes] = useState([1, 2, 3, 4, 5]);
-// 	function doSmth(index) {
-// 		let copy = Object.assign([], notes);
-// 		copy[index] = copy[index]*copy[index]; 
-// 		setNotes(copy);
-// 	}
-// 	const result = notes.map((note, index) => {
-// 		return <li key={index} onClick={() => doSmth(index)}>
-// 			{note}
-// 		</li>;
-// 	});
+//     const [notes, setNotes] = useState([1, 2, 3, 4, 5]);
+//     function doSmth(index) {
+//         // let copy = Object.assign([], notes);
+//         let copy = [...notes]
+//         copy[index] = copy[index]*copy[index]; 
+//         setNotes(copy);
+//     }
+//     const result = notes.map((note, index) => {
+//         return <li key={index} onClick={() => doSmth(index)}>
+//             {note}
+//         </li>;
+//     });
 
-// 	return <div>
-// 		<ul>
-// 			{result}
-// 		</ul>
-// 	</div>;
+//     return <div>
+//         <ul>
+//             {result}
+//         </ul>
+//     </div>;
 // }
 
 // export default function App() {
-//     const [value, setValue] = useState([1, 2, 3, 4, 5]);
-//     function kvadrad(i) {
-//         let copy = Object.assign([], value);
-//         copy[i] = copy[i] * copy[i];
-//         setValue(copy);
-//     }
-//     const res = value.map((value, i) => {
-//         return <li key={i} onClick={() => kvadrad(i)}>
-//             {value}
-//         </li>
-//     });
-//     return <>
-//         <ul>
-//             {res}
-//         </ul>
-//     </>
-// };
+//     const [notes, setNotes] = useState([1, 2, 3, 4, 5]);
 
+//     function doSmth(index) {
+//         // Create a copy of the 'notes' array
+//         const copy = [...notes];
+
+//         // Square the number at the specified index
+//         copy[index] = copy[index] * copy[index];
+
+//         // Update the 'notes' state with the modified copy
+//         setNotes(copy);
+//     }
+
+//     const result = notes.map((note, index) => (
+//         <li key={index} onClick={() => doSmth(index)}>
+//             {note}
+//         </li>
+//     ));
+
+//     return (
+//         <div>
+//             <ul>{result}</ul>
+//         </div>
+//     );
+// }
 
 
 // 74.2
 
 // export default function App() {
 //     const [li, setLi] = useState([1, 2, 3, 4, 5]);
-//     function del(elem) {
-//         let copy = Object.assign([], li);
-//         copy.splice(elem, 1)
+//     function del(index) {
+//         // let copy = Object.assign([], li);
+//         let copy = [...li.slice(0, index), ...li.slice(index + 1)]
+//         // copy.splice(index, 1)
 //         setLi(copy);
 //     }
-//     const res = li.map((li, elem) => {
-//         return <li key={elem} onClick={() => del(elem)}>
+//     const res = li.map((li, index) => {
+//         return <li key={index} onClick={() => del(index)}>
 //             {li}
 //         </li>
 //     });
@@ -124,7 +133,7 @@ import { useState } from 'react';
 // 74.3
 
 // export default function App() {
-//     // const [inp, setInp] = useState('');
+//     const [inp, setInp] = useState('');
 //     const [li, setLi] = useState([1, 2, 3, 4, 5]);
 //     function inp(elem) {
 //         let copy = Object.assign([], li);
@@ -140,11 +149,11 @@ import { useState } from 'react';
 //         <ul>
 //             {res}
 //         </ul>
-//         <input onClick={() => inp()} />
+//         <input value={inp} onChange={} onClick={() => inp()} />
 //     </>
 // };
 
-
+// ??????????????
 // export default function App() {
 //   const [li, setLi] = useState([1, 2, 3, 4, 5]);
 //   const [inputValue, setInputValue] = useState('');
@@ -169,27 +178,27 @@ import { useState } from 'react';
 //   );
 // }
 
-export default function App() {
-    const [li, setLi] = useState([1, 2, 3, 4, 5]);
-    function revers() {
-        const res = [...li].reverse()
-        console.log(li);
-        return res
-    };
-    function handleLiClick(text) {
-        setLi(text);
-    }
-    const rev = li.map((text, index) => {
-        return <>
-            <li key={index} onClick={() => handleLiClick(text)}>
-                {text}
-            </li>
-        </>
-    })
-    return <>
-        <ul>
-            {rev} </ul><br /><br /><br />
-        <button onClick={() => setLi(revers())}>ok</button>
-    </>
-};
+// export default function App() {
+//     const [li, setLi] = useState([1, 2, 3, 4, 5]);
+//     function revers() {
+//         const res = [...li].reverse()
+//         console.log(li);
+//         return res
+//     };
+//     function handleLiClick(text) {
+//         setLi(text);
+//     }
+//     const rev = li.map((text, index) => {
+//         return <>
+//             <li key={index} onClick={() => handleLiClick(text)}>
+//                 {text}
+//             </li>
+//         </>
+//     })
+//     return <>
+//         <ul>
+//             {rev} </ul><br /><br /><br />
+//         <button onClick={() => setLi(revers())}>ok</button>
+//     </>
+// };
 
