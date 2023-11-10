@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 // const initNotes = [
@@ -143,5 +143,30 @@ import { useState } from 'react';
 // }
 
 
+// lesson 9
 
-// 77.1 ???????????
+// import React from 'react'
+// import Product from './components/Product';
+
+// const prods = [
+//     { name: 'product1', cost: 100 },
+//     { name: 'product2', cost: 200 },
+//     { name: 'product3', cost: 300 },
+// ];
+// export default function App() {
+//     const result = prods.map(prod => {
+//         return <Product key={prod.name} name={prod.name} cost={prod.cost} />;
+//     })
+//     return <>
+//         {result}
+//     </>
+// }
+
+import React from 'react'
+import Products from './components/Products';
+
+export default function App() {
+    return <>
+        <Products />
+    </>
+}
