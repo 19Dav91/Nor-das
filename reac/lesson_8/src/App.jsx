@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+
 // import { useState } from 'react';
 
 
@@ -163,10 +164,94 @@ import './App.css';
 // }
 
 import React from 'react'
-import Products from './components/Products';
+// import Products from './components/Products';
 
-export default function App() {
-    return <>
-        <Products />
-    </>
-}
+// export default function App() {
+//     return <>
+//         <Products />
+//     </>
+// }
+// export default function App() {
+// 	const class1 = {
+// 		width: '200px',
+// 		border: '2px solid brown',
+// 		padding: '10px',
+// 		textAlign: 'center',
+//         margin: '0 auto'
+// 	};
+
+// 	const class2 = {
+// 		color: 'red',
+// 		fontWeight: 'bold',
+// 	};
+
+// 	const class3 = {
+// 		fontStyle: 'italic',
+// 		color: 'green',
+// 	};
+
+// 	const class4 = {
+// 		backgroundColor: 'orange',
+// 		fontWeight: 'bold',
+// 		color: 'blue',
+// 	};
+
+// 	return (
+// 		<div style={class1}>
+// 			<p style={class2}>text</p>
+// 			<p style={class3}>text</p>
+// 			<p style={class4}>text</p>
+// 		</div>
+// 	);
+// } 
+
+// import styled from "styled-components";
+
+// const Container = styled.div`
+// 	width: 200px;
+// 	border: 2px solid brown;
+// 	padding: 10px;
+// 	text-align: center;
+//     margin: 0 auto
+// `;
+
+// const Text1 = styled.p`
+// 	color: orangered;
+// 	font-weight: bold;
+// `;
+
+// const Text2 = styled.p`
+// 	font-style: italic;
+// 	color: brown;
+// `;
+
+// const Text3 = styled.p`
+// 	background-color: orange;
+// 	font-weight: bold;
+// 	color: white;
+// `;
+
+// export default function App() {
+// 	return <>
+// 		<Container>
+// 			<Text1>text</Text1>
+// 			<Text2>text</Text2>
+// 			<Text3>text</Text3>
+// 		</Container>
+// 	</>;
+// }
+
+// import styles from "./Buttons.module.css"; 
+
+// const Buttons = () => (
+// 	<>
+// 		<button className={styles.btn1}>btn1</button>
+// 		<button className={styles.btn2}>btn2</button>
+// 		<button className={styles.btn3}>btn3</button>
+// 	</>
+// );
+// export default function App() {
+//     return <>
+//     {Buttons()}
+//     </>
+// };

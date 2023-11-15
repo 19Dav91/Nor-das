@@ -13,26 +13,28 @@ import ProductField from './ProductField';
 // }
 
 
-export default function Product({ id, name, cost, isEdit, toggleMode, editProd }) {
-	return <>
-		name: <ProductField
-			id={id}
-			text={name}
-			type="name"
-			isEdit={isEdit}
-			editProd={editProd}
-		/>,
+// export default function Product({ id, name, cost, isEdit, toggleMode, editProd }) {
+// 	return <>
+// 		name: <ProductField
+// 			id={id}
+// 			text={name}
+// 			type="name"
+// 			isEdit={isEdit}
+// 			editProd={editProd}
+// 		/>,
 		
-		cost: <ProductField
-			id={id}
-			text={cost}
-			type="cost"
-			isEdit={isEdit}
-			editProd={editProd}
-		/>
+// 		cost: <ProductField
+// 			id={id}
+// 			text={cost}
+// 			type="cost"
+// 			isEdit={isEdit}
+// 			editProd={editProd}
+// 		/>
 		
-		<button onClick={() => toggleMode(id)}>
-			{isEdit ? 'save': 'edit'}
-		</button>
-	</>;
-}
+// 		<button onClick={() => toggleMode(id)}>
+// 			{isEdit ? 'save': 'edit'}
+// 		</button>
+// 	</>;
+// }
+
+

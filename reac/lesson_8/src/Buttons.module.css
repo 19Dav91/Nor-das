@@ -1,0 +1,17 @@
+.btn1 {
+	background-color: orange;
+	border: 2px solid brown;
+	color: white;
+}
+
+.btn2 {
+	background-color: red;
+	border: 2px solid green;
+	color: yellow;
+}
+
+.btn3 {
+	background-color: brown;
+	border: 2px solid yellowgreen;
+	color: orange;
+}

@@ -14,8 +14,12 @@
     "react-dom": "^18.2.0",
     "server": "^1.0.38",
     "service": "^0.1.4",
+    "styled-components": "^6.1.1",
     "uuid": "^9.0.0",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.18.0"
   }
 }
