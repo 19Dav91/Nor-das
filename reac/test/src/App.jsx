@@ -52,7 +52,8 @@ export default function App() {
             setstatus={setstatus}
             />
             <TodoList
-            setfiltertodo={setfiltertodo}
+            filtertodo={filtertodo}
+            settodos={settodos}
             todos={todos}/>
         </div>
     )
