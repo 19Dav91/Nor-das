@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-
+import Form from './components/Form.js'
+import TodoList from './components/TodoList.js';
 export default function App() {
     const [input, setinput] = useState('');
     const [todos, settodos] = useState([]);
@@ -41,32 +42,18 @@ export default function App() {
     };
     return (
         <div className='App'>
-            <header className='App-header'>
-                <h1>todos</h1>
+            <header>
+                <h1>Todo list</h1>  
             </header>
-            <div className='App-body'>
-                <div className='App-input'>
-                    <input
-                        type='text'
-                        value={input}
-                        onChange={(e) => setinput(e.target.value)}
-                    />
-                    <button onClick={() => addTodo(input)}>Add Todo</button>
-                </div>
-                <div className='App-todos'>
-                    {todos.map((todo, index) => (
-                        <div key={index} className='App-todo'>
-                            <input
-                                type='checkbox'
-                                checked={todo.completed}
-                                onChange={() => completedTodo(todo.id)}
-                            />
-                            <span>{todo.text}</span>
-                            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <Form inputText={input}
+            todos={todos}
+            settodos={settodos}
+            setinput={setinput}
+            setstatus={setstatus}
+            />
+            <TodoList
+            setfiltertodo={setfiltertodo}
+            todos={todos}/>
         </div>
     )
 }
