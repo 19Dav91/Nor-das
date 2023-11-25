@@ -38,7 +38,7 @@ form button {
     transition: all 0.3s ease;
 }
 button:hover{
-    background: #ff6f47 !important;
+    background: #47ff59 !important;
     color: white !important;
 }
 
@@ -57,14 +57,11 @@ form button:hover {
     min-width: 30%;
     list-style: none;
 }
-button {
-    background: white;
-    font-size: 1.5rem;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 1s ease;
+button .button{
+    font-size: 44px;
+}
+.res {
+    font-size: 15px;
 }
 .todo {
     background: white;
@@ -72,6 +69,7 @@ button {
     color: black;
     display: flex;
     padding: 5px;
+    border: none;
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
@@ -93,7 +91,7 @@ button {
 
 .trash-btn,
 .complete-btn {
-    background: #ff6f47;
+    background: #d4360b;
     color: white;
     border: none;
     padding: 1rem;
@@ -124,7 +122,7 @@ button {
     opacity: 0.5;
 }
 
-/*CUSTOM SELECTOR */
+CUSTOM SELECTOR
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -139,6 +137,7 @@ select {
 /* Custom Select */
 .select {
     margin: 1rem;
+    padding: 12px;
     position: relative;
     overflow: hidden;
 }
@@ -154,9 +153,9 @@ select {
 .select::after {
     content: "\25BC";
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
+    top: 27px;
+    right: 15px;
+    padding: 13px;
     background: #ff6f47;
     cursor: pointer;
     pointer-events: none;

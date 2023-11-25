@@ -1,9 +1,10 @@
+import { ArrowLeft } from "@rsuite/icons"
 
 const class1 = {
     backgroundColor: 'white',
     listStyle: 'none',
     textAlign: 'center',
-    padding: '10px',
+    padding: '1px',
     margin: '10px auto',
     border: '1px solid #ccc',
     borderRadius: '5px',
@@ -15,6 +16,7 @@ const class2 = {
     backgroundColor: 'greenyellow',
     overflow: 'hidden',
     color: 'black',
+    marginLeft: '5px',
     listStyle: 'none',
     textAlign: 'center',
     borderRadius: '5px',

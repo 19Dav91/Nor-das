@@ -1,43 +1,47 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import { styles } from "./styles";
-import { IconButton } from "rsuite"; 
-import { Admin, Menu, Reload, Resize, Search,Plus,Completed } from '@rsuite/icons'; 
 // Import the default CSS 
-import "rsuite/dist/rsuite.min.css"; 
-
+import { Icon } from '@iconify/react';
+import form from './components/form'
 function App() {
     const [input, setinput] = useState('');
     const [notes, setNotes] = useState([]);
     const [status, setstatus] = useState('All');
-    let subHendler = (e) => {
-        e.preventDefault();
+    // let subHendler = (e) => {
+    //     e.preventDefault();
 
-    };
-    function addNote() {
+    // };
+    // function addNote() {
 
-        if (input !== '') {
-            setNotes([...notes, input]);
-            setinput('');
-        }
-    }
+    //     if (input !== '') {
+    //         setNotes([...notes, input]);
+    //         setinput('');
+    //     }
+    // }
 
-    //     useEffect(()=>{
-
-    //     return ()=>{ /* cleanup code */ }
-    //          },[])
-    const res = notes.map((note) => {
-        return <>
-            <form >
-                <div style={styles.class1}>
-                    {note}
-                </div>
-                <button style={styles.class2} onClick={subHendler}>
-                    <i className="fas fa-plus-square"></i>
-                </button>
-            </form>
-        </>
-    });
+    // useEffect(() => {
+    //     del()
+    //     return () => { /* cleanup code */ }
+    // }, [])
+    // function del() {
+    //     console.log(15);
+    // }
+    // const res = notes.map((note) => {
+    //     return <>
+    //         <div className='todo-container' style={styles.class1} >
+    //             {note}
+    //             <div>
+    //                 <button style={styles.class2} onClick={subHendler}>
+    //                     <Icon className='todo-item button btn ' icon="fluent-mdl2:completed-solid" />
+    //                 </button>
+    //                 <button onClic={del()} style={styles.class2} onClick={subHendler}>
+    //                     <Icon className='todo-item button btn' icon="material-symbols:delete-outline" />
+    //                 </button>
+    //             </div>
+    //         </div>
+    //     </>
+    // });
 
     return <>
         <div className='App'>
@@ -46,16 +50,21 @@ function App() {
             </header>
             <div className='todo-container'>
                 <input
-                    className='input todo'
+                    className='input res todo'
                     type='text'
                     value={input}
                     onChange={(e) => setinput(e.target.value)} />
-                <button className='button' onClick={addNote} >
-                    <IconButton icon={<Plus />} color="cyan" 
-                appearance="primary"  /> 
-                <IconButton icon={<Completed />} color="cyan" 
-                appearance="primary"  /> 
+                <button className='todo-item button ' onClick={addNote} >
+                    <Icon className='todo-item button btn' icon="ph:plus-fill" />
                 </button>
+                <div className="select">
+                    <select className='select input ' name="todos" >
+                        <option value='All'>All</option>
+                        <option value='Completed'>Completed</option>
+                        <option value='Uncompleted'>Uncompleted</option>
+                    </select>
+                </div>
+
             </div>
         </div>
         <p
