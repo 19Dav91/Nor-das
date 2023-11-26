@@ -1,4 +1,3 @@
-import { ArrowLeft } from "@rsuite/icons"
 
 const class1 = {
     backgroundColor: 'white',
@@ -36,8 +35,18 @@ const class3 = {
     width: '50%',
     justifyContent: 'center',
 };
+const class4 = {
+    color: 'black',
+    backgroundColor: 'greenyellow',
+    listStyle: 'none',
+    textAlign: 'center',
+    cursor: 'pointer',
+    border: 'none',
+
+};
 export const styles = {
     class1: class1,
     class2: class2,
     class3: class3,
+    class4: class4,
 };
