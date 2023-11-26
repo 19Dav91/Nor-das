@@ -21,6 +21,12 @@ function App() {
             setInput('');
         }
     };
+    
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            addNote();
+        }
+    };
 
     const deleteNote = (index) => {
         const updatedNotes = [...notes];
@@ -66,6 +72,7 @@ function App() {
                     type='text'
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onKeyPress={handleKeyPress}
                 />
                 <button style={styles.class4} className='todo-item button' onClick={addNote}>
                 <Icon className='button' icon="ph:plus-fill" />
