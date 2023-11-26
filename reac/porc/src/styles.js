@@ -5,10 +5,11 @@ const class1 = {
     textAlign: 'center',
     padding: '1px',
     margin: '10px auto',
-    border: '1px solid #ccc',
+    border: '3px solid greenyellow',
     borderRadius: '5px',
     cursor: 'pointer',
     width: '50%',
+    fontSize: '22px',
     justifyContent: 'space-between',
 }
 const class2 = {
