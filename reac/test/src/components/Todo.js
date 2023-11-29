@@ -1,29 +1,43 @@
-import React from "react";
-const Todo = ({ text, todos, settodos, todo }) => {
-    const deleteHeader = () => {
-        settodos(todos.filter((el) => el.id !== todo.id));
+import React from 'react';
+import '../App.css';
+import { styles } from "../styles";
+import { Icon } from '@iconify/react';
+
+const Todo = ({ status, notes, setnotes, setstatus }) => {
+
+    const deleteNote = (index) => {
+        const newNotes = [...notes];
+        newNotes.splice(index, 1);
+        setnotes(newNotes);
     };
-    const completeHeader = () => {
-        settodos(todos.map(item => {
-            if (item.id === todo.id) {
-                return {
-                    ...item,
-                    completed: !item.completed
-                }
-            }
-            return item;
-        }))
-    }
-    return (
-        <div className="todo">
-            <li className={`todo-item ${todo.completed?'completed':''}`}>{text}</li>    
-            <button onClick={completeHeader} className="complete-btn">
-                <i className="fas fa-check"></i>
-            </button>
-            <button onClick={deleteHeader} className="trash-btn">
-                <i className="fa fa-trash"></i>
-            </button>
+    const toggleCompletion = (index) => {
+        const newNotes = [...notes];
+        newNotes[index].completed = !newNotes[index].completed;
+        newNotes[index].backgroundColor = newNotes[index].completed ? 'green' : 'red';
+        setnotes(newNotes);
+    };
+    const filterNotes = notes.filter((note) => {
+        if (status === 'All') return true;
+        if (status === 'Completed') return note.completed;
+        if (status === 'Uncompleted') return !note.completed;
+        return true;
+    });
+    const res = filterNotes.map((note, index) => (
+        <div className='todo-container bg' style={{ ...styles.class1, backgroundColor: note.backgroundColor }} key={index}>
+            <span className={note.completed ? 'completed' : ''}>{note.text}</span>
+            <div>
+                <button style={styles.class2} onClick={() => toggleCompletion(index)}>
+                    <Icon className='todo-item button btn' icon="fluent-mdl2:completed-solid" />
+                </button>
+                <button style={styles.class2} onClick={() => deleteNote(index)}>
+                    <Icon className='todo-item button btn' icon="material-symbols:delete-outline" />
+                </button>
+            </div>
         </div>
-    )
+    ));
+    return <>
+        
+        <div className="todo-list">{res}</div>
+    </>
 };
 export default Todo;

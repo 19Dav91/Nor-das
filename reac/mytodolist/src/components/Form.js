@@ -17,9 +17,9 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
         setStatus(e.target.value);
 
     }
-  
+
     return (
-        <form> 
+        <form>
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
             <button onClick={submitTodoHandler} className="todo-button" type="submit">
                 <i className="fas fa-plus-square"></i>
@@ -35,4 +35,3 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
     );
 }
 export default Form;
- 

@@ -2,7 +2,6 @@ import React from "react";
 const Todo = ({ text, todos, setTodos, todo }) => {
     //Events
     const deleteHandler = () => {
-
         setTodos(todos.filter((el) => el.id !== todo.id));
     };
     const completeHandler = () => {
@@ -12,7 +11,6 @@ const Todo = ({ text, todos, setTodos, todo }) => {
                 return {
                     ...item, completed: !item.completed,
                 }
-
             }
             return item;
         })
