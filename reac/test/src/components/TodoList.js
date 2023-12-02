@@ -3,22 +3,18 @@ import '../App.css';
 // import { styles } from "../styles";
 // import { Icon } from '@iconify/react';
 import Todo from './Todo'
-const TodoList = ({ notes, setnotes,setstatus, filterNotes }) => {
-    return (
-        <div className="todo-container">
-            <div>
-            <select className='select input' name="todos" onChange={(e) => setstatus(e.target.value)}>
-                <option value='All'>All</option>
-                <option value='Completed'>Completed</option>
-                <option value='Uncompleted'>Uncompleted</option>
-            </select>
+const TodoList = ({ notes, setnotes, setstatus, status }) => {
+    return <>
+        <div >
+
+            <Todo setnotes={setnotes}
+                notes={notes}
+                status={status}
+            />
         </div>
-            <div className="todo-list">
-                <Todo setnotes={setnotes}
-                    notes={notes}
-                />
-            </div>
+        <div className="todo-list">
+
         </div>
-    );
+    </>;
 };
 export default TodoList;

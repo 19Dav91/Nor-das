@@ -3,7 +3,7 @@ import '../App.css';
 import { styles } from "../styles";
 import { Icon } from '@iconify/react';
 
-const Todo = ({ status, notes, setnotes, setstatus }) => {
+const Todo = ({ status, notes, setnotes }) => {
 
     const deleteNote = (index) => {
         const newNotes = [...notes];
@@ -21,10 +21,12 @@ const Todo = ({ status, notes, setnotes, setstatus }) => {
         if (status === 'Completed') return note.completed;
         if (status === 'Uncompleted') return !note.completed;
         return true;
-    });
+    }); 
     const res = filterNotes.map((note, index) => (
         <div className='todo-container bg' style={{ ...styles.class1, backgroundColor: note.backgroundColor }} key={index}>
-            <span className={note.completed ? 'completed' : ''}>{note.text}</span>
+            <div >
+                <span className={note.completed ? 'completed' : ''}>{note.text}</span>
+            </div>
             <div>
                 <button style={styles.class2} onClick={() => toggleCompletion(index)}>
                     <Icon className='todo-item button btn' icon="fluent-mdl2:completed-solid" />
@@ -34,9 +36,9 @@ const Todo = ({ status, notes, setnotes, setstatus }) => {
                 </button>
             </div>
         </div>
+
     ));
     return <>
-        
         <div className="todo-list">{res}</div>
     </>
 };
