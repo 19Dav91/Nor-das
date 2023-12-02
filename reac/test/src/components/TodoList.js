@@ -3,7 +3,7 @@ import '../App.css';
 // import { styles } from "../styles";
 // import { Icon } from '@iconify/react';
 import Todo from './Todo'
-const TodoList = ({ notes, setnotes,setstatus filterNotes }) => {
+const TodoList = ({ notes, setnotes,setstatus, filterNotes }) => {
     return (
         <div className="todo-container">
             <div>
