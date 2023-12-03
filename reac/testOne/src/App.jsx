@@ -1,34 +1,37 @@
-import './App.css';
 import React, { useEffect, useState } from 'react';
-import Form from './components/Form'
-// import { Icon } from '@iconify/react';
-import { styles } from "./styles";
-import Todo from './components/Todo'
-
+import './App.css';
+import Form from './components/Form';
+import TodoList from './components/TodoList';
 export default function App() {
-    const [inputtext, setinputtext] = useState('');
-    const [todos, settodos] = useState(() => {
-        const savedtodos = localStorage.getItem('todos');
-        return savedtodos ? JSON.parse(savedtodos) : [];
+
+    const [inputText, setinputText] = useState('');
+
+    const [notes, setnotes] = useState(() => {
+        const savednotes = localStorage.getItem('notes');
+        return savednotes ? JSON.parse(savednotes) : [];
     });
+
     const [status, setstatus] = useState('All');
     useEffect(() => {
-        localStorage.setItem('todos', JSON.stringify(todos));
-    }, [todos, status]);
+        localStorage.setItem('notes', JSON.stringify(notes));
+    }, [notes]);
+    // const [filteredTodos, setFilteredTodos] = useState([]);
+
     return <>
         <div className='App'>
             <header>
                 <h1>Todo List</h1>
             </header>
             <Form
-                inputtext={inputtext}
-                todos={todos}
-                settodos={settodos}
-                setinputtext={setinputtext}
+                inputText={inputText}
+                setinputText={setinputText}
+                notes={notes}
+                setnotes={setnotes}
             />
-            <Todo
-                todos={todos}
-                settodos={settodos}
+            <TodoList
+                notes={notes}
+                setnotes={setnotes}
+                status={status}
                 setstatus={setstatus}
             />
         </div>

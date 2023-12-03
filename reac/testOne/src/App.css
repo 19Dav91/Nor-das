@@ -15,19 +15,19 @@ header {
 
 header,
 form {
-  min-height: 20vh;
+  /* min-height: 20vh; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 form input,
-form button {
+form button,.btn {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: rgb(255, 255, 255);
 }
-form button {
+form button, .btn {
   color: #ff6f47;
   background: #f7fffe;
   cursor: pointer;
@@ -51,14 +51,15 @@ form button:hover {
 }
 
 .todo {
-  margin: 0.5rem;
+  margin: 0.5rem auto;
   background: white;
   font-size: 1.5rem;
   color: black;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center ;
   transition: all 1s ease;
+  text-align: center;
 }
 .filter-todo {
   padding: 1rem;

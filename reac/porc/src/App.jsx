@@ -5,16 +5,7 @@ import { styles } from "./styles";
 
 export default function App() {
     const [inputText, setInputText] = useState('');
-    const [notes, setNotes] = useState(() => {
-        const savedNotes = localStorage.getItem('notes');
-        return savedNotes ? JSON.parse(savedNotes) : [];
-    });
-    const [status, setStatus] = useState('All');
-
-    useEffect(() => {
-        localStorage.setItem('notes', JSON.stringify(notes));
-    }, [notes]);
-
+    
     const addNote = () => {
         if (inputText !== '') {
             setNotes([...notes, { text: inputText, completed: false }]);

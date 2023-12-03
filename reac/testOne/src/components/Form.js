@@ -1,32 +1,34 @@
-import React from "react";
-import { styles } from "../styles";
-import { Icon } from '@iconify/react';
+import React from 'react';
 import '../App.css';
-const Form = ({ inputtext, setinputtext, todos, settodos }) => {
-
+const Form = ({ inputText, setinputText, notes, setnotes }) => {
+    const inputTextHandler = (e) => {
+        setinputText(e.target.value);
+    }
     const submitTodoHandler = (e) => {
         e.preventDefault();
-        if (inputtext !== '') {
-            settodos([...todos, { text: inputtext, completed: false }]);
-            setinputtext('');
+        if (inputText !== '') {
+            setnotes([
+                ...notes, { text: inputText, completed: false, id: Math.random() * 1000 }
+            ]);
+            setinputText('')
         }
-    };
+    }
     return <>
         <form className='todo-container'>
-            <input
-                className='input res todo'
-                type='text'
-                value={inputtext}
-                onChange={(e) => {
-                    setinputtext(e.target.value);
-                }}
-            />
-            <button style={styles.class4} className='todo-item button' onClick={submitTodoHandler}>
-                <Icon className='button todo' icon="ph:plus-fill" />
+            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+            <button onClick={submitTodoHandler} className="todo-button" type="submit">
+                <i className="fas fa-plus-square"></i>
             </button>
-        </form >
+            <div className="select">
+                <select name="todos" className="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
 
     </>
-
-};
+}
 export default Form;
+// onChange={statusHandler}
