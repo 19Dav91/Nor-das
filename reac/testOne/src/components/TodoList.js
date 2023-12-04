@@ -27,12 +27,12 @@ const TodoList = ({ notes, setnotes, status }) => {
     const res = filterNotes.map((note, index) => (
         <div className='todo-container bg' style={{ ...styles.class1, backgroundColor: note.backgroundColor }} key={index}>
             <p className={note.completed ? 'completed' : ''}>{note.text}</p>
-            <div>
+            <div className="btnDiv">
                 <button onClick={() => completeNote(index)}>
-                    <Icon className='todo-button  btn' icon="fluent-mdl2:completed-solid" color="green" />
+                    <Icon className='comp btn-blow' icon="fluent-mdl2:completed-solid" color="green" />
                 </button>
                 <button onClick={() => deleteNote(index)}>
-                    <Icon className='todo-button  btn' icon="wpf:delete" color="red" />
+                    <Icon className='del btn-blow' icon="wpf:delete" color="red" />
                 </button>
             </div>
         </div>
