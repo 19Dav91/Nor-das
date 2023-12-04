@@ -1,144 +1,158 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  background-image: linear-gradient(120deg, #65f695 0%, #85cdfd 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+    background-image: linear-gradient(180deg, #00f451 0%, #3c8bbf 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
 }
+
 header {
-  font-size: 2rem;
+    font-size: 2rem;
 }
+
 .bg {
-  background-color: red ;
+    background-color: red;
 }
+
 header,
 form {
-  /* min-height: 20vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 form input,
-form button,.btn {
-  padding: 0.5rem;
-  font-size: 2rem;
-  border: none;
-  background: rgb(255, 255, 255);
+form button,
+.btn {
+    padding: .30rem;
+    font-size: 2.5rem;
+    border: none;
 }
-form button, .btn {
-  color: #ff6f47;
-  background: #f7fffe;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+button{
+    color: #6fff47;
+    background: #f7fff8;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-form button:hover {
-  background: #ffa947 !important;
-  color: white;
-  transform: translateY(-.2rem) rotateZ(180deg);
-  opacity: 1;
+
+button:hover {
+    background-color: #47ff69;
+    color: white;
+    /* transform: translateY(-.2rem) rotateZ(180deg); */
+    opacity: 1;
 }
+
 .todo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .todo-list {
-  min-width: 30%;
-  list-style: none;
+    min-width: 30%;
+    list-style: none;
 }
 
-.todo {
-  margin: 0.5rem auto;
-  background: white;
-  font-size: 1.5rem;
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center ;
-  transition: all 1s ease;
-  text-align: center;
+.todo{
+    margin: 1rem auto;
+    background: white;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:ease-in-out;
+    text-align: center;
 }
+
 .filter-todo {
-  padding: 1rem;
+    padding: 1rem;
 }
+
 .todo li {
-  flex: 1;
+    flex: 1;
 }
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
+
 .complete-btn {
-  background: rgb(11, 212, 162);
+    background: rgb(11, 212, 162);
 }
+
 .todo-item {
-  padding: 0rem 0.5rem;
+    padding: 0rem 0.5rem;
 }
 
 .fa-trash,
 .fa-check {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0.2;
 }
 
 .completed {
-  text-decoration: line-through;
-  opacity: 0.5;
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /*CUSTOM SELECTOR */
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
 }
 
 /* Custom Select */
 .select {
-  margin: 1rem;
-  position: relative;
-  overflow: hidden;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
 }
+
 select {
-  color: #ff6f47;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-  width: 12rem;
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
 }
+
 /* Arrow */
 .select::after {
-  content: "\25BC";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  background: #ff6f47;
-  cursor: pointer;
-  pointer-events: none;
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
 }
+
 /* Transition */
-
+/* 
 .select:hover::after {
-  transform: scale(1.5);
-}
-
+    transform:scale(1.5rem);
+} */

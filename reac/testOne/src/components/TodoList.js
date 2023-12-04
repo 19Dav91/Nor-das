@@ -3,7 +3,7 @@ import '../App.css'
 import { styles } from "../styles";
 import { Icon } from '@iconify/react';
 
-const TodoList = ({ notes, setnotes, status }) => { 
+const TodoList = ({ notes, setnotes, status }) => {
     const deleteNote = (index) => {
         const newNotes = [...notes];
         newNotes.splice(index, 1);
