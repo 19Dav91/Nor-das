@@ -29,7 +29,7 @@ export default function App() {
                     setstatus={setstatus}
                 />
             </div>
-            <TodoList
+            <TodoList className={'bg'}
                 notes={notes}
                 setnotes={setnotes}
                 status={status}

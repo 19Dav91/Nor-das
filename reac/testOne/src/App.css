@@ -12,7 +12,9 @@ body {
 header {
   font-size: 2rem;
 }
-
+.bg {
+  background-color: red ;
+}
 header,
 form {
   /* min-height: 20vh; */
