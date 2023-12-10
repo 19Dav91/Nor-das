@@ -16,7 +16,7 @@ const ServiceItem = styled.li`
 `;
 
 const Button = styled.button`
-  background-color: #ffcc00;
+  background-color:aqua;
   color: #333;
   padding: 8px 12px;
   border: none;
