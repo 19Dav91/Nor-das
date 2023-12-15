@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "0.1.0",
-  "homepage": "http://19dav91.github.io/Nor-das/",
+  "homepage": "https://19dav91.github.io/ToDo/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
