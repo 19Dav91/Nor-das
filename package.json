@@ -23,6 +23,7 @@
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "react-router-dom": "^6.18.0"
   }
 }
