@@ -2,6 +2,7 @@
   "name": "todos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://19dav91.github.io/ToDos/",
   "dependencies": {
     "@iconify/react": "^4.1.1",
     "@testing-library/jest-dom": "^5.17.0",
