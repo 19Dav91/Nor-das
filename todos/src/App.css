@@ -256,3 +256,15 @@ button {
   transition: background-size 1.8s, border-radius 1.4s;
   background-size: 120% 120%;
 }
+
+@media (max-width: 768px) {
+  /* стили для мобильных устройств */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* стили для планшетов */
+}
+
+@media (min-width: 1025px) {
+  /* стили для компьютеров и широких экранов */
+}
