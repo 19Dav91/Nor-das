@@ -48,18 +48,18 @@
 // } 
 import { useEffect, useState } from 'react';
 
-// export default function App() {
-// 	useEffect(() => {
-// 		document.body.style.backgroundColor = 'green';
-//         console.log('render');
-// 	}, []);
+export default function App() {
+	useEffect(() => {
+		document.body.style.backgroundColor = 'green';
+        console.log('render');
+	}, []);
 
-// 	return (
-// 		<div>
-// 			<h1>React App</h1>
-// 		</div>
-// 	);
-// }
+	return (
+		<div>
+			<h1>React App</h1>
+		</div>
+	);
+}
 
 
 // export default function App() {
