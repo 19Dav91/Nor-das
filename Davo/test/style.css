@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.calendar {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.days div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+#calendarDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+#calendarDays div {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#calendarDays div:hover {
+    background-color: #25c24c;
+}
+.weekdays {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#eventsForDay li {
+    margin-bottom: 5px;
+}
+.weekdays div {
+    width: 14.28%; /* Ширина для каждого дня недели, чтобы равномерно распределить по всей ширине */
+    text-align: center;
+}
+.event-form {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.event-form input,
+.event-form button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.events {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events li {
+    margin-bottom: 5px;
+}
+
+#eventText {
+    width: 70%;
+    padding: 5px;
+    margin-right: 10px;
+}
+#addEvent {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#addEvent:hover {
+    background-color: #2980b9;
+}

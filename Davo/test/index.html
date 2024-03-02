@@ -4,12 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Calendar</title>
 </head>
 
 <body>
-    <p style="font-size:xx-large;color:red;text-align:center">"Hello world"</p>
-    <script src="../test/script.js"></script>
+    <div class="calendar">
+        <div class="header">
+            <button id="prevMonth">&#8249;</button>
+            <h2 id="currentMonth"></h2>
+            <button id="nextMonth">&#8250;</button>
+            
+        </div>
+        <div class="weekdays">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div>Сб</div>
+            <div>Вс</div>
+        </div>
+        <div class="days" id="calendarDays"></div>
+    </div>
+    <div class="event-form">
+        <h3>Добавить событие</h3>
+        <input type="date" id="eventDate" required>
+        <input type="text" id="eventText" placeholder="Event description" required>
+        <button id="addEvent">Add</button>
+    </div>
+    <div class="events" id="eventList">
+        <h3>Событие</h3>
+        <ul id="eventsForDay"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
