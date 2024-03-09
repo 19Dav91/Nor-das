@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function getEvents() {
         const storedEvents = JSON.parse(localStorage.getItem('events')) || {};
-        return storedEvents;a
+        return storedEvents; a
     }
 
     function saveEvents(events) {
